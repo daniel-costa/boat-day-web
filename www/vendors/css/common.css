@@ -1,0 +1,286 @@
+/** ****************************** **/
+/** MEDIA PAGE
+/** ****************************** **/
+@media (max-width: 768px)  {
+	.footer, 
+	.footer li,
+	.safety h2,
+	.safety-list p,
+	.cities .twitter .right,
+	.cities .cities-list h2, 
+	.cities .cities-list h4, 
+	.cities .cities-list p,
+	.cities .your-town h2,
+	.cities .your-town p,
+	.sms-form input {
+		text-align : center !important;
+	}
+
+	nav.header { 
+		padding : 0px 15px;
+	}
+	body.legal, body.contact {
+		padding-top : 189px;
+	}
+
+	.home .boat-users h2 {
+		margin-top : 30px !important;
+	}
+
+
+	nav.header .logo, nav.header .links {
+		line-height : 47px;
+	}
+
+	nav.header .logo img {
+		height : 30px;
+	}
+
+	.panorama .panorama-badge {
+		width : 153px ! important;
+		height : 150px !important;
+		background: url('../../images/badge-xs.png') center no-repeat;
+		font-size : 18px;
+		line-height : 35px;padding-top : 20px;
+	}
+
+
+	.panorama .panorama-badge.small-text {
+		font-size: 16px !important;
+	}
+
+	.carousel .sms-form {
+		margin-top : 20px !important;
+	}
+
+	.carousel .img h1 {
+		padding-top : 100px !important;
+	}
+
+	.download .download-block h1.important {
+		padding-top : 0px !important;
+	}
+
+	.carousel h1.two-lines {
+		padding-top : 418px !important;
+	}
+
+	.carousel h1.three-lines {
+		padding-top : 348px !important;
+	}
+
+	.footer h6 {
+		margin-bottom : 15px;
+	}
+
+	.footer ul {
+		margin-bottom : 30px;
+	}
+
+	.footer .social .btn {
+		margin : 0px !important;
+		margin-bottom : 30px !important;
+	}
+
+	.footer .social a {
+		margin-bottom : 50px;
+	}
+
+	.cities p {
+		margin-left : 0px !important;
+	}
+
+	.download .download-block {
+		margin : 0px 15px;
+	}
+}
+
+/** ****************************** **/
+/** HOME PAGE
+/** ****************************** **/
+.home .video .cell {
+	position: relative;
+	padding : 0px;
+	margin : 0px;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.home .video .cell iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border : 6px #5795af solid;
+	border-radius: 6px
+}
+
+.home .boat-app .separation-v {
+	height : 250px;
+	background: url('../../images/home-separation.png') center center no-repeat;
+}
+
+.home .boat-users img {
+	max-width : 100%;
+	display : inline-block;
+}
+
+.home .boat-users .row {
+	margin-bottom : 100px;
+}
+
+.home .jump {
+	padding : 120px 0px 150px 0px;
+	background: url('../../images/home-jump.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.home .jump h1 {
+	color : white;
+	line-height : 70px;
+	font-size:48px;
+}
+
+.home .jump p {
+	color : white;
+	margin : 20px auto;
+	font-size: 18px;
+	font-weight : 500 !important;
+	/* test */
+}
+
+
+/** ****************************** **/
+/** SAFETY PAGE
+/** ****************************** **/
+
+.safety .safety-list .icon {
+	margin-bottom :20px;
+}
+
+.safety .safety-list p {
+	margin-bottom : 50px;
+}
+
+.safety .icon {
+	text-align : center;
+}
+
+/** ****************************** **/
+/** CITIES PAGE
+/** ****************************** **/
+
+.cities .cities-list h4 {
+	line-height : 36px;
+}
+
+.cities .cities-list p {
+	line-height : 30px;
+	margin-left : 20px;
+}
+
+.cities .twitter img {
+	width : 120px;
+}
+
+.cities .right {
+	text-align : right;
+	padding : 0px;
+}
+
+/** ****************************** **/
+/** CONTACT FORM
+/** ****************************** **/
+
+.contact .glyphicon {
+	color: #aa0000;
+}
+
+/** ****************************** **/
+/** FAQ FORM
+/** ****************************** **/
+.faq .faq-list a.item {
+	display : inline-block;
+	font-weight : bold;
+	padding : 5px 0px 0px 0px;
+	font-size:20px;
+}
+
+.faq .faq-list a.item span {
+	font-size : 16px;
+}
+.faq .faq-block .inside {
+	margin-left : 15px;
+	margin-bottom : 50px;
+	border-left : 1px solid #57c0ed;
+	padding-left : 15px;
+	/*display : none;*/
+}
+
+/** ****************************** **/
+/** HOSTS & GUESTS PAGE
+/** ****************************** **/
+.hosts .wrapper, .guests .wrapper {
+	padding : 0px;
+}
+
+/** ****************************** **/
+/** CONTACT PAGE
+/** ****************************** **/
+.contact {
+	padding-top : 95px;
+}
+
+/** ****************************** **/
+/** LEGAL PAGE
+/** ****************************** **/
+.legal {
+	padding-top : 95px;
+}
+
+
+.legal p {
+	text-align: justify;
+}
+
+/** ****************************** **/
+/** DOWNLOAD PAGE
+/** ****************************** **/
+.download .download-block {
+	margin-top : 180px;
+	padding : 30px;
+	background : rgba(58, 99, 117, 0.9);
+}
+
+.download .download-block h1.important {
+	height : auto;
+	margin : 0px;
+	padding : 0px;
+	font-size : 18px;
+	line-height : 30px;
+}
+
+.download .download-block h3 {
+	color : white !important;
+	font-weight : 300;
+	font-size : 20px !important;
+	text-align : center;
+}
+
+.download .download-block .sms-form {
+	margin : 0px !important;
+	padding : 0px !important;
+}
+
+.download .download-block img.appstore {
+	width : 130px;
+}
+
+.download .social img {
+	margin-bottom : 50px;
+}

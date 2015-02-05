@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteBase /com.boatdayapp.com/www/
+RewriteRule ^(.+)$ $1.php [L]

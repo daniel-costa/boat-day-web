@@ -1,0 +1,66 @@
+
+.x {
+	position : fixed;
+	bottom : 10px;
+	left : 10px;
+	background : red;
+	width : 40px;
+	line-height : 40px;
+	font-size : 20px;
+	text-align : center;
+	z-index : 9999;
+}
+
+body { padding-top: 70px; }
+
+.navbar-brand {
+	padding : 10px !important;
+}
+
+.navbar {
+	background: #3a6375;
+}
+
+.navbar .dropdown .btn {
+	background : #4b8fac;
+	border : 1px solid #4b8fac;
+	color : white;
+}
+
+.navbar .dropdown.open .btn {
+	background : #3a6375;
+}
+
+.navbar .dropdown-menu {
+	background : #3a6375;
+}
+
+.navbar .dropdown-menu li a:hover {
+	background : #4b8fac;
+}
+
+.navbar a { color : #eee !important; }
+
+.logo {
+	max-height : 100%;
+}
+
+.old-price {
+	text-decoration: line-through;
+	color : #666;
+}
+
+.btn-plus {
+	background : transparent;
+	border : none;
+	color: #337ab7;
+	font-size : 12px;
+}
+
+.btn-plus:hover {
+	color : #333;
+}
+
+.glyphicon-asterisk.form-control-feedback {
+	color : #aa0000;
+}

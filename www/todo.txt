@@ -1,0 +1,6 @@
+jToDo
+- Create email:
+	+ Lostandfound@boatdayapp.com
+	+ payments@boatdayapp.com
+	+ captains@boatdayapp.com
+- Check & entity in code and replace b good entity.
