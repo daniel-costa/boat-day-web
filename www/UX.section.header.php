@@ -12,8 +12,8 @@
 				<div class="separation"></div>
 				<a href="safety">SAFETY</a>
 				<div class="separation hidden-xs"></div>
-				<!-- <a href="download" class="btn hidden-xs">DOWNLOAD</a> -->
-				<a href="download" class="btn hidden-xs">Pre-Register</a>
+				<a href="download" class="btn hidden-xs">DOWNLOAD</a>
+				<!-- <a href="download" class="btn hidden-xs">Pre-Register</a> -->
 			</div>
 		</Div>
 	</div>

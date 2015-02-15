@@ -20,8 +20,8 @@
 		</div>
 		<div class="col-sm-6 col-md-6 col-lg-5 social">
 			<div>
-				<!-- <a href="download" class="btn">DOWNLOAD</a> -->
-				<a href="download" class="btn">Pre-Register</a>
+				<a href="download" class="btn">DOWNLOAD</a>
+				<!-- <a href="download" class="btn">Pre-Register</a> -->
 			</div>
 			<div class="fb-like" data-href="https://www.facebook.com/BoatDayapp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 			<p>VISIT US ON:</p>

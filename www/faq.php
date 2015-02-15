@@ -42,20 +42,20 @@
 							<h4>HOW DO I REGISTER?</h4>
 							<p>Once you've downloaded the app, tap the "Host Registration" button on the main landing screen or the "Host Registration" tab in the navigation panel. From there, the app will guide you through our 3 easy registration steps:</p>
 							<ol>
-								<li>Host Registration</li>
+								<li>Step 1: Host Registration</li>
 								<ul>
 									<li>tell us about you</li>
 									<li>photo of your driver's license</li>
 									<li>your basic contact and ID information (address, phone #, etc)</li>
 								</ul>
-								<li>Boat Registration </li>
+								<li>Step 2: Boat Registration </li>
 								<ul>
 									<li>tell us about your boat</li>
 									<li>photo of your boat</li>
 									<li>basic boat information (location, length make, age, etc)</li>
 									<li>photo of your boat insurance policy page</li>
 								</ul>
-								<li>Payment Information </li>
+								<li>Step 3: Payment Information </li>
 								<ul>
 									<li>tell us how to pay you!</li>
 									<li>deposit account information </li>
@@ -87,7 +87,7 @@
 						<div class="inside">
 							<p>The suggested contribution amount for each BoatDay is set by the Host.  Learn more about <a href="#essentials-4">suggested contributions</a>. Because of our unprecedented per-person pricing, BoatDay is usually much cheaper (and more fun) than other boating options.</p>
 							<h4>CAN I SEE HOW MUCH THE BOATDAY WILL BE BEFORE I JOIN IT?</h4>
-							<p>Yes! The suggested contribution will be listed on the front of the listingfor each BoatDay. It will also be included in the BoatDay details when you click on any specific.  Once the BoatDay is over, the app will display the suggested contribution for your BoatDay and will allow you to review your Host. Don't forget, if your Host goes above and beyond, feel free to increase the suggested contribution.</p>
+							<p>Yes! The suggested contribution will be listed on the front of the listing for each BoatDay. It will also be included in the BoatDay details when you click on any specific.  Once the BoatDay is over, the app will display the suggested contribution for your BoatDay and will allow you to review your Host. Don't forget, if your Host goes above and beyond, feel free to increase the suggested contribution.</p>
 							<h4>WHAT IS THE TRUST &amp; SAFETY FEE?</h4>
 							<p>The safety of all BoatDay passengers is our top priority and is taken into account with everything we do. The Trust &amp; Safety Fee of $5.00 per Guest supports our leading safety standards, including background checks, excess liability insurance and ongoing back-end support.</p>
 							<p>Find out more about <a href="#essentials-2">how payments work</a> on the BoatDay platform.</p>
@@ -133,7 +133,7 @@
 						<a class="item" href="#"><span class="glyphicon glyphicon-info-sign"></span> Payment Issues</a>
 						<div class="inside">
 
-							<p>If you believe your credit card was used improperly on the BoatDay platform, please immediately contact your bank and request they look into the charges.</p>
+							<!-- <p>If you believe your credit card was used improperly on the BoatDay platform, please immediately contact your bank and request they look into the charges.</p> -->
 							<p>Our Payments team is also standing by to investigate any claims. Please contact us at <a href="mailto:payments@boatdayapp.com">payments@boatdayapp.com</a> with the following information:</p>
 							<ul>
 								<li>The last four digits of your card number.</li>
@@ -166,7 +166,7 @@
 						</div>
 					</div>
 					<div id="essentials-12" class="faq-block">
-						<a class="item" href="#"><span class="glyphicon glyphicon-info-sign"></span> Can I use a licensed Captain for my BoatDay?</a>
+						<a class="item" href="#"><span class="glyphicon glyphicon-info-sign"></span> Can I use a Captain for my BoatDay?</a>
 						<div class="inside">
 							<p>Yes! If you are a Host, and want a licensed captain for your BoatDay, you can register a captain with us in a few easy steps: </p>
 							<h4>HOW TO REGISTER A CAPTAIN</h4>
@@ -185,8 +185,11 @@
 							<p>Once your captain has been registered, the captain must be "on-boarded" in your BoatDay listing.</p>
 							<p>In order to on-board a captain, you must:</p>
 							<ol>
-								<li>include the captain's picture as one of the three allotted photos for your BoatDay event</li>
-								<li>expressly mention that your BoatDay will have a captain, as well as the captain's name, in your BoatDay event description</li>
+								<li>mention that your BoatDay will have a captain, as well as the captain's name, in your BoatDay event description, and</li>
+								<li>include the captain's picture as one of your allotted profile photos, or</li>
+								<li>include the captain as a confirmed Guest on your BoatDay.</li>
+								<!-- <li>include the captain's picture as one of the three allotted photos for your BoatDay event</li> -->
+								<!-- <li>expressly mention that your BoatDay will have a captain, as well as the captain's name, in your BoatDay event description</li> -->
 							</ol>
 							<p>On-boarding helps build User trust and confidence, and provides extra reassurance to potential Guests.</p>
 						</div>

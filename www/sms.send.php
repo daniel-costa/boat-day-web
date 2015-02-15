@@ -4,7 +4,7 @@
 	include_once('../backend/core.config.php');
 	
 	// define('_MSG',  "Download the free BoatDay App - http://applestore.com/the.app");
-	define('_MSG',  "Thank you for pre-registering for the BoatDay app. You will receive a download link on February 4.");
+	define('_MSG',  "Better Boating, with Friends! Download BoatDay Today: https://itunes.apple.com/us/app/boatday/id953574487?ls=1&mt=8");
 	define('_FROM', "+17865745669");
 
 	require "vendors/php/Twilio.php";
