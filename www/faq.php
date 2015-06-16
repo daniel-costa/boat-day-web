@@ -27,12 +27,12 @@
 			<div class="container block-space">
 				<div class="col-md-20 col-md-offset-2 col-lg-18 col-lg-offset-3 block-space-bottom faq-list">
 					<h1>Hosts</h1>
-					<h2>How do I become a host?</h2>
+					<h2 id="becomeHost">How do I become a host?</h2>
 					<p>We're glad you're interested in hosting BoatDays! Here are the basics for becoming a BoatDay Host.</p>
 					<h4>WHAT ARE THE REQUIREMENTS FOR BECOMING A HOST?</h4>
 					<ul>
 						<li>Be at least 23 years old</li>
-						<li>In-state insurance for your boat, minimum coverage of $300,000 combined bodily injury and property protection (per occurrence) with your name on or endorsed on the policy</li>
+						<li>In-state insurance for your boat, minimum coverage of $300,000 combined bodily injury and property protection (per occurrence) with your name on or endorsed on the policy (we automatically provide extra insurance coverage for all Hosts)</li>
 						<li>In-state current boat registration</li>
 						<li>Successful completion of BoatDay 
 							<a href="#bgScreen">background screening.</a>
@@ -61,9 +61,13 @@
 					<h4>CAN I EXIT THE SIGN UP-PROCESS AND COME BACK TO FINISH MY REGISTRATION?</h4>
 					<p>Your registration information will be saved and available, even if you close your browser completely.</p>
 
+					<h2>Are there any fees to become a Host?</h2>
+					<p>No, signing up as a Host, registering a boat and listing BoatDays on the platform are absolutely free for all Hosts!  There are also no subscription costs or membership fees.  Simply go to www.boatdayhosts.com to create your free Host account and get started. </p>
+					<p>To ensure BoatDay’s quality and safety standards, BoatDay does receive 15% of the per-person price listed by a Host for each BoatDay, which goes to support and maintain our extra insurance coverage for Hosts, background checks, and easy to use application.</p>
+
 					<h2 id="bgScreen">Host Background Screening</h2>
 					<p>We’re committed to the safety of your BoatDay experience!</p>
-					<p>All BoatDay Hosts (and Captains) must go through a rigorous background screening, which includes county, federal and multi-state checks. </p>
+					<p>All BoatDay Hosts (and Captains) must pass BoatDay’s background screening, which includes county, federal and multi-state checks. </p>
 					<h4>REQUIRED HOST QUALIFICATIONS</h4>
 					<ul>
 						<li>Age 23 or older </li>
@@ -186,6 +190,8 @@
 					<p>Use high-quality photos of your Boat, write a detailed description of the day’s activities, select the activity type, and highlight all the amenities and extras your boat and BoatDay include.</p>
 					<h4>PRICING YOUR BOATDAY</h4>
 					<p>Guests will evaluate the value of your BoatDay, so it's important to set a price that balances expectations with what your boat and the day’s activities have to offer.  If you're a first-time Host, consider lowering your rate so that you can get that first booking, gain some experience, and start developing your hosting style.</p>
+					<h2>Host Insurance Coverage</h2>
+					<p>To help protect all Hosts and Guests on the platform, BoatDay requires all Hosts to maintain their own minimum <a href="#becomeHost">private boat insurance</a>.  But don’t worry, Host’s are also protected by our $500,000 excess liability policy for each BoatDay, covering injury to Guests while on a BoatDay. </p>
 
 					<h1>GUESTS</h1>
 					<h2>How much does a BoatDay cost?</h2>
