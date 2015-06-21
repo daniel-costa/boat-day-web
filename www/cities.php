@@ -29,7 +29,8 @@
 
 		<div class="container-fluid wrapper">
 			<p class="intro2">Starting in the Sunshine State... coming soon to a city near you!</p>
-			<p class="sub-intro">BoatDay is now available in these Florida locations:</p>
+			<!-- <p class="sub-intro">BoatDay is now available in these Florida locations:</p> -->
+			<p class="sub-intro">We are now registering Hosts and launching BoatDays in these Florida locations.</p>
 
 			<div class="container block-space">
 				<div class="row cities-list">

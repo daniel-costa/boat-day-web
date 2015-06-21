@@ -29,13 +29,13 @@
 
 		<div class="container-fluid wrapper">
 
-			<p class="intro2">Sunk by high boating costs?</p>
-			<p class="sub-intro">Easily plan fun BoatDays, meet new friends, or simply make money with your boat.</p>
+			<p class="intro2">Host fun days on the water!</p>
+			<p class="sub-intro">Create and list your boat outings, welcome friends and Guests on-board, and get paid to enjoy great days out.</p>
 			
 			<h1 class="text-center block-space-top">- STEP ONE -</h1>
 			<p class="text-center block-space-bottom">
-				Complete a quick one-time Host and Boat registration process which includes basic identification<br/>
-				information about you, your boat, and your boat's insurace policy
+				Complete a quick one-time registration process which includes background information about you, your boat,<br/> 
+				and your boating experience
 			</p>
 			<div class="panorama panorama-hosts-1">
 				<div class="container">
@@ -48,10 +48,10 @@
 			</div>
 
 			<h1 class="text-center block-space-top">- STEP TWO -</h1>
-			<p class="text-center">Use your registered boat to host BoatDays! </p>
+			<p class="text-center">Create fun BoatDays, list them in the app, and fill your boat with Guests!</p>
 			<p class="text-center block-space-bottom">
-				Browse and invite Guests on-board your own custom events, or sit back and <br class="hidden-xs" />
-				wait for reservation requests. The choice is yours!
+				Invite Guests from your contacts, share your BoatDays on social media, or <br class="hidden-xs" />
+				just sit back and wait for reservation requests. The choice is yours!
 			</p>
 			<div class="panorama panorama-hosts-2">
 				<div class="container">
@@ -64,7 +64,8 @@
 			</div>
 
 			<h1 class="text-center block-space-top">- STEP THREE -</h1>
-			<p class="text-center block-space-bottom">Have a great time! Meet your Guests and head out for a fun and lucrative day on the water.</p>
+			<p class="text-center">Host great days on the water!</p>
+			<p class="text-center block-space-bottom">Meet your Guests and head out for a fun and lucrative day of boating.</p>
 			<div class="panorama panorama-hosts-3">
 				<div class="container">
 					<div class="panorama-badge right">
@@ -76,8 +77,7 @@
 			</div>
 
 			<h1 class="text-center block-space-top">- STEP FOUR -</h1>
-			<p class="text-center">Sit Back. Relax. Get Paid!</p>
-			<p class="text-center block-space-bottom">Guest payments are automatically processed through the app, its cashless and hassle-free.</p>
+			<p class="text-center block-space-bottom">Guest payments are automatically processed and deposited in your account, its cashless and hassle-free.</p>
 			<div class="panorama panorama-hosts-4">
 				<div class="container">
 					<div class="panorama-badge">

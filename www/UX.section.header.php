@@ -10,7 +10,8 @@
 				<div class="separation"></div>
 				<a href="guests">GUESTS</a>
 				<div class="separation"></div>
-				<a href="safety">SAFETY</a>
+				<!-- <a href="safety">SAFETY</a> -->
+				<a href="faq">HELP</a>
 				<div class="separation hidden-xs"></div>
 				<a href="download" class="btn hidden-xs">DOWNLOAD</a>
 				<!-- <a href="download" class="btn hidden-xs">Pre-Register</a> -->

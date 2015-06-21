@@ -39,8 +39,8 @@
 						<img src="images/safety-2.png"/>
 					</div>
 					<div class="col-md-10 col-lg-9">
-						<h2 class="no-margins">BACKGROUND CHECKS </h2>
-						<p>Every BoatDay Host is subject to a criminal background check. The screening includes a search of national and county databases, as well as DMV records and the sex-offender registry.</p>
+						<h2 class="no-margins">BACKGROUND SCREENING </h2>
+						<p>Every BoatDay Host is subject to a background screening, including a search of national and county databases, as well as DMV records and the sex-offender registry.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -56,7 +56,7 @@
 					</div>
 					<div class="col-md-10 col-lg-9">
 						<h2 class="no-margins">PEER REVIEWS</h2>
-						<p>Hosts and Guests can leave reviews after every BoatDay, which are used to maintain our high safety standards. For added reassurance, read through reviews when picking a BoatDay.</p>
+						<p>Hosts and Guests can leave reviews after every BoatDay, which are used to maintain our high quality standards. For added reassurance, read through reviews when picking a BoatDay.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -65,7 +65,7 @@
 					</div>
 					<div class="col-md-10 col-lg-9">
 						<h2 class="no-margins">ON-WATER ASSISTANCE</h2>
-						<p>Quickly contact and receive on-water assistance directly through the app. Access "Emergency Services" by tapping the Safety icon in the app's navigation panel to directly contact nearby boat service providers.</p>
+						<p>Quickly contact and receive on-water assistance directly through the app. To directly contact emergency on-water assistance, tap the Safety Icon while you are on-board a BoatDay.</p>
 					</div>
 					<div class="col-md-2 icon">
 						<img src="images/safety-6.png"/>
@@ -107,6 +107,10 @@
 					<div class="col-sm-3 col-sm-offset-1 icon">
 						<img src="images/safety-2.png"/>
 					</div>
+					<!-- <div class="col-sm-19">
+						<h2 class="no-margins">BACKGROUND CHECKS </h2>
+						<p>Every BoatDay Host is subject to a criminal background check. The screening includes a search of national and county databases, as well as DMV records and the sex-offender registry.</p>
+					</div> -->
 					<div class="col-sm-19">
 						<h2 class="no-margins">BACKGROUND CHECKS </h2>
 						<p>Every BoatDay Host is subject to a criminal background check. The screening includes a search of national and county databases, as well as DMV records and the sex-offender registry.</p>
@@ -164,7 +168,7 @@
 					</div>
 					<div class="col-sm-19">
 						<h2 class="no-margins">NETWORK VISIBILITY</h2>
-						<p>Because we link BoatDay profiles to existing social networks, you can easily view friends in common with any Host or Guest.  It's not only a conversation starter, but helps build confidence and trust within the BoatDay community.</p>
+						<p>If you choose to link your BoatDay account to your existing social networks, you can view friends in common with other Host and Guests. It's not only a conversation starter, but helps build confidence and trust within the BoatDay community.</p>
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,7 @@
 		<div class="container-fluid wrapper">
 
 			<p class="intro2">Contact us</p>
-			<p class="sub-intro">We welcome all feedback from BoatDay users</p>
+			<p class="sub-intro">Interested in joining BoatDay? Already a user?  We we welcome all of your feedback!</p>
 			
 			<div class="container block-space" >
 				<form method="post" style="background:#f4f4f4;border-radius:8px;padding:10px;" action="http://backend.boatdayapp.com/core.proceed.php?form=contact.create" role="form" class="col-sm-18 col-sm-offset-3 col-md-14 col-md-offset-5 col-lg-12 col-lg-offset-6">
@@ -50,7 +50,7 @@
 						<span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
 					</div>
 					<div class="form-group has-feedback">
-						<textarea class="form-control input-lg" name="feedback" rows="5" placeholder="How can we help you?"><?php t('feedback'); ?></textarea>
+						<textarea class="form-control input-lg" name="feedback" rows="5" placeholder="Tell us what’s on your mind . . . "><?php t('feedback'); ?></textarea>
 						<span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
 					</div>
 					<div class="form-group text-center">

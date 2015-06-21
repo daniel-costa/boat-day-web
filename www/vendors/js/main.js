@@ -47,7 +47,7 @@ function getSmsFormContent() {
 	var input = $("<input />")
 		.addClass("form-control")
 		.attr("type", "text")
-		.attr("placeholder", "Phone number");
+		.attr("placeholder", "Enter your phone number");
 
 	var button1 = $("<button />")
 		.addClass("btn")

@@ -13,9 +13,9 @@
 			<h6>LEARN MORE</h6>
 			<ul>
 				<li><a href="cities">CITIES</a></li>
-				<li><a href="faq">FAQ's</a></li>
+				<li><a href="faq">HELP</a></li>
 				<li><a href="contact">CONTACT</a></li>
-				<li><a href="legal">LEGAL</a></li>
+				<li><a href="legal">TERMS</a></li>
 			</ul>
 		</div>
 		<div class="col-sm-6 col-md-6 col-lg-5 social">
@@ -31,7 +31,7 @@
 		</div>
 		<div class="col-sm-8 col-md-6 col-lg-5 copy">
 			<img src="images/logo-footer.png" />
-			<p>&copy; 2014 Peer-to-Pier Technologies, LLC</p>
+			<p>&copy; 2015 Peer-to-Pier Technologies, LLC</p>
 		</div>
 	</div>
 </div>
