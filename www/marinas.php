@@ -18,8 +18,8 @@
 			<p class="sub-intro">Enter your phone number, area code and all, and we’ll text you a download link.</p>
 			
 			<div class="container block-space" >
-				<!-- <form method="post" style="background:#f4f4f4;border-radius:8px;padding:10px;" action="http://backend.boatdayapp.com/core.proceed.php?form=marinas.create" role="form" class="col-sm-18 col-sm-offset-3 col-md-14 col-md-offset-5 col-lg-12 col-lg-offset-6"> -->
-				<form method="post" style="background:#f4f4f4;border-radius:8px;padding:10px;" action="http://127.0.0.1/com.boatdayapp/backend/core.proceed.php?form=marinas.create" role="form" class="col-sm-18 col-sm-offset-3 col-md-14 col-md-offset-5 col-lg-12 col-lg-offset-6">
+				<form method="post" style="background:#f4f4f4;border-radius:8px;padding:10px;" action="https://backend.boatdayapp.com/core.proceed.php?form=marinas.create" role="form" class="col-sm-18 col-sm-offset-3 col-md-14 col-md-offset-5 col-lg-12 col-lg-offset-6">
+				<!-- <form method="post" style="background:#f4f4f4;border-radius:8px;padding:10px;" action="http://127.0.0.1/com.boatdayapp/backend/core.proceed.php?form=marinas.create" role="form" class="col-sm-18 col-sm-offset-3 col-md-14 col-md-offset-5 col-lg-12 col-lg-offset-6"> -->
 
 					<?php
 						if(isset($_SESSION['errors'])) {

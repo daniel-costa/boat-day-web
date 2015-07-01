@@ -20,14 +20,13 @@
 		</div>
 		<div class="col-sm-6 col-md-6 col-lg-5 social">
 			<div>
-				<a href="download" class="btn">DOWNLOAD</a>
-				<!-- <a href="download" class="btn">Pre-Register</a> -->
+				<a target="_blank" href="https://boatdayhosts.com" class="btn">BECOME A HOST</a>
 			</div>
 			<div class="fb-like" data-href="https://www.facebook.com/BoatDayapp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 			<p>VISIT US ON:</p>
-			<a href="https://www.facebook.com/BoatDayapp"><img src="images/social-fb.png"/></a>
-			<a href="https://twitter.com/boatdayapp"><img src="images/social-tw.png"/></a>
-			<a href="http://instagram.com/boatdayapp"><img src="images/social-in.png"/></a>
+			<a target="_blank" href="https://www.facebook.com/BoatDayapp"><img src="images/social-fb.png"/></a>
+			<a target="_blank" href="https://twitter.com/boatdayapp"><img src="images/social-tw.png"/></a>
+			<a target="_blank" href="http://instagram.com/boatdayapp"><img src="images/social-in.png"/></a>
 		</div>
 		<div class="col-sm-8 col-md-6 col-lg-5 copy">
 			<img src="images/logo-footer.png" />

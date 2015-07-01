@@ -128,7 +128,7 @@
 										<a href="#bgScreen">background screening.</a>
 									</li>
 								</ul>
-								<p>If you would like to learn more about our safety measures, please visit our <a href="http://www.boatdayapp.com/safety" target="_blank">safety page</a>.</p>
+								<p>If you would like to learn more about our safety measures, please visit our <a href="https://www.boatdayapp.com/safety" target="_blank">safety page</a>.</p>
 							</div>
 							<div class="sub-sub-cat">
 								<h4>HOW DO I SIGN UP AS A HOST?</h4>
@@ -190,7 +190,7 @@
 									<li>Multi-State Criminal Database</li>
 									<li>National Sex Offender Registry</li>
 								</ul>
-								<p>If you would like to learn more about our safety measures, please visit our <a href="http://www.boatdayapp.com/safety" target="_blank">safety page.</a></p>
+								<p>If you would like to learn more about our safety measures, please visit our <a href="https://www.boatdayapp.com/safety" target="_blank">safety page.</a></p>
 							</div>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -397,7 +397,7 @@
 							</div>
 							<div class="sub-sub-cat">
 								<h4>WHAT IS THE TRUST &amp; SAFETY FEE?</h4>
-								<p>The safety of all BoatDay passengers is our top priority and is taken into account with everything we do. The Trust & Safety Fee of $4.00 per confirmed BoatDay Guest supports our safety standards, including background checks, insurance and ongoing support. The Trust & Safety fee will always be displayed as before you book your BoatDay.</p>
+								<p>The safety of all BoatDay passengers is our top priority and is taken into account with everything we do. The Trust &amp; Safety Fee of $4.00 per confirmed BoatDay Guest supports our safety standards, including background checks, insurance and ongoing support. The Trust &amp; Safety fee will always be displayed as before you book your BoatDay.</p>
 								<p>Find out more about <a href="#payment">how payments work</a> on the BoatDay platform.</p>
 							</div>
 							<div class="back-to-top">
@@ -497,7 +497,7 @@
 								<li><u>Strict:</u>&nbsp;50% refund up to 5 days prior to departure time of BoatDay, except fees.</li>
 							</ul>
 							<p>You agree to the Host's cancellation policy by submitting a BoatDay request. We strongly recommend reviewing all cancellation policies before making reservations.</p>
-							<p>A BoatDay is officially canceled when the Guest clicks the cancellation button on the cancellation confirmation page, which they can find in App Menu > My BoatDays > Cancel. The Trust & Safety Fee is non-refundable.</p>
+							<p>A BoatDay is officially canceled when the Guest clicks the cancellation button on the cancellation confirmation page, which they can find in App Menu > My BoatDays > Cancel. The Trust &amp; Safety Fee is non-refundable.</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
@@ -554,14 +554,14 @@
 						<div id="general-3" class="sub-cat">
 							<h2 id="duration">How long is a BoatDay?</h2>
 							<p>The length of each BoatDay is up to the Host, and will be displayed clearly on each BoatDay listing in the app.  If you have specific time requirements, use the search filters to find BoatDays that fit your schedule.</p>
-							<p>To ensure the safety and comfort of our users, BoatDays are limited to a maximum duration of 12 hours. Overnight trips are not permitted (its a Boat"DAY"), and BoatDay boats are limited to travel within a 12 mile distance of the nearest shoreline.</p>
+							<p>To ensure the safety and comfort of our users, BoatDays are limited to a maximum duration of 12 hours. Overnight trips are not permitted (its a Boat"DAY"), and BoatDay excursions may travel up to a maximum of 12 miles offshore (the distance from the nearest shoreline).</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
 						<div id="general-4" class="sub-cat">
 							<h2>What is the Trust &amp; Safety Fee?</h2>
-							<p>The safety of all BoatDay passengers is our top priority and is taken into account with everything we do. The Trust & Safety Fee of $4.00 per confirmed BoatDay Guest supports our safety standards, including background checks, insurance and ongoing support. The Trust & Safety fee will always be displayed as before you book your BoatDay. </p>
+							<p>The safety of all BoatDay passengers is our top priority and is taken into account with everything we do. The Trust &amp; Safety Fee of $4.00 per confirmed BoatDay Guest supports our safety standards, including background checks, insurance and ongoing support. The Trust &amp; Safety fee will always be displayed as before you book your BoatDay. </p>
 							<p>Find out more about <a href="#payment">how payments work</a> on the BoatDay platform.</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -637,7 +637,7 @@
 								<li>Mutual social network visibility</li>
 								<li>Customer support</li>
 							</ul>
-							<p>If you would like to learn more about our safety features, please visit our <a href="http://www.boatdayapp.com/safety" target="_blank">safety page</a>.</p>
+							<p>If you would like to learn more about our safety features, please visit our <a href="https://www.boatdayapp.com/safety" target="_blank">safety page</a>.</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>

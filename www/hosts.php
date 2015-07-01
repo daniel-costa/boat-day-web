@@ -2,6 +2,29 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
+		<!-- Facebook Conversion Code for BoatDay Host Registrations -->
+		<script>(function() {
+		var _fbq = window._fbq || (window._fbq = []);
+		if (!_fbq.loaded) {
+		var fbds = document.createElement('script');
+		fbds.async = true;
+		fbds.src = '//connect.facebook.net/en_US/fbds.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(fbds, s);
+		_fbq.loaded = true;
+		}
+		})();
+		window._fbq = window._fbq || [];
+		window._fbq.push(['track', '6028939225360', {'value':'0.00','currency':'USD'}]);
+		</script>
+		<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6028939225360&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+
+		<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+		<script type="text/javascript">twttr.conversion.trackPid('l6cox', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+		<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6cox&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+		<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6cox&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+		</noscript>
 		<title>BoatDay App</title>
 	</head>
 	<body class="hosts">
@@ -29,9 +52,14 @@
 
 		<div class="container-fluid wrapper">
 
-			<p class="intro2">Host fun days on the water!</p>
-			<p class="sub-intro">Create and list your boat outings, welcome friends and Guests on-board, and get paid to enjoy great days out.</p>
+			<!-- <p class="intro2">Host fun days on the water!</p> -->
+			<!-- <p class="sub-intro">Create and list your boat outings, welcome friends and Guests on-board, and get paid to enjoy great days out.</p> -->
 			
+			<h1 class="text-center block-space-top">Own a boat?</h1>
+			<p class="text-center block-space-bottom">
+				Start by signing up from the <a href="https://www.boatdayhosts.com">BoatDay Host Center</a> and follow these simple steps.
+			</p>
+
 			<h1 class="text-center block-space-top">- STEP ONE -</h1>
 			<p class="text-center block-space-bottom">
 				Complete a quick one-time registration process which includes background information about you, your boat,<br/> 
