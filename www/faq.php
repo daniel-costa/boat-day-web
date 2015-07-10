@@ -64,15 +64,16 @@
 							<li><a href="#hosts-5">Pricing of My BoatDay</a></li>
 							<li><a href="#hosts-6">Booking Policy</a></li>
 							<li><a href="#hosts-7">How do I manage my BoatDays?</a></li>
-							<li><a href="#hosts-8">How long do I have to respond to a Guest request?</a></li>
-							<li><a href="#hosts-9">What happens if one of my Guests cancels?</a></li>
-							<li><a href="#hosts-10">What if I have to cancel a BoatDay?</a></li>
-							<li><a href="#hosts-11">Getting Paid – Direct Deposit</a></li>
-							<li><a href="#hosts-12">What boat can I use to Host BoatDays?</a></li>
-							<li><a href="#hosts-13">Can I use a Captain for my BoatDay?</a></li>
-							<li><a href="#hosts-14">Reporting an on-water incident?</a></li>
-							<li><a href="#hosts-15">Taking excellent Profile, Boat and Account Photos</a></li>
-							<li><a href="#hosts-16">Hosting Standards and Accuracy</a></li>
+							<!-- <li><a href="#hosts-8">How long do I have to respond to a Guest request?</a></li> -->
+							<li><a href="#hosts-8">What happens if one of my Guests cancels?</a></li>
+							<li><a href="#hosts-9">What if I have to cancel a BoatDay?</a></li>
+							<li><a href="#hosts-10">Getting Paid – Direct Deposit</a></li>
+							<li><a href="#hosts-11">What boat can I use to Host BoatDays?</a></li>
+							<li><a href="#hosts-12">Can I use a Captain for my BoatDay?</a></li>
+							<li><a href="#hosts-13">Reporting an on-water incident?</a></li>
+							<li><a href="#hosts-14">Taking excellent Profile, Boat and Account Photos</a></li>
+							<li><a href="#hosts-15">Hosting Standards and Accuracy</a></li>
+							<li><a href="#hosts-16">Charter Hosts?</a></li>
 							<li><a href="#hosts-17">Host Insurance Coverage</a></li>
 						</ul>
 						<li><a href="#guests">Guests</a></li>
@@ -84,12 +85,12 @@
 							<li><a href="#guests-5">Can I reserve a BoatDay weeks in advance?</a></li>
 							<li><a href="#guests-6">What is Instant Booking?</a></li>
 							<li><a href="#guests-7">Can I request multiple seats on a BoatDay?</a></li>
-							<li><a href="#guests-8">How long does a Host have to respond to my BoatDay request?</a></li>
-							<li><a href="#guests-9">How do payments work?</a></li>
-							<li><a href="#guests-10">What if I can’t make it to a reserved BoatDay?</a></li>
-							<li><a href="#guests-11">Payment Issues</a></li>
-							<li><a href="#guests-12">Receipts</a></li>
-							<li><a href="#guests-13">Lost Items</a></li>
+							<!-- <li><a href="#guests-8">How long does a Host have to respond to my BoatDay request?</a></li> -->
+							<li><a href="#guests-8">How do payments work?</a></li>
+							<li><a href="#guests-9">What if I can’t make it to a reserved BoatDay?</a></li>
+							<li><a href="#guests-10">Payment Issues</a></li>
+							<li><a href="#guests-11">Receipts</a></li>
+							<li><a href="#guests-12">Lost Items</a></li>
 						</ul>
 						<li><a href="#general">General</a></li>
 						<ul>
@@ -233,7 +234,7 @@
 							<ul>
 								<li><u>Manual Book</u>: You want to review each individual seat request for your BoatDay and confirm or deny Guest’s manually.  When selecting this option, don’t forget to respond to requests <a href="#response">before they expire</a>.</li>
 								<li><u>Instant Book</u>: Automatically accept all Guest requests to join your BoatDay.  <a href="#instant">Instant Book</a> is a great option if you’re simply looking to fill your BoatDay calendar, and is great for Guests looking for instant or last minute confirmations.</li>
-								<li><u>Trusted Book</u>: It’s instant book for preferred Guests. Automatically accept bookings from previous Guests aboard your BoatDay, or from Guests above a 4 star rating.</li>
+								<li><u>Trusted Book</u>: : (coming soon) It’s instant book for preferred Guests. Automatically accept bookings from previous Guests aboard your BoatDay, or from Guests above a 4 star rating.</li>
 							</ul>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -247,7 +248,7 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="hosts-8" class="sub-cat">
+						<!-- <div id="hosts-8" class="sub-cat">
 							<h2 id="response">How long do I have to respond to a Guest request?</h2>	
 							<p>You have 24 hours to respond to a Guest’s seat request before it expires, by clicking the Accept or Decline button. Guests appreciate a prompt response, even if you cannot host them.</p>
 							<p>If you do not accept or decline a request within the allotted time, it will expire and your placement in search results and Host star rating may be negatively impacted. Expired requests cannot be reactivated.</p>
@@ -256,8 +257,8 @@
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
-						</div>
-						<div id="hosts-9" class="sub-cat">
+						</div> -->
+						<div id="hosts-8" class="sub-cat">
 							<h2 id="cancellationPolicy">What happens if one of my Guests cancels?</h2>
 							<p>BoatDay allows Hosts to choose among three standardized cancellation policies (Flexible, Moderate, and Strict) that we will enforce to protect against Guest cancellations.  You will be able set the cancellation policy for each BoatDay from the “Create a BoatDay” screen accessible from your Host Dashboard.</p>
 							<ul>
@@ -270,7 +271,7 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="hosts-10" class="sub-cat">
+						<div id="hosts-9" class="sub-cat">
 							<h2>What if I have to cancel a BoatDay?</h2>	
 							<p>If you need to cancel a BoatDay for which there are confirmed Guests, it’s important to do so as soon as possible. To cancel, go to “My BoatDays” from your Host Dashboard, find the BoatDay you need to cancel, and click.</p>
 							<p>Canceling a Guest's reservation, or an entire BoatDay, can have serious implications on their experience, so, penalties will be applied for any cancellation that isn't due to an extenuating circumstance.</p>
@@ -284,7 +285,7 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="hosts-11" class="sub-cat">
+						<div id="hosts-10" class="sub-cat">
 							<h2>Getting Paid – Direct Deposit</h2>
 							<p>All Hosts get paid via direct deposit (sorry, no checks). Host deposits will typically appear in your account within 5 to 7 days of payment confirmation by a Guest.</p>
 							<p>Your banking information is entered directly when creating your Host Account by entering your routing number, account number, and the name associated with your Bank Account. You can find this information on one of your personal checks, or get it by contacting your bank.</p>
@@ -297,14 +298,14 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="hosts-12" class="sub-cat">
+						<div id="hosts-11" class="sub-cat">
 							<h2>What boat can I use to Host BoatDays?</h2>
 							<p>You are only authorized to use the vessel that was submitted to and approved by BoatDay, and that is named or scheduled on your personal insurance policy.</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="hosts-13" class="sub-cat">
+						<div id="hosts-12" class="sub-cat">
 							<h2>Can I use a Captain for my BoatDay?</h2>	
 							<p>Yes! If you are a Host, and have a someone beside yourself who you trust to operate your Boat, you can register him or her as a Captain of your boat in a few easy steps:</p>
 							<div class="sub-sub-cat">
@@ -320,7 +321,7 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="hosts-14" class="sub-cat">
+						<div id="hosts-13" class="sub-cat">
 							<h2>Reporting an on-water incident?</h2>
 							<p>If you experience an incident while on the water, once all passengers are safely ashore, use the Help Center from your Host Dashboard to report the accident. Upon receiving report of an accident, a member of our Trust and Safety Team should reach out to you to check in and see what action needs to be taken.</p>
 							<img src="images/helpCenter.png"/><br>
@@ -328,7 +329,7 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="hosts-15" class="sub-cat">
+						<div id="hosts-14" class="sub-cat">
 							<h2>Taking excellent Profile, Boat and Account Photos</h2>
 							<div class="sub-sub-cat">
 								<h4>PROFILE PHOTO</h4>
@@ -379,6 +380,11 @@
 							</div>
 						</div>
 						<div id="hosts-17" class="sub-cat">
+							<h2 id="charterHost">Charter Hosts?</h2>	
+							<p>Already use your boat to carry paying guests? Sign-up as a BoatDay Host to book even more profitable trips!  Great for booking more excursions, or simply filling up any extra room on your existing trips, enjoy the benefits of #betterboating for your business.</p>
+							<p>To verify your status as a charter host, select “I already use my boat to carry paying guests” when creating your BoatDay Host account. Simply submit a copy of your captain’s license and charter boat insurance during our quick and easy registration process, and you’re all set. </p>
+						</div>
+						<div id="hosts-18" class="sub-cat">
 							<h2>Host Insurance Coverage</h2>
 							<p>To help protect all Hosts and Guests on the platform, BoatDay requires all Hosts to maintain their own minimum <a href="#becomeHost">private boat insurance</a>.  But don’t worry, Host’s are also protected by our $500,000 excess liability policy for each BoatDay, covering injury to Guests while on a BoatDay. </p>
 							<div class="back-to-top">
@@ -410,13 +416,10 @@
 
 							<div class="sub-sub-cat">
 								<h4>1. REQUEST A SEAT</h4>
-								<p>Start by clicking the Request a Seat button. You’ll find the button on a BoatDay listing or in a message thread. Make sure to enter the number of Seats you would like to request, and confirm the payment method you will be using. Be sure to review all details from the request screen. We suggest you also include a message along with your request, it helps Host’s get to know you and what you’re looking for in a BoatDay.</p>
+								<p>Start by clicking the Request a Seat button. You’ll find the button at the bottom of each BoatDay listing. Make sure to enter the number of Seats you would like to request, and confirm the payment method you will be using.</p>
 								<p>If you do not want to complete your BoatDay request, either click the back button or close the app entirely.</p>
 							</div>
-							<div class="sub-sub-cat">
-								<h4>2. AGREE TO THE POLICIES AND TERMS</h4>
-								<p>You need to agree to the Terms and Conditions at the bottom of the request screen to officially submit your reservation request to a Host.</p>
-							</div>
+							
 							<div class="sub-sub-cat">
 								<h4>3. WAIT FOR THE HOSTS RESPONSE</h4>
 								<p>Once you send your seat request, it does not mean your request has been accepted. Hosts have 24 hours to reply to a request.  If the host declines the request or the request expires, you can try requesting a BoatDay for that date with someone else.</p>
@@ -463,15 +466,15 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="guests-8" class="sub-cat">
+						<!-- <div id="guests-8" class="sub-cat">
 							<h2>How long does a Host have to respond to my BoatDay request?</h2>	
 							<p>Hosts have 24 hours to officially accept or decline a BoatDay request. You will receive a notification about the status of your request.  You may not request to join overlapping BoatDays (i.e. two BoatDays taking place at the same time).</p>
 							<p>If a Host accepts your request, you will appear as a confirmed Guest and have access to the group messaging function for that BoatDay. If a host declines your request or the request expires, you will be able to request alternative BoatDay’s on that day and time.</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
-						</div>
-						<div id="guests-9" class="sub-cat">
+						</div> -->
+						<div id="guests-8" class="sub-cat">
 							<h2 id="payment">How do payments work?</h2>
 							<p>When you create your BoatDay Account, you will be asked to input your payment information. From there, making and receiving payments for BoatDays is done quickly and easily through the platform, and is completely cash-free! </p>
 							<p>As a Guest, when your BoatDay is over, you will be prompted to confirm payment, and will have 24 hours to finalize your contribution. To show your appreciation for an amazing BoatDay, just hit the payment method and tap "+" to increase the contribution amount!</p>
@@ -488,7 +491,7 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="guests-10" class="sub-cat">
+						<div id="guests-9" class="sub-cat">
 							<h2>What if I can’t make it to a reserved BoatDay?</h2>
 							<p>BoatDay allows hosts to choose among three standardized cancellation policies (Flexible, Moderate, and Strict) that we will enforce to protect both Guests and Hosts alike. Each BoatDay listing and confirmation on our will clearly state the cancellation policy for that BoatDay.</p>
 							<ul>
@@ -502,7 +505,7 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="guests-11" class="sub-cat">
+						<div id="guests-10" class="sub-cat">
 							<h2>Payment Issues</h2>
 							<p>Our Payments team is standing by to investigate any payment issues you may have. Please contact us at <a href="mailto:payments@boatdayapp.com">payments@boatdayapp.com</a> with the following information:</p>
 							<ul>
@@ -517,14 +520,14 @@
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="guests-12" class="sub-cat">
+						<div id="guests-11" class="sub-cat">
 							<h2>Receipts</h2>
 							<p>You will automatically receive a payment receipt shortly after your payment has been confirmed. If you do not receive a receipt, or would like to have one resent, contact us at <a href="mailto:payments@boatdayapp.com">payments@boatdayapp.com</a>.</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 							</div>
 						</div>
-						<div id="guests-13" class="sub-cat">
+						<div id="guests-12" class="sub-cat">
 							<h2>Lost Items</h2>
 							<p>If you accidentally leave something behind on a boat, don't worry, let us know and we'll help you find your item. Email us at <a href="mailto:Lostandfound@boatdayapp.com">Lostandfound@boatdayapp.com</a>, tell us what you left behind, the name of your Host and the date of your BoatDay, and we'll do our best to locate your lost item.</p>
 							<div class="back-to-top">
@@ -545,7 +548,8 @@
 						</div>
 						<div id="general-2" class="sub-cat">
 							<h2 id="contibution">What is a "contribution"?</h2>
-							<p>When a Host creates a BoatDay, they set the price or “contribution" for Guests on-board. This amount will be visible on the front of all BoatDay listings, as well as in the details for each BoatDay. As a Guest, once your BoatDay is finished, you have 24 hours to submit your contribution amount to your Host. If you don't submit your contribution within that time period, we take it as a sign that you enjoyed your BoatDay, and the app will automatically charge the contribution amount to your credit card on file.</p>
+							<p>When a Host creates a BoatDay, they set the price or “contribution" for Guests on-board. This amount will be visible on the front of all BoatDay listings, as well as in the details for each BoatDay.</p>
+							<p>For BoatDays hosted by <a href ="#charterHost">Charter Hosts</a>, the listed contribution will automatically be charged once the BoatDay is complete. For all other BoatDays, once the BoatDay is finished, you have 24 hours to submit a contribution amount to your Host. If you don't submit your contribution within that time period, we take it as a sign that you enjoyed your BoatDay, and the app will automatically charge the listed contribution amount to your credit card on file.</p>
 							<p>Had an amazing time with your Host, or a BoatDay that far exceeded your expectations? You can always show your appreciation to the Host by increasing your contribution. If you feel you must reduce your contribution, be sure to tell us why! Your feedback is valuable to us and the Hosts as we try to provide the best BoatDay experiences. Remember, Hosts rely on contributions in making their boats available to you, and contributions are key to providing BoatDay's unparalleled and affordable per-person prices.</p>
 							<div class="back-to-top">
 								<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
