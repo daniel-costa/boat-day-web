@@ -419,7 +419,7 @@
 								<p>Start by clicking the Request a Seat button. You’ll find the button at the bottom of each BoatDay listing. Make sure to enter the number of Seats you would like to request, and confirm the payment method you will be using.</p>
 								<p>If you do not want to complete your BoatDay request, either click the back button or close the app entirely.</p>
 							</div>
-							
+
 							<div class="sub-sub-cat">
 								<h4>3. WAIT FOR THE HOSTS RESPONSE</h4>
 								<p>Once you send your seat request, it does not mean your request has been accepted. Hosts have 24 hours to reply to a request.  If the host declines the request or the request expires, you can try requesting a BoatDay for that date with someone else.</p>
