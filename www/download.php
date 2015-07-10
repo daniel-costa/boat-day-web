@@ -14,7 +14,9 @@
 						<div class="container">
 							<div class="col-sm-22 col-sm-offset-1 col-md-18 col-md-offset-3 col-lg-14 col-lg-offset-5 download-block">
 								<h1 class="important">
-									BoatDay 1.0 is just days away... Enter your phone number, area code and all, and we’ll text you a download link when the app is available for download
+									<!-- BoatDay 1.0 is just days away... Enter your phone number, area code and all, and we’ll text you a download link when the app is available for download -->
+									Enter your phone number and<br/>
+									we'll text you a download link!
 								</h1>
 								<form class="container-fluid sms-form"></form>
 							</div>

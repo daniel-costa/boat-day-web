@@ -13,7 +13,8 @@
 				<!-- <a href="safety">SAFETY</a> -->
 				<a href="faq">HELP</a>
 				<div class="separation hidden-xs"></div>
-				<a target="_blank" href="https://boatdayhosts.com" class="btn hidden-xs">BECOME A HOST</a>
+				<a href="download" class="btn">DOWNLOAD</a>
+				<!-- <a target="_blank" href="https://boatdayhosts.com" class="btn hidden-xs">BECOME A HOST</a> -->
 				<!-- <a href="download" class="btn hidden-xs">Pre-Register</a> -->
 			</div>
 		</Div>
