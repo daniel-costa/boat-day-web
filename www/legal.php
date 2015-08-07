@@ -11,7 +11,7 @@
 			<div class="container">
 				<div class="col-md-20 col-md-offset-2 col-lg-18 col-lg-offset-3 block-space-bottom">
 					<h1>BoatDay Terms and Conditions</h1>
-<p><em>Last Updated: June 29th, 2015</em></p>
+<p><em>Last Updated: July 29th, 2015</em></p>
 <p>THE FOLLOWING USER AGREEMENT DESCRIBES THE TERMS AND CONDITIONS ON WHICH PEER TO PIER TECHNOLOGIES, LLC. OFFERS YOU ACCESS TO THE PLATFORM. </p>
 <p>PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION REGARDING YOUR LEGAL RIGHTS, REMEDIES AND OBLIGATIONS.  THESE INCLUDE VARIOUS LIMITATIONS AND EXCLUSIONS, A CLAUSE THAT GOVERNS THE JURISDICTION AND VENUE OF DISPUTES, AND OBLIGATIONS TO COMPLY WITH APPLICABLE LAWS AND REGULATIONS. </p>
 <p>These terms and conditions constitute a legally binding agreement (the &quot;Agreement&quot; or the &quot;Terms and Conditions&quot;) between You (&quot;You&quot;, &quot;Your&quot;, or &quot;Yourself&quot;) and Peer-to-Pier Technologies, LLC (&quot;Peer to Pier&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;), a Florida limited liability company, governing Your use of the &quot;BoatDay&quot; mobile application (the &quot;Application&quot;), www.boatdayhosts.com and any other website through which Peer to Pier makes the Services (defined below) available (collectively the &quot;Site&quot;, and together with the Application, the &quot;Platform&quot;).</p>
