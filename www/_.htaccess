@@ -1,3 +1,15 @@
 RewriteEngine on
-RewriteBase /com.boatdayapp.com/www/
-RewriteRule ^(.+)$ $1.php [L]
+RewriteRule ^index$ /index.php [L]
+RewriteRule ^hosts$ /hosts.php [L]
+RewriteRule ^guests$ /guests.php [L]
+RewriteRule ^safety$ /safety.php [L]
+RewriteRule ^contact$ /contact.php [L]
+RewriteRule ^faq$ /faq.php [L]
+RewriteRule ^legal$ /legal.php [L]
+RewriteRule ^download$ /download.php [L]
+RewriteRule ^cities$ /cities.php [L]
+RewriteRule ^marina$ /marinas.php [L]
+RewriteRule ^marinas$ /marinas.php [L]
+RewriteRule ^promotions$ /marinas.php [L]
+RewriteRule ^promotion$ /marinas.php [L]
+RewriteRule ^dl/boatday/(.+)$ deep-linking/boatday.html?id=$1 [L]

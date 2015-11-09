@@ -1,0 +1,25 @@
+{
+  "name": "boatday-deep-linking",
+  "version": "1.0.0",
+  "authors": [
+    "Daniel Costa <Daniel@boatdayapp.com>"
+  ],
+  "description": "BoatDay Deep Linking",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "www.boatdayapp.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": null,
+    "bootstrap": null,
+    "animate.css": null
+  }
+}
