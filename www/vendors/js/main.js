@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 function scrollToAnchor(aid) {
 	var aTag = $(aid);
-	$('html, body').animate({scrollTop: aTag.offset().top},'slow');
+	$('html, body').animate({scrollTop: aTag.offset().top - 100} ,'slow');
 }
 
 var evFormSubmit = function(event) {
