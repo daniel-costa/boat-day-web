@@ -1,0 +1,90 @@
+.guest-picture {
+	display: inline-block;
+	background-image: url(../../resources/placeholder-guest.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 24pt;
+	height: 24pt;
+	border-radius: 0px;
+	vertical-align: middle;
+	border-radius: 320px !important;
+}
+
+section.reviews .review-block {
+	margin: 0px 0px 40px 0px;
+	background: rgba(255, 255, 255, 0.75);
+}
+
+section.reviews .review-block h3 {
+	padding: 40px 0px;
+	margin: 0px;
+	color: rgb(115, 135, 156);
+}
+
+.reviews {
+	text-align: left;
+}
+
+.reviews div.review {
+	padding: 0px 40px 40px 40px;
+}
+
+.review, .review * {
+
+}
+
+.reviews .review .heading {
+	font-size: 0pt;
+}
+
+.reviews .review h4 {
+	color: rgba(17, 171, 193, 1);
+	font-size: 14px;
+	margin: 0px;
+	margin-left: 12px;
+	vertical-align: middle;
+	display: inline-block;
+	position:relative;
+	line-height: 40px;
+	font-weight: 500;
+}
+
+.reviews .review h4:after {
+	content: "";
+	width: 4px;
+	height: 4px;
+	border-radius: 6px;
+	position: absolute;
+	right: -12px;
+	top: 17px;
+	background: rgba(84, 110, 122, 1);
+}
+
+.reviews .review .rating {
+	color: rgba(17, 171, 193, 1);
+	font-size: 12px;
+	font-weight: 500;
+	left: 24px;
+	top: 4px;
+}
+
+.reviews div.review .date {
+	color: rgba(177, 191, 204, 1);
+	font-size: 10px;
+	line-height: 40px;
+	float: right;
+}
+
+.reviews div.review p.review {
+	color: rgba(84, 110, 122, 1);
+	font-size: 18px;
+	text-align: left;
+	margin: 11px 0px 10px 0px;
+}
+
+.reviews div.review p.boatday {
+	color: rgba(177, 191, 204, 1);
+	font-size: 16px;
+	text-align: left;
+}

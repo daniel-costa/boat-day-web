@@ -25,6 +25,10 @@
 <link rel="stylesheet" type="text/css" href="scripts/vendor/animate.css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="scripts/vendor/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="scripts/vendor/swiper/dist/css/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/boatday.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/review.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/boatday-icons.css" />
+<link rel="stylesheet" type="text/css" href="styles/css/font-avenir.css" />
 <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
 <link rel="stylesheet" type="text/css" href="styles/css/footer.css" />
 

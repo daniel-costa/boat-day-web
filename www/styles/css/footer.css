@@ -12,6 +12,7 @@ footer h4 {
 footer .icon {
 	color: rgb(163, 177, 191);
 	margin-right: 5px;
+    font-size:12px;
 }
 
 footer h4, footer h4 a {
