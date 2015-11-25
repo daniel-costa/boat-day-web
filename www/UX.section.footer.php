@@ -1,36 +1,45 @@
-<div class="container footer">
-	<div class="row">
-		<div class="col-sm-5 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-3">
-			<h6>HOW IT WORKS</h6>
-			<ul>
-				<li><a href="index">HOME</a></li>
-				<li><a href="hosts">HOSTS</a></li>
-				<li><a href="guests">GUESTS</a></li>
-				<li><a href="safety">SAFETY</a></li>
-			</ul>
-		</div>
-		<div class="col-sm-5 col-md-5 col-lg-4">
-			<h6>LEARN MORE</h6>
-			<ul>
-				<li><a href="cities">CITIES</a></li>
-				<li><a href="faq">HELP</a></li>
-				<li><a href="contact">CONTACT</a></li>
-				<li><a href="legal">TERMS</a></li>
-			</ul>
-		</div>
-		<div class="col-sm-6 col-md-6 col-lg-5 social">
-			<div>
-				<a target="_blank" href="https://boatdayhosts.com" class="btn">BECOME A HOST</a>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-8">
+				<h4><a href="#modal-safety" data-toggle="modal">SAFETY <span class="icon glyphicon glyphicon-arrow-right"></span></a></h4>
+				<p>The mesures we're taking.</p>
+				<h4><a href="#modal-faq" data-toggle="modal">FAQ <span class="icon glyphicon glyphicon-arrow-right"></span></a></h4>
+				<p>The questions we've been asked.</p>
 			</div>
-			<div class="fb-like" data-href="https://www.facebook.com/BoatDayapp" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-			<p>VISIT US ON:</p>
-			<a target="_blank" href="https://www.facebook.com/BoatDayapp"><img src="images/social-fb.png"/></a>
-			<a target="_blank" href="https://twitter.com/boatdayapp"><img src="images/social-tw.png"/></a>
-			<a target="_blank" href="http://instagram.com/boatdayapp"><img src="images/social-in.png"/></a>
-		</div>
-		<div class="col-sm-8 col-md-6 col-lg-5 copy">
-			<img src="images/logo-footer.png" />
-			<p>&copy; 2015 Peer-to-Pier Technologies, LLC</p>
+			<div class="col-md-4 col-sm-8">
+				<h4>GET IN TOUCH</h4>
+				<p>The world is our office and you’ll find us working away in Miami, Helsinki and Auckland. Our HQ are in Florida.</p>
+				<ul class="list-unstyled">
+					<li><a href="mailto:info@boatday.com"><span class="icon glyphicon glyphicon-envelope"></span> info@boatdayapp.com</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-8">
+				<h4>STAY UP TO DATE</h4>
+				<p>The best way to follow BoatDay’s journey is to add us on Facebook, Instagram and Twitter.</p>
+				<ul class="list-unstyled social">
+				    <li><a class="soc-instagram" href="https://www.instagram.com/boatdayapp/"></a></li>
+				    <li><a class="soc-facebook" href="https://www.facebook.com/BoatDayapp/"></a></li>
+				    <li><a class="soc-youtube" href="https://www.youtube.com/channel/UCMWfnlMRktfTn5LSF8w5Fhw"></a></li>
+				    <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/boatdayapp"></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
+  
+	<div class="footer-bottom">
+		<div class="container inner">
+			<p class="pull-left">&copy; 2015 Peer-to-Peer Technologies, LLC.</p>
+			<ul class="list-inline pull-right">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="mailto:info@boatday.com">Contact</a></li>
+				<li><a href="#modal-contact04" data-toggle="modal">Legal</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<div class="visible-lg res">LG</div>
+<div class="visible-md res">MD</div>
+<div class="visible-sm res">SM</div>
+<div class="visible-xs res">XS</div>

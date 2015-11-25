@@ -1,12 +1,9 @@
-
-<script src="vendors/js/jquery-2.1.1.min.js"></script>
-<script src="vendors/js/jquery.viewportchecker.js"></script>
-<script src="vendors/js/d3.min.js" charset="utf-8"></script>
-<script src="vendors/js/c3.min.js"></script>
-<script src="vendors/js/bootstrap.min.js"></script>
-<script src="vendors/js/main.js"></script>
-
+<script src="scripts/vendor/jquery/dist/jquery.min.js"></script>
+<script src="scripts/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/vendor/swiper/dist/js/swiper.jquery.js"></script>
+<script src="scripts/main.js"></script>
 <div id="fb-root"></div>
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;

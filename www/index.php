@@ -2,120 +2,134 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App</title>
+		<title>BoatDay App - Our mission</title>
 	</head>
 	<body class="home">
 		<?php include_once('UX.section.header.php'); ?>
 
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel" data-slide-to="1"></li>
-				<li data-target="#carousel" data-slide-to="2"></li>
-				<li data-target="#carousel" data-slide-to="3"></li>
-				<li data-target="#carousel" data-slide-to="4"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active"><div class="img img-1"></div></div>
-				<div class="item"><div class="img img-2"></div></div>
-				<div class="item"><div class="img img-3"></div></div>
-				<div class="item"><div class="img img-4"></div></div>
-				<div class="item"><div class="img img-5"></div></div>
-			</div>
-		</div>
-
-		<div class="container-fluid wrapper">
-			<p class="intro">Download the BoatDay mobile app to share fun and affordable boating with friends near you! </p>
-			<?php include_once('UX.section.sms-form.php'); ?>
-			<div class="block-space">
-				<h1 class="text-center">- THE BOATDAY APP -</h1>
-				<h4 class="text-center">how it works . . .</h4>
-			</div>
-			<div class="container boat-app">
-				<div class="row">
-					<div class="col-sm-7 col-lg-6 col-lg-offset-1">
-						<h2 class="text-center">1. Browse</h2>
-						<p class="text-center">Browse boats using your custom search filters.  Fun, fishing, watersports and more, the app shows you BoatDays when and where you need one.</p>
-					</div>
-					<div class="hidden-xs col-sm-1 separation-v"></div>
-					<div class="col-sm-8 col-lg-8 mid">
-						<h2 class="text-center">2. Invite</h2>
-						<p class="text-center">
-							Found your BoatDay? Request space for<br class="hidden-sm"/>
-							yourself, for a group, or reserve the<br class="hidden-sm"/>
-							entire boat. Once confirmed by the Host,<br class="hidden-sm"/>
-							use the private chat wall to coordinate<br class="hidden-sm"/>
-							with your Host and other Guests.
-						</p>
-					</div>
-					<div class="hidden-xs col-sm-1 separation-v"></div>
-					<div class="col-sm-7 col-lg-6">
-						<h2 class="text-center">3. Enjoy</h2>
-						<p class="text-center">It's that simple!  Meet your Host and other Guests at the departure point, then head out for more frequent, friendly, and affordable boating than ever before. </p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container video block-space">
-				<div class="row">
-					<div class="col-xs-24 cell">
-						<iframe src="//www.youtube.com/embed/LZW8YKzh-MY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
-			<h1 class="text-center">- BOATDAY USERS -</h1>
-			<h4 class="text-center">whatever floats your boat . . .</h4>
-
-			<div class="block-space">
-				<div class="container boat-users">
-					<div class="row">
-						<div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-2">
-							<img src="images/home-hosts.jpg" />
+		<main>
+			<section class="main-swiper">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide-1">
+							<div class="container text-center">
+								<img src="resources/logo-white.png" /><br/><br/>
+								<p>Instant Getaway.</p>
+							</div>
 						</div>
-						<div class="col-sm-12 col-lg-10">
-							<h2 class="no-margins">HOSTS</h2>
-							<h4>I own a boat</h4>
-							<p>You own a boat, don't just let it sit there!</p>
-							<p>Become a Host to access the BoatDay community, invite Guests on-board, and enjoy more frequent and affordable boat outings.</p>
-							<p>Just looking to eliminate your high boat costs? Get paid to take out your boat.</p>
-							<a href="hosts">TELL ME MORE &gt;</a>
+						<div class="swiper-slide slide-2">
+							<div class="container text-right">
+								<span>Meanigfull<br/>Conections</span>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12 col-lg-10 col-lg-offset-2">
-							<img src="images/home-guests.jpg" />
+						<div class="swiper-slide slide-3">
+							<div class="container text-left">
+								<span>Amazing<br/>Experiences</span>
+							</div>
 						</div>
-						<div class="col-sm-12 col-lg-10">
-							<h2 class="no-margins">GUESTS</h2>
-							<h4>I need a friend with a boat</h4>
-							<p>Don't be left ashore!</p>
-							<p>Download BoatDay to find boats in your area for a fraction of the cost of a rental or charter. Great for advanced planning or last minute whims - its boating when, where and how you want it.</p>
-							<a href="guests">TELL ME MORE &gt;</a>
+						<div class="swiper-slide slide-4">
+							<div class="container text-right">
+								<span>Better<br/>Boating</span>
+							</div>
+						</div>
+						<div class="swiper-slide slide-5">
+							<div class="container text-left">
+								<span>Unpresedented<br/>Value</span>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<div class="swiper-pagination"></div>
+			</section>
 
-			<div class="jump">
+			<section>
 				<div class="container">
-					<div class="row">
-						<div class="col-sm-16 col-md-14 col-lg-12" style="padding:0px;">
-							<h1 class="text-center">Ready to go<br/>Boating?</h1>
-							<p class="text-center">Join BoatDay today!</p>
-							<form class="container-fluid sms-form"></form>
-							<p class="text-center">
-								Download the App for instant,<br/>
-								affordable boating with friends.
-							</p>
+					<h1>Welcome to BoatDay</h1>
+					<p>
+						Drop any kind of content into a fully flexible and responsive modal!<br/>
+						Useful for One Page sites and notifications. Available in five sizes.
+					</p>
+					<a href="https://www.youtube.com/watch?v=LZW8YKzh-MY" target="_blank" class="btn btn-large">Check out our video</a>
+				</div>
+			</section>
+
+			<section class="blured blured-01">
+				<div class="container">
+					<div class="row text-center">
+						<h2>How does it work?</h2>
+							
+						<div class="col-sm-3">
+							<h3>1. Browse</h3>
+							<p class="text-small">Browse boats using your custom search filters. Fun, fishing, watersports and more, the app shows you BoatDays when and where you need one.</p>
+						</div>
+						<div class="col-sm-3">
+							<h3>2. Invite</h3>
+							<p class="text-small">Found your BoatDay? Request space for yourself, for a group, or reserve the entire boat. Once confirmed by the Host, use the private chat wall to coordinate with your host and other guests.</p>
+						</div>
+						<div class="col-sm-3">	
+							<h3>3. Enjoy</h3>
+							<p class="text-small">It's that simple! Meet your Host and other Guests at the departure point, then head out for more frequent, friendly, and affordable boating than ever before.</p>
+						</div>
+						<div class="col-sm-3">	
+							<h3>4. Rate</h3>
+							<p class="text-small">Let the  host know what you thought of his/her trip. This rating will be displayed in order for users peace of mind and in benefit of the hosts.</p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+			</section>
+
+			<section class="past-boatdays">
+				<div class="container">
+					<div class="row text-center">
+						<h2>Upcoming BoatDays</h2>
+					<!--
+						<div class="boatdays-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide slide-1">1</div>
+								<div class="swiper-slide slide-2">2</div>
+								<div class="swiper-slide slide-3">3</div>
+								<div class="swiper-slide slide-4">4</div>
+								<div class="swiper-slide slide-5">5</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					-->
+					</div>
+				</div>
+			</section>
+
+			<section class="blured blured-02">
+				<div>
+					<div class="container">
+						<img src="resources/products.png" />
+					</div>
+				</div>
+			</section>
+
+			<section class="join-boatday">
+				<div class="container">
+					<h2>Join BoatDay</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<img class="heading-for-box" src="resources/join-bd-guest.jpg" />
+							<div class="box">
+								<h4>Get the app and enjoy your boatdays.</h4>
+								<a class="btn" href="#modal-download">Get the app</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<img class="heading-for-box" src="resources/join-bd-host.jpg" />
+							<div class="box">
+								<h4>Take me to the sign up page for host</h4>
+								<a class="btn" href="https://www.boatdayhosts.com" target="_blank">Join as a Host</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<?php include_once('UX.section.modals.php'); ?>			
+		</main>
 
 		<?php include_once('UX.section.footer.php'); ?>
 		<?php include_once('UX.scripts.php'); ?>

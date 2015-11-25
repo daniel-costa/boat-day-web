@@ -1,22 +1,19 @@
-<nav class="header navbar navbar-default navbar-fixed-top" role="navigation">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-4 col-sm-8 logo">
-				<a href="https://www.boatdayapp.com" class="hidden-xs"><img src="images/logo-header.png" /></a>
-				<a href="https://www.boatdayapp.com" class="hidden-sm hidden-md hidden-lg"><img src="images/logo-small.png" /></a>
-			</div>
-			<div class="col-xs-20 col-sm-16 links">
-				<a href="hosts">HOSTS</a>
-				<div class="separation"></div>
-				<a href="guests">GUESTS</a>
-				<div class="separation"></div>
-				<!-- <a href="safety">SAFETY</a> -->
-				<a href="faq">HELP</a>
-				<div class="separation hidden-xs"></div>
-				<a href="download" class="btn">DOWNLOAD</a>
-				<!-- <a target="_blank" href="https://boatdayhosts.com" class="btn hidden-xs">BECOME A HOST</a> -->
-				<!-- <a href="download" class="btn hidden-xs">Pre-Register</a> -->
-			</div>
-		</Div>
+<header class="navbar navbar-fixed-top">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#xs-menu" aria-expanded="false">
+			<span class="glyphicon glyphicon-menu-hamburger"></span>
+		</button>
+		<a class="navbar-brand" href="index"><img src="resources/logo.svg" class="logo"></a>
 	</div>
-</nav>
+	<div class="container">
+		<div class="collapse navbar-collapse" id="xs-menu">
+			<ul class="nav navbar-nav">
+				<li><a href="host">BOATDAY FOR HOSTS</a></li>
+				<li><a href="guest">BOATDAY FOR GUESTS</a></li>
+			</ul>
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="#modal-download">GET THE APP</a></li>
+			</ul>
+		</div>
+	</div>
+</header>

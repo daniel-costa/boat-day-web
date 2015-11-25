@@ -1,0 +1,277 @@
+html, body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #292c2e;
+	padding-top: 91px;
+	font-family: 'avenir book', sans-serif;
+}
+
+* {
+	color: #73879C;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	box-sizing: border-box;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(60, 175, 192);
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.2s;
+	-webkit-transition-property: all;
+	-webkit-transition-timing-function: ease-out;
+}
+
+header {
+	background: white;
+	border-bottom: 1px solid #4EBAC4;
+	margin: 0px !important;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 10px 10px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 10px 10px;
+	padding: 20px 0px;
+}
+
+header .logo {
+	height: 100%;
+}
+
+header .navbar-brand {
+	padding: 10px 15px;
+}
+
+header a {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #506A85;
+}
+
+main {
+	background: white;
+}
+
+.res {
+	background: orange;
+	position: fixed;
+	padding: 20px;
+	bottom: 20px;
+	left: 20px;
+	z-index: 9999999;
+}
+
+@media screen and (max-width: 767px) {
+	
+}
+
+section {
+	text-align: center;
+}
+
+section > .container {
+	padding: 120px 0px !important;
+}
+
+section h1 {
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	font-size: 44px;
+	font-weight: 300;
+	line-height: 60px;
+	color: rgb(115, 135, 156);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section h2 {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 34px;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section h3 {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 34px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+section h4 {
+	color: rgb(115, 135, 156);
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section h6 {
+}
+
+section p {
+	color: rgb(115, 135, 156);
+	font-size: 22px;
+	line-height: 33px;
+	margin: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 300;
+}
+
+
+section.blured-01 {
+	background: url(../../resources/section-blurred-01.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+section.blured-02 {
+	background: url(../../resources/section-blurred-02.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+section.blured * {
+	color: rgb(255, 255, 255);
+}
+
+section.blured p {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+section.blured-02 img {
+	max-width: 100%;
+}
+
+section .box {
+	margin-top: 80px;
+	background: rgb(245, 247, 250);
+	min-height: 200px;
+	padding: 25px;
+	border: 1px solid rgb(230, 233, 237);
+	border-top: 2px solid rgb(11, 184, 200);
+	border-bottom: 2px solid rgb(230, 233, 237);
+	border-radius: 0px 0px 3px 3px;
+}
+
+section .box.no-top-border {
+	border-top: 1px solid rgb(230, 233, 237);
+}
+
+section .heading-for-box {
+	margin-top: 80px;
+	width: 100%;
+}
+
+section .heading-for-box ~ .box {
+	margin-top: 0px;
+	border-top: none;
+}	
+
+section .box p {
+	color: rgb(115, 135, 156);
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+section .btn {
+	display: inline-block;
+	border-radius: 3px;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 15px;
+	background: #36b4c6;
+	box-shadow: rgba(0, 0, 0, 0.14902) 0px -2px 0px 0px inset;
+	margin: 15px 0px;
+	padding: 14px 26px;
+}
+
+section .btn:hover {
+	color: rgb(255, 255, 255);
+	opacity: 0.8;
+}
+
+.swiper-pagination-bullet {
+	background: #506A85;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background: rgb(54, 180, 198);
+	opacity: 1;
+}
+
+.main-swiper, .boatdays-swiper {
+	position: relative;
+}
+
+.main-swiper .swiper-pagination {
+	display: block;
+	position: relative;
+	bottom: 0px;
+}
+
+.main-swiper .swiper-pagination-bullet {
+	width: 16px;
+	height: 16px;
+	margin: 10px 2px;
+}
+
+.main-swiper .swiper-slide {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.main-swiper .swiper-slide > .container {
+	margin: 120px auto;
+	min-height: 350px;
+}
+
+.main-swiper .swiper-slide > .container span {
+	-webkit-box-shadow: rgb(80, 106, 133) -36px 0px 0px 0px, rgb(80, 106, 133) 36px 0px 0px 0px;
+	background-color: rgb(80, 106, 133);
+	box-shadow: rgb(80, 106, 133) -36px 0px 0px 0px, rgb(80, 106, 133) 36px 0px 0px 0px;
+	color: rgb(255, 255, 255);
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: 4px;
+	line-height: 87px;
+	padding: 18.25px 0px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.main-swiper .swiper-slide p {
+	color: white;
+}
+
+.join-boatday h4 {
+	text-transform: none;
+}
+
+
+.main-swiper .slide-1 { background-image: url(../../resources/swiper-main-01.jpg); }
+.main-swiper .slide-2 { background-image: url(../../resources/swiper-main-02.jpg); }
+.main-swiper .slide-3 { background-image: url(../../resources/swiper-main-03.jpg); }
+.main-swiper .slide-4 { background-image: url(../../resources/swiper-main-04.jpg); }
+.main-swiper .slide-5 { background-image: url(../../resources/swiper-main-05.jpg); }
