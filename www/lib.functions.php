@@ -1,5 +1,7 @@
 <?php
-
+	
+	date_default_timezone_set('America/New_York'); 
+	
 	function dateToEnBoatDayCard($date) {
 		$date->setTimezone(new DateTimeZone('Europe/Helsinki'));
 
