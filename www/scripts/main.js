@@ -82,7 +82,18 @@ $(document).ready(function() {
 				btn.attr('back', '1').text('Back');
 			});
 		}
-	})
+	});
+
+    var youtubeUrl = $("#boatday-intro-video").attr('src');
+    
+    $("#modal-youtube-video").on('hide.bs.modal', function(){
+        $("#boatday-intro-video").attr('src', '');
+    });
+    
+    $("#modal-youtube-video").on('show.bs.modal', function(){
+        $("#boatday-intro-video").attr('src', youtubeUrl);
+    });
+
 });
 
 

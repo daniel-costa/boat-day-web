@@ -61,7 +61,7 @@
 						Drop any kind of content into a fully flexible and responsive modal!<br/>
 						Useful for One Page sites and notifications. Available in five sizes.
 					</p>
-					<a href="https://www.youtube.com/watch?v=LZW8YKzh-MY" target="_blank" class="btn btn-large">Check out our video</a>
+					<a data-toggle="modal" data-target="#modal-youtube-video"  target="_blank" class="btn btn-large">Check out our video</a>
 				</div>
 			</section>
 

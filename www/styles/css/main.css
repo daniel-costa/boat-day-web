@@ -30,6 +30,7 @@ a:hover {
 	-webkit-transition-timing-function: ease-out;
 }
 
+
 header {
 	background: white;
 	border-bottom: 1px solid #4EBAC4;
@@ -64,7 +65,14 @@ header .btn {
 
 header .btn:hover {
 	background: #36b4c6;
+	color: rgb(255, 255, 255);
 }
+
+header .btn:focus{
+	background: transparent;
+	color: #36b4c6;
+}
+
 
 main {
 	background: white;
@@ -236,6 +244,12 @@ section .box p {
 	opacity: 0.8;
 }
 
+.btn:focus, .btn:visited{
+	color: rgb(255, 255, 255);
+}
+
+
+
 section.placeholder {
 	height: 600px;
 	max-height: 40vh;
@@ -245,7 +259,10 @@ section.placeholder {
 	width: 100%;
 }
 
-.hosts  section.placeholder { background-image: url(../../resources/swiper-main-03.jpg); }
+.hosts  section.placeholder { 
+	background-image: url(../../resources/swiper-main-03.jpg); 
+	padding: 400px;
+}
 .faq    section.placeholder { background-image: url(../../resources/swiper-main-04.jpg); }
 
 .swiper-pagination-bullet {
@@ -412,4 +429,23 @@ section.hosts .rating {
 
 section.hosts .ratingAmount {
 	color: #36b4c6;
+}
+
+.or-hr{
+	height: 1px; 
+	background-color: #F3EFEF; 
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.or-hr span{
+	position: relative; 
+	top: -0.7em;
+	font-size: 18px;
+	background-color: #FFFFFF;
+	border: 1px solid #F3EFEF;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	padding: 5px 10px 5px 10px;
 }

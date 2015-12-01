@@ -12,7 +12,7 @@
 				<li><a href="hosts">BOATDAY FOR HOSTS</a></li>
 			</ul>
 			<ul class="nav navbar-nav pull-right">
-				<li><button data-toggle="modal" data-target="#modal-download" class="btn">GET THE APP!</button></li>
+				<li><button data-toggle="modal" data-target="#modal-download" class="btn get-app-btn">GET THE APP!</button></li>
 			</ul>
 		</div>
 	</div>

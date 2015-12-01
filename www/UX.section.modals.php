@@ -411,7 +411,9 @@
 					<a href=""><img src="resources/dl-google.png" class="dl" /></a>
 				</div>
 
-				<hr />
+				<div class="or-hr">
+				  <span>or</span>
+				</div>
 
 				<h4>Send a link to my phone.</h4>
 				<form>
@@ -420,6 +422,20 @@
 					<button type="submit" class="btn btn-block">Send text</button>
 				</form>
 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modal-youtube-video" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+				<h4 class="modal-title text-center">Intro to BoatDay | Better Boating, with Friends!</h4>
+			</div>
+			<div class="modal-body">
+				<iframe id="boatday-intro-video" width="560" height="315" src="https://www.youtube.com/embed/LZW8YKzh-MY?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
