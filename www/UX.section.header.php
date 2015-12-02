@@ -8,12 +8,15 @@
 	<div class="container">
 		<div class="collapse navbar-collapse" id="xs-menu">
 			<ul class="nav navbar-nav">
-				<li><a href="guests">BOATDAY FOR GUESTS</a></li>
+				<li><a href="guests">HOW IT WORKS</a></li>
 				<li><a href="hosts">BOATDAY FOR HOSTS</a></li>
+				<li><a href="hosts">FIND A BOATDAY</a></li>
 			</ul>
 			<ul class="nav navbar-nav pull-right">
-				<li><button data-toggle="modal" data-target="#modal-download" class="btn get-app-btn">GET THE APP!</button></li>
+				<li><button data-toggle="modal" data-target="#modal-download" class="btn">GET THE APP</button></li>
+				<li><a href="https://www.boatdayhosts.com/" target="_blank" class="host-log-in btn">HOST LOG IN</a></li>
 			</ul>
+
 		</div>
 	</div>
 </header>

@@ -2,19 +2,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-8">
-				<h4><a data-toggle="modal" data-target="#modal-safety">SAFETY <span class="icon bd-arrow-right"></span></a></h4>
+				<h4><a href="#" data-toggle="modal" data-target="#modal-safety">SAFETY <span class="icon bd-arrow-right"></span></a></h4>
 				<p>The mesures we're taking.</p>
 				<h4><a href="faq">FAQ's <span class="icon bd-arrow-right"></span></a></h4>
 				<p>The most common BoatDay questions.</p>
 			</div>
-			<div class="col-md-4 col-sm-8">
+			<div class="col-md-4 col-sm-8 footer-col2">
 				<h4>GET IN TOUCH</h4>
-				<p>The world is our office and you’ll find us working away in Miami, Helsinki and San Francisco. Our HQ are in Florida.</p>
+				<p>The world is our office and you’ll find us working away in Miami and Helsinki. Our HQ are in Florida.</p>
 				<ul class="list-unstyled">
 					<li><a href="mailto:contact@boatday.com"><span class="icon bd-mail"></span> info@boatdayapp.com</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4 col-sm-8">
+			<div class="col-md-4 col-sm-8 footer-col3">
 				<h4>STAY UP TO DATE</h4>
 				<p>Get all the latest updates! Follow BoatDay’s journey on Facebook, Instagram and Twitter.</p>
 				<ul class="list-unstyled social">
@@ -33,7 +33,7 @@
 			<ul class="list-inline pull-right">
 				<li><a href="home">Home</a></li>
 				<li><a href="mailto:info@boatday.com">Contact</a></li>
-				<li><a data-toggle="modal" data-target="#modal-terms">Legal</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#modal-terms">Legal</a></li>
 			</ul>
 		</div>
 	</div>

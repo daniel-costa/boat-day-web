@@ -1,75 +1,89 @@
 
 footer {
-	padding-top: 25px;
-	background-color: rgb(51, 57, 60);
-	color: rgb(101, 114, 126);
+    padding-top: 25px;
+    background-color: rgb(51, 57, 60);
+    color: rgb(101, 114, 126);
 }
 
 footer h4 {
-	color: white;
+    color: white;
 }
 
 footer .icon {
-	color: rgb(163, 177, 191);
-	margin-right: 5px;
+    color: rgb(163, 177, 191);
+    margin-right: 5px;
     font-size:12px;
 }
 
 footer h4, footer h4 a {
-	color: white;
-	font-size: 16px;
-	font-weight: 500;
-	display: block;
-	line-height: 24px;
-	margin-bottom: 5px;
-	margin-top: 25px;
-	text-transform: uppercase;
-}	
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}   
 
 footer p {
-	color: rgb(163, 177, 191);
-	margin: 0px;
-	margin-bottom: 15px;
-	font-size: 14px;
-	line-height: 22px;
+    color: rgb(163, 177, 191);
+    margin: 0px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 footer a {
-	color: #707E8C;
-	font-size: 14px;
+    color: #707E8C;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+}
+footer a:visited, footer a:focus{
+    outline: none;
+
 }
 
 footer a:hover {
 }
 
 footer .footer-bottom {
-	margin-top: 40px;
-	background: rgb(41, 44, 46);
+    margin-top: 40px;
+    background: rgb(41, 44, 46);
 }
 
 footer .footer-bottom .container {
-	padding: 30px 15px;
+    padding: 30px 15px;
 }
 
 footer .footer-bottom p {
-	color: rgb(112, 126, 140);
-	margin-bottom: 0px
+    color: rgb(112, 126, 140);
+    margin-bottom: 0px
 }
 
 footer .footer-bottom ul {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 footer .footer-bottom li {
-	padding: 0px;
-	padding-left: 10px;
+    padding: 0px;
+    padding-left: 10px;
 }
 
 footer .footer-bottom li:not(:first-child):before {
-	display: inline-block;
-	content: "·";
-	padding-right: 12px;
+    display: inline-block;
+    content: "·";
+    padding-right: 12px;
 }
+
+footer .footer-col2{
+    padding-right: 80px;
+}
+footer .footer-col3{
+    padding-left: 40px;
+}
+
 
 
 @font-face {

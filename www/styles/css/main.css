@@ -30,7 +30,6 @@ a:hover {
 	-webkit-transition-timing-function: ease-out;
 }
 
-
 header {
 	background: white;
 	border-bottom: 1px solid #4EBAC4;
@@ -40,7 +39,7 @@ header {
 }
 
 header .logo {
-	height: 100%;
+	height: 150%;
 }
 
 header .navbar-brand {
@@ -63,14 +62,23 @@ header .btn {
 	box-shadow: none;
 }
 
+header .btn:focus{
+	color: #36b4c6;
+	background: white;
+}
+
 header .btn:hover {
 	background: #36b4c6;
 	color: rgb(255, 255, 255);
 }
+header a.host-log-in{
+	margin-left: 10px;
+	background: #36b4c6;
+}
 
-header .btn:focus{
-	background: transparent;
-	color: #36b4c6;
+header a.host-log-in:hover{
+	background: #36b4c6;
+	color: rgb(255, 255, 255);
 }
 
 
@@ -185,9 +193,20 @@ section.blured * {
 section.blured p {
 	font-size: 16px;
 	line-height: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 section.blured-02 img {
+	max-width: 100%;
+}
+
+section.phone-screenshot {
+	margin: 100px 50px 0px 50px;
+}
+
+
+section.phone-screenshot img{
 	max-width: 100%;
 }
 
@@ -237,16 +256,15 @@ section .box p {
 	margin: 15px 0px;
 	padding: 14px 26px;
 }
-
+.btn:focus, .btn:visited{
+	color: rgb(255, 255, 255);
+}
 
 .btn:hover {
 	color: rgb(255, 255, 255);
 	opacity: 0.8;
 }
 
-.btn:focus, .btn:visited{
-	color: rgb(255, 255, 255);
-}
 
 
 
@@ -261,7 +279,7 @@ section.placeholder {
 
 .hosts  section.placeholder { 
 	background-image: url(../../resources/swiper-main-03.jpg); 
-	padding: 400px;
+	padding: 300px;
 }
 .faq    section.placeholder { background-image: url(../../resources/swiper-main-04.jpg); }
 
@@ -430,7 +448,6 @@ section.hosts .rating {
 section.hosts .ratingAmount {
 	color: #36b4c6;
 }
-
 .or-hr{
 	height: 1px; 
 	background-color: #F3EFEF; 

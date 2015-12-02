@@ -21,37 +21,39 @@
 
 			<section>
 				<div class="container">
-					<h1>Welcome to BoatDay</h1>
+					<h1>Become a BoatDay Host</h1>
 					<p>
-						Drop any kind of content into a fully flexible and responsive modal!<br/>
-						Useful for One Page sites and notifications. Available in five sizes.
+						Suffering from an empty or underused boat? Sign-up as a BoatDay Host <br/>  and enjoy more frequent, friendly and profitable use of your boat.
 					</p>
-					<a href="https://www.boatdayhosts.com" target="_blank" class="btn btn-large">Sign up as a Host</a>
+					<a href="https://www.boatdayhosts.com" target="_blank" class="btn btn-large">Sign-up as a Host</a>
 				</div>
 			</section>
 
 			<section class="blured blured-01">
 				<div class="container">
 					<div class="row text-center">
-						<h2>How does it work?</h2>
-							
-						<div class="col-sm-4">
-							<img src="resources/ico-money.png" />
-							<h3>Make Money</h3>
-							<p class="text-small">Browse boats using your custom search filters. Fun, fishing, watersports and more, the app shows you BoatDays when and where you need one.</p>
-						</div>
+						<h2>WHY HOST BOATDAYS?</h2>
 						<div class="col-sm-4">
 							<img src="resources/ico-love.png" />
-							<h3>Boat More Often</h3>
-							<p class="text-small">Found your BoatDay? Request space for yourself, for a group, or reserve the entire boat. Once confirmed by the Host, use the private chat wall to coordinate with your host and other guests.</p>
+							<h3>Do what you love</h3>
+							<p class="text-small">Whether boating is your business or your passion, fill your boat with BoatDay and enjoy more great days on the water.</p>
 						</div>
 						<div class="col-sm-4">
 							<img src="resources/ico-captain.png" />
-							<h3>Become a Captain</h3>
-							<p class="text-small">It's that simple! Meet your Host and other Guests at the departure point, then head out for more frequent, friendly, and affordable boating than ever before.</p>
+							<h3>Meet great people</h3>
+							<p class="text-small">The BoatDay community is full of fun, friendly people - get to know them as you share great experiences.</p>
+						</div>
+						<div class="col-sm-4">
+							<img src="resources/ico-money.png" />
+							<h3>Make money</h3>
+							<p class="text-small">Boost your buisiness or simply cover the costs of your regular weekend trips - BoatDay makes cents for boat owners.</p>
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section class="phone-screenshot">
+				<img  class="img-responsive" src="resources/3phoneScreens.png" >
 			</section>
 
 			<?php
@@ -71,7 +73,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12">
-								<h1>Meet some of our Hosts</h1>
+								<h1>Get to know our Hosts</h1>
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
 										<?php foreach( $hosts as $host ) { ?>
@@ -100,39 +102,39 @@
 
 			<section class="join-boatday">
 				<div class="container">
-					<h4>Join BoatDay</h4>
+					<h4>HOW HOSTING WORKS</h4>
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>1. Register</h4>
-								<p>Complete a one-time registration process which includes background information about you, your boat, and your boating experience.</p>
+								<h4>1. Register as a Host</h4>
+								<p>Tell us about yourself, your boat, and your boating experience. Enter your info, and after a background screening and a quick Q&A with our team, you're all set!</p>
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>2. Create a BoatDay</h4>
-								<p>Create fun BoatDays, list them in the app, and wait for reservation requests to come in. Or be active and promote your BoatDays on social media. The choice is yours!</p>
+								<h4>2. Create BoatDays</h4>
+								<p>Create fun boat outings for us to list in the app. Want to fill up fast?  Use our social media tools to promote your BoatDays directly on Facebook and Twitter.</p>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>3. Meet your Guests</h4>
-								<p>Chat, cordinate, and meet your Guests then head out for a fun and memorable day of boating.</p>
+								<h4>3. Set Sail</h4>
+								<p>It's the big day! Meet your Guests at the departure point and head out for a fun and memorable day on the water.</p>
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>4. Payment</h4>
-								<p>Guest payments are automatically processed and deposited in your account, its cashless and hassle-free.</p>
+								<h4>4. Recieve Payment</h4>
+								<p>Once the BoatDay is over, Guest payments are automatically processed through the app and deposited in your account. Its cashless and hassle-free.</p>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="box no-top-border">
-								<h3>Take me to the sign up page for hosts</h3>
+								<h3>Don't miss the boat, sign-up today!.</h3>
 								<a href="https://www.boatdayhosts.com" target="_blank" class="btn">Sign up as a Host</a>
 							</div>
 						</div>
