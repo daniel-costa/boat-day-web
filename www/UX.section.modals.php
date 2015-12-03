@@ -407,8 +407,8 @@
 
 				<h4>Get started with BoatDay.</h4>	
 				<div class="dls">
-					<a href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" class=""><img src="resources/dl-apple.png" class="dl" /></a>
-					<a href=""><img src="resources/dl-google.png" class="dl" /></a>
+					<a target="_blank" href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" ><img src="resources/dl-apple.png" class="dl" /></a>
+					<a target="_blank" href="https://play.google.com/store/apps/details?id=com.boat.day" ><img src="resources/dl-google.png" class="dl" /></a>
 				</div>
 
 				<div class="or-hr">
