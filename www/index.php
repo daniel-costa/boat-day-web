@@ -27,7 +27,7 @@
 						<div class="swiper-slide slide-1">
 							<div class="container text-center">
 								<img src="resources/logo-white.png" /><br/><br/>
-								<p>Better Boating, with Friends!</p>
+								<p>Better Boating With Friends</p>
 							</div>
 						</div>
 						<div class="swiper-slide slide-5">
@@ -226,14 +226,14 @@
 					<h4>Ready to go Boating?</h4>
 					<div class="row">
 						<div class="col-sm-6">
-							<img class="heading-for-box" src="resources/join-bd-guest.jpg" />
+							<img class="heading-for-box" src="resources/guestcard.jpg" />
 							<div class="box">
 								<h4>Download the app and join a great day on the water</h4>
 								<a class="btn" data-toggle="modal" data-target="#modal-download">Get the app</a>
 							</div>
 						</div>
 						<div class="col-sm-6">
-							<img class="heading-for-box" src="resources/join-bd-host.jpg" />
+							<img class="heading-for-box" src="resources/hostcard.jpg" />
 							<div class="box">
 								<h4>Host fun boat outings with paying Guests</h4>
 								<a class="btn" href="https://www.boatdayhosts.com" target="_blank">Sign-up as a Host</a>

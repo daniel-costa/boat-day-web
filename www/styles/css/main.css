@@ -12,6 +12,7 @@ body {
 	background: #292c2e;
 	padding-top: 91px;
 	font-family: 'avenir book', sans-serif;
+	letter-spacing: 1px;
 }
 
 * {
@@ -60,6 +61,7 @@ header .btn {
 	color: #36b4c6;
 	border: 1px solid #36b4c6;
 	box-shadow: none;
+	letter-spacing: 1px;
 }
 
 header .btn:focus{
@@ -254,6 +256,7 @@ section .box p {
 	box-shadow: rgba(0, 0, 0, 0.14902) 0px -2px 0px 0px inset;
 	margin: 15px 0px;
 	padding: 14px 26px;
+
 }
 .btn:focus, .btn:visited{
 	color: rgb(255, 255, 255);
@@ -314,23 +317,35 @@ section.placeholder {
 	background-repeat: no-repeat;
 }
 
+/*
 .main-swiper .swiper-slide > .container {
 	margin: 120px auto;
 	min-height: 350px;
 }
+*/
+.main-swiper .slide-1 > .container {
+	margin: 120px auto;
+	min-height: 350px;
+}
+.main-swiper .slide-2 > .container,
+.main-swiper .slide-3 > .container,
+.main-swiper .slide-4 > .container,
+.main-swiper .slide-5 > .container {
+	margin: 200px auto 50px auto; 
+	min-height: 350px;
+}
 
 .main-swiper .swiper-slide > .container span {
-	-webkit-box-shadow: rgb(80, 106, 133) -36px 0px 0px 0px, rgb(80, 106, 133) 36px 0px 0px 0px;
-	background-color: rgb(80, 106, 133);
-	box-shadow: rgb(80, 106, 133) -36px 0px 0px 0px, rgb(80, 106, 133) 36px 0px 0px 0px;
 	color: rgb(255, 255, 255);
 	font-size: 40px;
 	font-weight: 300;
 	letter-spacing: 4px;
-	line-height: 87px;
+	line-height: 60px;
 	padding: 18.25px 0px;
 	text-align: right;
 	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;
+	font-family: Arial;
 }
 
 .main-swiper .swiper-slide p {
@@ -340,11 +355,11 @@ section.placeholder {
 }
 
 
-.main-swiper .slide-1 { background-image: url(../../resources/swiper-main-01.jpg); }
-.main-swiper .slide-2 { background-image: url(../../resources/swiper-main-02.jpg); }
-.main-swiper .slide-3 { background-image: url(../../resources/swiper-main-03.jpg); }
-.main-swiper .slide-4 { background-image: url(../../resources/swiper-main-04.jpg); }
-.main-swiper .slide-5 { background-image: url(../../resources/swiper-main-05.jpg); }
+.main-swiper .slide-1 { background-image: url(../../resources/swiper-main01.jpg); }
+.main-swiper .slide-2 { background-image: url(../../resources/swiper-main02.jpg); }
+.main-swiper .slide-3 { background-image: url(../../resources/swiper-main03.jpg); }
+.main-swiper .slide-4 { background-image: url(../../resources/swiper-main04.jpg); }
+.main-swiper .slide-5 { background-image: url(../../resources/swiper-main05.jpg); }
 
 .modal-body {
 	max-height: 90vh;
