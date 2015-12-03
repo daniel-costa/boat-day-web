@@ -53,7 +53,11 @@
 			</section>
 
 			<section class="phone-screenshot">
-				<img  class="img-responsive" src="resources/3phoneScreens.png" >
+				<div class="container">
+					<div class="row text-center">
+						<img  class="img-responsive" src="resources/3phoneScreens.png" >
+					</div>
+				</div>
 			</section>
 
 			<?php
@@ -134,8 +138,8 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="box no-top-border">
-								<h3>Don't miss the boat, sign-up today!.</h3>
-								<a href="https://www.boatdayhosts.com" target="_blank" class="btn">Sign up as a Host</a>
+								<h3>Don't miss the boat, sign-up today!</h3>
+								<a href="https://www.boatdayhosts.com" target="_blank" class="btn">Sign-up as a Host</a>
 							</div>
 						</div>
 					</div>

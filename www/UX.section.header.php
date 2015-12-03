@@ -14,7 +14,7 @@
 			</ul>
 			<ul class="nav navbar-nav pull-right">
 				<li><button data-toggle="modal" data-target="#modal-download" class="btn">GET THE APP</button></li>
-				<li><a href="https://www.boatdayhosts.com/" target="_blank" class="host-log-in btn">HOST LOG IN</a></li>
+				<li><a href="https://www.boatdayhosts.com/" target="_blank" class="host-log-in btn">HOST LOG-IN</a></li>
 			</ul>
 
 		</div>

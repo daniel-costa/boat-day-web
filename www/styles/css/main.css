@@ -205,7 +205,6 @@ section.phone-screenshot {
 	margin: 100px 50px 0px 50px;
 }
 
-
 section.phone-screenshot img{
 	max-width: 100%;
 }
@@ -278,7 +277,7 @@ section.placeholder {
 }
 
 .hosts  section.placeholder { 
-	background-image: url(../../resources/swiper-main-03.jpg); 
+	background-image: url(../../resources/host_cover_img.jpg); 
 	padding: 300px;
 }
 .faq    section.placeholder { background-image: url(../../resources/swiper-main-04.jpg); }
