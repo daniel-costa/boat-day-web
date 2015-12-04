@@ -70,6 +70,15 @@
 				</div>
 			</section>
 
+
+			<section class="phone-screenshot">
+				<div class="container">
+					<div class="row text-center">
+						<img  class="img-responsive" src="resources/3phoneScreens.png" >
+					</div>
+				</div>
+			</section>
+
 			<section class="blured blured-01">
 				<div class="container">
 					<div class="row text-center">

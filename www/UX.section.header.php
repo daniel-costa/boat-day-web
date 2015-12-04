@@ -10,7 +10,7 @@
 			<ul class="nav navbar-nav">
 				<li><a href="guests">HOW IT WORKS</a></li>
 				<li><a href="hosts">BOATDAY FOR HOSTS</a></li>
-				<li><a href="hosts">FIND A BOATDAY</a></li>
+				<li><a href="boatdays">FIND A BOATDAY</a></li>
 			</ul>
 			<ul class="nav navbar-nav pull-right">
 				<li><button data-toggle="modal" data-target="#modal-download" class="btn">GET THE APP</button></li>

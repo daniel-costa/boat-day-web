@@ -31,6 +31,29 @@ a:hover {
 	-webkit-transition-timing-function: ease-out;
 }
 
+.btn {
+	display: inline-block;
+	border-radius: 3px;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 15px;
+	background: #36b4c6;
+	box-shadow: rgba(0, 0, 0, 0.14902) 0px -2px 0px 0px inset;
+	margin: 15px 0px;
+	padding: 14px 26px;
+
+}
+.btn:focus, .btn:visited{
+	color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+	color: rgb(255, 255, 255);
+	opacity: 0.8;
+}
+
+
 header {
 	background: white;
 	border-bottom: 1px solid #4EBAC4;
@@ -203,8 +226,8 @@ section.blured-02 img {
 	max-width: 100%;
 }
 
-section.phone-screenshot {
-	margin: 100px 50px 0px 50px;
+section.phone-screenshot .container {
+	padding-top: 0px !important;
 }
 
 section.phone-screenshot img{
@@ -245,30 +268,15 @@ section .box p {
 	text-align: center;
 }
 
-.btn {
-	display: inline-block;
-	border-radius: 3px;
-	color: rgb(255, 255, 255);
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 15px;
-	background: #36b4c6;
-	box-shadow: rgba(0, 0, 0, 0.14902) 0px -2px 0px 0px inset;
-	margin: 15px 0px;
-	padding: 14px 26px;
-
-}
-.btn:focus, .btn:visited{
-	color: rgb(255, 255, 255);
+section.legal-text p, 
+section.legal-text h1,
+section.legal-text h2{
+	text-align: left;
 }
 
-.btn:hover {
-	color: rgb(255, 255, 255);
-	opacity: 0.8;
+section.legal-text h2{
+	padding: 50px 0px 0px 0px;
 }
-
-
-
 
 section.placeholder {
 	height: 600px;
@@ -277,6 +285,16 @@ section.placeholder {
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+}
+
+.legal  section.placeholder { 
+	background-image: url(../../resources/legal_header.jpg); 
+	padding: 300px;
+}
+
+.boatdays  section.placeholder { 
+	background-image: url(../../resources/boatdays_display_header.jpg); 
+	padding: 300px;
 }
 
 .hosts  section.placeholder { 
@@ -434,6 +452,10 @@ section.faq h5.title {
 
 #modal-download p {
 	margin: 20px 0px;
+}
+
+#modal-youtube-video .modal-content{
+	width: 675px;
 }
 
 section.hosts p {

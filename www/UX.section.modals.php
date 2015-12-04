@@ -435,7 +435,7 @@
 				<h4 class="modal-title text-center">Intro to BoatDay | Better Boating, with Friends!</h4>
 			</div>
 			<div class="modal-body">
-				<iframe id="boatday-intro-video" width="560" height="315" src="https://www.youtube.com/embed/LZW8YKzh-MY?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe id="boatday-intro-video" width="640" height="360" src="https://www.youtube.com/embed/LZW8YKzh-MY?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
