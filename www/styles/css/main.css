@@ -269,9 +269,26 @@ section .box p {
 }
 
 section.legal-text p, 
-section.legal-text h1,
 section.legal-text h2{
 	text-align: left;
+}
+
+section.legal-text h1{
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+
+section.legal-text p.legal-date{
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 20px;
+}
+
+section.legal-text hr.header-underline{
+	width: 400px;
+	height: 3px;
+	background-color:#36b4c6;
 }
 
 section.legal-text h2{
