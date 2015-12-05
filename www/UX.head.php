@@ -9,9 +9,9 @@
 <meta property="og:title"        content="BoatDay App, better boating with friends" />
 <meta property="og:description"  content="Download the BoatDay app to access instant and affordable boating near you.  Fishing, sailing, parties and more, plan a boat outing with just a few clicks." />
 <meta property="og:url"          content="https://www.boatdayapp.com/index" />
-<meta property="og:image"        content="https://www.boatdayapp.com/images/media/image-1.jpg?t=12345?" />
-<meta property="og:image"        content="https://www.boatdayapp.com/images/media/image-2.jpg?t=12345?" />
-<meta property="og:image"        content="https://www.boatdayapp.com/images/media/image-3.jpg?t=12345?" />
+<meta property="og:image"        content="https://www.boatdayapp.com/resources/media/image-1.jpg?t=12345?" />
+<meta property="og:image"        content="https://www.boatdayapp.com/resources/media/image-2.jpg?t=12345?" />
+<meta property="og:image"        content="https://www.boatdayapp.com/resources/media/image-3.jpg?t=12345?" />
 <meta property="fb:app_id"       content="1442439216059238" />
 
 <meta name="twitter:card"        content="summary_large_image" />
@@ -20,7 +20,7 @@
 <meta name="twitter:title"       content="BoatDay App, better boating, with Friends!" />
 <meta name="twitter:description" content="Download the BoatDay app to access instant and affordable boating near you. Fishing, sailing, parties and more, plan a boat outing with just a few clicks." />
 <meta name="twitter:url"         content="https://www.boatdayapp.com/index" />
-<meta name="twitter:image:src"   content="https://www.boatdayapp.com/images/media/image-1.jpg" />
+<meta name="twitter:image:src"   content="https://www.boatdayapp.com/resources/media/image-1.jpg" />
 
 <link rel="stylesheet" type="text/css" href="scripts/vendor/animate.css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="scripts/vendor/bootstrap/dist/css/bootstrap.min.css" />
@@ -32,11 +32,7 @@
 <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
 <link rel="stylesheet" type="text/css" href="styles/css/footer.css" />
 
-<link rel="shortcut icon" href="assets/images/favicon.ico">
-<link href="https://www.boatdayapp.com/images/media/image-1.jpg" rel="image_src" type="image/jpeg" />
 
-<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
-<!--[if lt IE 9]>
-<script src="assets/js/html5shiv.js"></script>
-<script src="assets/js/respond.min.js"></script>
-<![endif]-->
+<link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+<link href="https://www.boatdayapp.com/resources/media/image-1.jpg" rel="image_src" type="image/jpeg" />
