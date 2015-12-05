@@ -71,6 +71,7 @@
 			</section>
 
 
+<!-- 
 			<section class="phone-screenshot">
 				<div class="container">
 					<div class="row text-center">
@@ -78,6 +79,7 @@
 					</div>
 				</div>
 			</section>
+-->
 
 			<section class="blured blured-01">
 				<div class="container">
@@ -119,7 +121,7 @@
 				<section class="upcoming-boatdays">
 					<div class="container">
 						<div class="row text-center">
-							<h2>Next BoatDays</h2>
+							<h2>Enjoy a great day out.</h2>
 							<?php
 								foreach( $boatdays as $boatday ) {
 									

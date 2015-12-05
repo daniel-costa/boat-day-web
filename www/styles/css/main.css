@@ -353,20 +353,18 @@ section.placeholder {
 }
 
 /*
-.main-swiper .swiper-slide > .container {
-	margin: 120px auto;
-	min-height: 350px;
-}
-*/
-.main-swiper .slide-1 > .container {
-	margin: 120px auto;
-	min-height: 350px;
-}
+
+
 .main-swiper .slide-2 > .container,
 .main-swiper .slide-3 > .container,
 .main-swiper .slide-4 > .container,
 .main-swiper .slide-5 > .container {
 	margin: 200px auto 50px auto; 
+	min-height: 350px;
+}
+*/
+.main-swiper .swiper-slide > .container {
+	margin: 120px auto;
 	min-height: 350px;
 }
 
@@ -501,6 +499,11 @@ section.hosts .rating {
 section.hosts .ratingAmount {
 	color: #36b4c6;
 }
+
+section.join-boatday .container{
+	padding-top: 0px !important;
+}
+
 .or-hr{
 	height: 1px; 
 	background-color: #F3EFEF; 

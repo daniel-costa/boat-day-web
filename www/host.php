@@ -67,9 +67,9 @@
 
 				if( count($hosts) > 0 ) {
 			?>
-				<section class="hosts">
+				<section class="hosts" >
 					<div class="container">
-						<div class="row">
+						<div class="row" >
 							<div class="col-sm-12">
 								<h1>Get to know our Hosts</h1>
 								<div class="swiper-container">
