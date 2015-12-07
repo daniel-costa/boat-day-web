@@ -22,6 +22,7 @@
 <meta name="twitter:url"         content="https://www.boatdayapp.com/index" />
 <meta name="twitter:image:src"   content="https://www.boatdayapp.com/resources/media/image-1.jpg" />
 
+
 <link rel="stylesheet" type="text/css" href="scripts/vendor/animate.css/animate.min.css" />
 <link rel="stylesheet" type="text/css" href="scripts/vendor/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="scripts/vendor/swiper/dist/css/swiper.min.css" />
@@ -29,9 +30,10 @@
 <link rel="stylesheet" type="text/css" href="styles/css/review.css" />
 <link rel="stylesheet" type="text/css" href="styles/css/boatday-icons.css" />
 <link rel="stylesheet" type="text/css" href="styles/css/font-avenir.css" />
+<link rel="stylesheet" type="text/css" href="scripts/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" />
+<link rel="stylesheet" type="text/css" href="scripts/vendor/seiyria-bootstrap-slider/css/bootstrap-slider.css" />
 <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
 <link rel="stylesheet" type="text/css" href="styles/css/footer.css" />
-
 
 <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">

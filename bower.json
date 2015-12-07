@@ -21,6 +21,8 @@
     "jquery": null,
     "bootstrap": null,
     "animate.css": null,
-    "swiper": null
+    "swiper": null,
+    "bootstrap-datepicker": "1.4.0",
+    "seiyria-bootstrap-slider": "4.8.1"
   }
 }

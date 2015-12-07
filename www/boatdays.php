@@ -10,6 +10,54 @@
 
 	//Production version
 	//ParseClient::initialize('8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv', 'M4t1qE8ZLZ009lVRqX4QFCTQbUqcdNwblB5DfKV4', 'G32GlUu97evll0wt27WwmqaFuGsTbdwCmebvIGZx');
+
+	//default value settings for options
+	$startPrice = "10";
+	$endPrice = "200";
+	$minPrice = "10";
+	$maxPrice = "500";
+	$startDepartureTime = "6";
+	$endDepartureTime = "21.5";
+	$departureMinTime = "0";
+	$departureMaxTime = "23.5";
+	$dateFrom = "";
+	$dateTo = "";
+	$category = "leisure";
+
+	$query = new ParseQuery("BoatDay");
+	$query->includeKey('captain');
+	$query->includeKey('host');
+	$query->limit(20);
+	$query->equalTo('status', 'complete');
+	
+
+	if(isset($_POST['option-submit'])){
+		$category = mysql_real_escape_string($_POST['category']);
+		$dateFrom = mysql_real_escape_string($_POST['date-from']);
+		$dateTo = mysql_real_escape_string($_POST['date-to']);
+		$startPrice = mysql_real_escape_string($_POST['start-price-hidden']);
+		$endPrice = mysql_real_escape_string($_POST['end-price-hidden']);
+		$startDepartureTime = mysql_real_escape_string($_POST['start-departure-hidden']);
+		$endDepartureTime = mysql_real_escape_string($_POST['end-departure-hidden']);
+
+		$dateFrom_ = DateTime::createFromFormat('m/d/Y', $dateFrom);
+		$query->greaterThanOrEqualTo('date', $dateFrom_);
+		$dateTo_ = DateTime::createFromFormat('m/d/Y', $dateTo);
+		$query->lessThanOrEqualTo('date', $dateTo_);	
+	}
+
+	else{
+		//$query->equalTo("featured", -1);
+		$query->greaterThan('date', new DateTime());
+	}
+
+	$query->equalTo('category', $category);
+	$query->greaterThanOrEqualTo('price', floatval($startPrice));
+	$query->lessThanOrEqualTo('price', floatval($endPrice));
+	$query->greaterThanOrEqualTo('departureTime', floatval($startDepartureTime));
+	$query->lessThanOrEqualTo('departureTime', floatval($endDepartureTime));
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,13 +73,72 @@
 			<section class="placeholder">
 			</section>
 
+
+			<section class="options">
+				<div class="container">
+					<form method="post" action="" class="form-inline" role="form">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="control-label text-left" for="date-from">From:</label>
+									<input type="text" required placeholder="mm/dd/yyyy" class="form-control" id="date-from" name="date-from" value="<?php  echo $dateFrom;  ?>">
+								</div>
+								<div class="form-group">
+									<label class="control-label" for="date-to">To:</label>
+									<input type="text" required placeholder="mm/dd/yyyy" class="form-control" id="date-to" name="date-to" value="<?php  echo $dateTo;  ?>">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="control-label pull-left">Price</label>
+									<label class="preview-price control-label pull-right"><?php echo "$".$startPrice ." - $".$endPrice ?></label>
+									<div>
+										<input type="text" class="form-control" id="slider-price" name="slider-price"  data-slider-min="<?php echo $minPrice; ?>" data-slider-max="<?php echo $maxPrice; ?>" data-slider-step="5" data-slider-value="<?php echo "[".$startPrice.", ".$endPrice."]"; ?>">
+										<input type="hidden" name="start-price-hidden" id="start-price-hidden" value="<?php echo $startPrice; ?>"/>
+										<input type="hidden" name="end-price-hidden" id="end-price-hidden" value="<?php echo $endPrice; ?>"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="control-label">Activity:</label>
+									<select name="category" required class="form-control">
+										<option value="leisure" <?php if($category == "leisure") { echo "selected"; } ?>>Leisure</option>
+										<option value="fishing" <?php if($category == "fishing") { echo "selected"; } ?>>Fishing</option>
+										<option value="sailing" <?php if($category == "sailing") { echo "selected"; } ?>>Sailing</option>
+										<option value="sports"  <?php if($category == "sports") { echo "selected"; } ?>>Water Sports</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="control-label">Departure:</label>
+									<label class="preview-departure control-label pull-right"><?php echo departureTimeToDisplayTime($startDepartureTime)." - ".departureTimeToDisplayTime($endDepartureTime); ?></label>
+									<div>
+										<input type="text" class="form-control" id="slider-departure" name="slider-departure"  data-slider-min="<?php echo $departureMinTime; ?>" data-slider-max="<?php echo $departureMaxTime; ?>" data-slider-step="0.5" data-slider-value="<?php echo "[".$startDepartureTime.", ".$endDepartureTime."]"; ?>">
+										<input type="hidden" name="start-departure-hidden" id="start-departure-hidden" value="<?php echo $startDepartureTime; ?>"/>
+										<input type="hidden" name="end-departure-hidden" id="end-departure-hidden" value="<?php echo $endDepartureTime; ?>"/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group">
+								<button name="option-submit" type="submit" class="btn">Submit</button>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</section>
+
 			<?php
-				$query = new ParseQuery("BoatDay");
-				$query->includeKey('captain');
-				$query->includeKey('host');
-				$query->limit(20);
-				$query->equalTo("featured", -1);
-				//$query->greaterThan('date', new DateTime());
+
+
+
 				$boatdays = $query->find();
 
 				if( count($boatdays) > 0 ) {

@@ -3,6 +3,7 @@
 	date_default_timezone_set('America/New_York'); 
 	
 	function dateToEnBoatDayCard($date) {
+
 		$date->setTimezone(new DateTimeZone('Europe/Helsinki'));
 
 		return $date->format("D, n/j");
@@ -32,7 +33,7 @@
 		}
 
 		if( count($l) == 1 ) {
-			return $l[0].trim();
+			return trim($l[0]);
 		}
 
 		if( count($l) > 1 ) {

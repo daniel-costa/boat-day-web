@@ -84,6 +84,7 @@ $(document).ready(function() {
 		}
 	});
 
+	//youtube on modal
     var youtubeUrl = $("#boatday-intro-video").attr('src');
     
     $("#modal-youtube-video").on('hide.bs.modal', function(){
@@ -93,6 +94,76 @@ $(document).ready(function() {
     $("#modal-youtube-video").on('show.bs.modal', function(){
         $("#boatday-intro-video").attr('src', youtubeUrl);
     });
+
+
+    //datepicker
+    var datepickerOpts = {
+    	format: "mm/dd/yyyy",
+    	startDate: "0d",
+    	autoclose: true
+    };
+    $('#date-from').datepicker(datepickerOpts);
+    $('#date-to').datepicker(datepickerOpts);
+
+    //slider
+	var priceSlideEvent = function(slideEvent){
+		var priceArray = $('#slider-price').slider('getValue');
+		var startPrice = priceArray[0];
+		var endPrice = priceArray[1];
+		//console.log(priceArray);
+		$('.preview-price').text(displaySliderPrice(startPrice, endPrice));
+		$('#start-price-hidden').val(startPrice);
+		$('#end-price-hidden').val(endPrice);
+	};
+
+	var departureSlideEvent = function(slideEvent){
+		var timeArray = $('#slider-departure').slider('getValue');
+		var startTime = timeArray[0];
+		var endTime = timeArray[1];
+		$('#start-departure-hidden').val(startTime);
+		$('#end-departure-hidden').val(endTime);
+		$('.preview-departure').text(displaySliderDepatureTime(startTime, endTime));
+	};
+
+	function displaySliderPrice(startPrice, endPrice){
+		return "$"+startPrice + " - " + "$"+endPrice;
+	}
+
+	function displaySliderDepatureTime(startTime, endTime){
+		var h = parseInt(startTime);
+		var mm = (startTime-h) * 60;
+		var dd = 'AM';
+
+		if( h >= 12 ) {
+			dd = 'PM';
+			h -= 12;
+		}
+
+		var h2 = parseInt(endTime);
+		var mm2 = (endTime-h2) * 60;
+		var dd2 = 'AM';
+
+		if( h2 >= 12 ) {
+			dd2 = 'PM';
+			h2 -= 12;
+		}
+
+		var startStr = (h==0?12:h)+':'+(mm==0?'00':+(mm < 10 ? '0'+mm : mm))+' '+dd;
+		var endStr = (h2==0?12:h2)+':'+(mm2==0?'00':+(mm2 < 10 ? '0'+mm2 : mm2))+' '+dd2;
+		return startStr + " - " + endStr;
+	}
+
+    var slidersConfig = {
+    	tooltip: 'hide'
+    };
+
+    $('#slider-price').slider(slidersConfig).on('slide', priceSlideEvent);
+    $('#slider-departure').slider(slidersConfig).on('slide', departureSlideEvent);
+
+
+
+
+
 
 });
 
