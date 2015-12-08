@@ -49,8 +49,8 @@
 		</div>
 
 		<div class="row">
-			<div class="form-group pull-right">
-				<button name="option-submit" type="submit" class="btn">Search</button>
+			<div class="form-group">
+				<button style="width:100%;" name="option-submit" type="submit" class="btn">Search</button>
 			</div>
 		</div>
 		
