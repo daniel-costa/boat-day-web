@@ -4,7 +4,7 @@
 	
 	function dateToEnBoatDayCard($date) {
 
-		$date->setTimezone(new DateTimeZone('Europe/Helsinki'));
+		//$date->setTimezone(new DateTimeZone('Europe/Helsinki'));
 
 		return $date->format("D, n/j");
 	}

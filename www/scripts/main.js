@@ -7,6 +7,9 @@ function scrollToAnchor(aid) {
 
 $(document).ready(function() {
 
+	Parse.initialize("LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU", "kXeZHxlhpWhnRdtg7F0Cdc6kvuGHVtDlnSZjfxpU"); // QA
+	//Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp"); //HP
+
 	var xAnimationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 	
 	if($('.main-swiper').length !== 0) {
@@ -161,11 +164,59 @@ $(document).ready(function() {
     $('#slider-departure').slider(slidersConfig).on('slide', departureSlideEvent);
 
 
+    loadBoatDays();
+
+
+    function loadBoatDays(){
+
+    	var tpl = _.template(tplStr);
+
+    	var query = new Parse.Query(Parse.Object.extend('BoatDay'));
+    	query.include('captain');
+    	query.include('host');
+    	query.limit(20);
+    	query.equalTo('status', 'complete');
+    	query.find().then(function(boatdays){
+    		console.log(boatdays.length);
+
+    		_.each(boatdays, function(boatday){
+
+    			$('.upcoming-boatdays .container .row').append(tpl({boatday: boatday}));
+
+
+    			var q = boatday.relation('boatdayPictures').query();
+    			q.ascending('order');
+				q.first().then(function(fileholder) {
+					if( fileholder ) {
+						$('.bd-'+boatday.id+' .image').css({ backgroundImage: 'url('+fileholder.get('file').url()+')' });
+					}
+				});
+
+    		});
+
+    		
+
+    	}, function(error){
+    		console.log(error);
+    	})
 
 
 
+
+    }
 
 });
+
+
+var tplStr = '<div class="col-sm-4">'+
+					'<div class="boatday-card bd-<%= boatday.id %>">' +
+						'<div class="image">'+
+							'<div class="banner left">'+
+								'<div class="host-picture" style="background-image:url(<%= boatday.get("captain").get("profilePicture").url() %>)"></div>'+
+								'<div>'+
+								'</div>'+
+							'</div>'+	
+						'</div>';
 
 
 // Facebook Tracking

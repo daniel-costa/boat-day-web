@@ -4,6 +4,8 @@
 <script src="scripts/vendor/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
 <script src="scripts/vendor/swiper/dist/js/swiper.jquery.js"></script>
 <script src="scripts/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="scripts/vendor/underscore/underscore-min.js"></script>
+<script src="scripts/vendor/parse/parse.min.js"></script>
 <script src="scripts/main.js"></script>
 <div id="fb-root"></div>
 
