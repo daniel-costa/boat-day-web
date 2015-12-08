@@ -1,14 +1,165 @@
 var base_url = "";
 
+var getTemplate = function(name){
+	return $('script[type="x-boatday/template"][name="'+name+'"]').html();
+};
+
+var slidersConfig = {
+	tooltip: 'hide'
+};
+
+var datepickerOpts = {
+	format: "mm/dd/yyyy",
+	startDate: "0d",
+	autoclose: true
+};
+
+var priceSlideEvent = function(slideEvent){
+	var priceArray = $('#slider-price').slider('getValue');
+	var startPrice = priceArray[0];
+	var endPrice = priceArray[1];
+	$('.preview-price').text("$"+startPrice+ " - $" +endPrice);
+};
+
+var departureSlideEvent = function(slideEvent){
+	var timeArray = $('#slider-departure').slider('getValue');
+	var startTime = timeArray[0];
+	var endTime = timeArray[1];
+	$('.preview-departure').text(departureTimeToDisplayTime(startTime) + " - " + departureTimeToDisplayTime(endTime));
+};
+
 function scrollToAnchor(aid) {
 	var aTag = $(aid);
 	$('html, body').animate({ scrollTop: aTag.offset().top - 100}, 'slow');
 }
 
+function buttonLoader( text, button ) {
+
+	if( text ) {
+
+		if( !button ) var button =  $('#boatdaySearch').find('[type="submit"]');
+
+		button.attr('data-loading-text', text).button('loading');
+
+	} else {
+
+		 $('#boatdaySearch').find('[data-loading-text]').button('reset');
+
+	}
+}
+
+function departureTimeToDisplayTime(time) {
+	var h = parseInt(time);
+	var mm = (time-h) * 60;
+	var dd = 'AM';
+
+	if( h >= 12 ) {
+		dd = 'PM';
+		h -= 12;
+	}
+
+	return (h==0?12:h)+':'+(mm==0?'00':+(mm < 10 ? '0'+mm : mm))+' '+dd;
+}
+
+function getShortenDayname(date){
+	var daysName = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+	return daysName[date.getDay()];
+}
+
+function getDateToEn(date){
+	var d = getShortenDayname(date); 
+	return (d + ", " + (date.getMonth() + 1) + "/" + date.getDate());
+}
+
+function loadBoatDays(){
+
+	var tpl = _.template(getTemplate('boatday-card'));
+
+    var fromDate = $('.options .form-group input[name="date-from"]').datepicker('getDate');
+   	var toDate = $('.options .form-group input[name="date-to"]').datepicker('getDate');
+   	var category = $('.options .form-group select[name="category"]').val();
+   	var priceArray = $('#slider-price').slider('getValue');
+	var startPrice = priceArray[0];
+	var endPrice = priceArray[1];
+	var timeArray = $('#slider-departure').slider('getValue');
+	var startTime = timeArray[0];
+	var endTime = timeArray[1];
+
+	console.log("From Date :" + fromDate);
+	console.log("To Date :" + toDate);
+	console.log("Category :" + category);
+	console.log("Start price :" + parseInt(startPrice));
+	console.log("End price :" + parseInt(endPrice));
+	console.log("Start time :" + parseFloat(startTime));
+	console.log("End time :" + parseFloat(endTime));
+
+
+	var target = $('.upcoming-boatdays .container .row');
+	target.html("");
+
+	var query = new Parse.Query(Parse.Object.extend('BoatDay'));
+	query.include('captain');
+	query.include('host');
+	query.limit(20);
+	query.equalTo('status', 'complete');
+	query.equalTo('category', category);
+	query.greaterThanOrEqualTo('price', parseInt(startPrice));
+	query.lessThanOrEqualTo('price', parseInt(endPrice));
+	query.greaterThanOrEqualTo('departureTime', parseFloat(startTime));
+	query.lessThanOrEqualTo('departureTime', parseFloat(endTime));
+	
+	if((fromDate != null) && (toDate != null)){
+		console.log("Form date in query");
+		query.greaterThanOrEqualTo("date",fromDate);
+		query.lessThanOrEqualTo("date", toDate);
+	}
+	else{
+		console.log("Form date not in query");
+		query.greaterThan("date", new Date());
+	}
+	
+
+	query.find().then(function(boatdays){
+
+		if(boatdays.length > 0){
+			_.each(boatdays, function(boatday){
+
+				var data = {
+					boatday: boatday,
+					departureTime: departureTimeToDisplayTime(boatday.get("departureTime")),
+					dateToEn: getDateToEn(new Date(boatday.get('date')))
+				};
+
+				target.append(tpl(data));
+
+				var q = boatday.relation('boatdayPictures').query();
+				q.ascending('order');
+				q.first().then(function(fileholder) {
+					if( fileholder ) {
+						$('.bd-'+boatday.id+' .image').css({ backgroundImage: 'url('+fileholder.get('file').url()+')' });
+					}
+				});
+
+			});
+
+		}
+		else {
+			$('.upcoming-boatdays .container .row').append("<h1>BoatDay not found!</h1>");
+		}
+
+		buttonLoader();
+		
+
+	}, function(error){
+		console.log(error);
+		buttonLoader();
+	})
+}
+
 $(document).ready(function() {
 
-	Parse.initialize("LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU", "kXeZHxlhpWhnRdtg7F0Cdc6kvuGHVtDlnSZjfxpU"); // QA
-	//Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp"); //HP
+	//Parse.initialize("LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU", "kXeZHxlhpWhnRdtg7F0Cdc6kvuGHVtDlnSZjfxpU"); // QA
+	Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp"); //HP
 
 	var xAnimationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 	
@@ -98,125 +249,35 @@ $(document).ready(function() {
         $("#boatday-intro-video").attr('src', youtubeUrl);
     });
 
-
     //datepicker
-    var datepickerOpts = {
-    	format: "mm/dd/yyyy",
-    	startDate: "0d",
-    	autoclose: true
-    };
     $('#date-from').datepicker(datepickerOpts);
     $('#date-to').datepicker(datepickerOpts);
 
     //slider
-	var priceSlideEvent = function(slideEvent){
-		var priceArray = $('#slider-price').slider('getValue');
-		var startPrice = priceArray[0];
-		var endPrice = priceArray[1];
-		//console.log(priceArray);
-		$('.preview-price').text(displaySliderPrice(startPrice, endPrice));
-		$('#start-price-hidden').val(startPrice);
-		$('#end-price-hidden').val(endPrice);
-	};
-
-	var departureSlideEvent = function(slideEvent){
-		var timeArray = $('#slider-departure').slider('getValue');
-		var startTime = timeArray[0];
-		var endTime = timeArray[1];
-		$('#start-departure-hidden').val(startTime);
-		$('#end-departure-hidden').val(endTime);
-		$('.preview-departure').text(displaySliderDepatureTime(startTime, endTime));
-	};
-
-	function displaySliderPrice(startPrice, endPrice){
-		return "$"+startPrice + " - " + "$"+endPrice;
-	}
-
-	function displaySliderDepatureTime(startTime, endTime){
-		var h = parseInt(startTime);
-		var mm = (startTime-h) * 60;
-		var dd = 'AM';
-
-		if( h >= 12 ) {
-			dd = 'PM';
-			h -= 12;
-		}
-
-		var h2 = parseInt(endTime);
-		var mm2 = (endTime-h2) * 60;
-		var dd2 = 'AM';
-
-		if( h2 >= 12 ) {
-			dd2 = 'PM';
-			h2 -= 12;
-		}
-
-		var startStr = (h==0?12:h)+':'+(mm==0?'00':+(mm < 10 ? '0'+mm : mm))+' '+dd;
-		var endStr = (h2==0?12:h2)+':'+(mm2==0?'00':+(mm2 < 10 ? '0'+mm2 : mm2))+' '+dd2;
-		return startStr + " - " + endStr;
-	}
-
-    var slidersConfig = {
-    	tooltip: 'hide'
-    };
-
     $('#slider-price').slider(slidersConfig).on('slide', priceSlideEvent);
     $('#slider-departure').slider(slidersConfig).on('slide', departureSlideEvent);
+
+    $('#boatdaySearch').on('submit', function(e){
+    	e.preventDefault();
+
+    	buttonLoader("Searching...");
+
+    	var fromDate = $('.options .form-group input[name="date-from"]').datepicker('getDate');
+    	var toDate = $('.options .form-group input[name="date-to"]').datepicker('getDate');
+
+    	if((fromDate != null) && (toDate != null)){
+    		loadBoatDays();
+    	}
+    	else {
+    		buttonLoader();
+    		alert("Please pick dates!");
+    	}
+    });
 
 
     loadBoatDays();
 
-
-    function loadBoatDays(){
-
-    	var tpl = _.template(tplStr);
-
-    	var query = new Parse.Query(Parse.Object.extend('BoatDay'));
-    	query.include('captain');
-    	query.include('host');
-    	query.limit(20);
-    	query.equalTo('status', 'complete');
-    	query.find().then(function(boatdays){
-    		console.log(boatdays.length);
-
-    		_.each(boatdays, function(boatday){
-
-    			$('.upcoming-boatdays .container .row').append(tpl({boatday: boatday}));
-
-
-    			var q = boatday.relation('boatdayPictures').query();
-    			q.ascending('order');
-				q.first().then(function(fileholder) {
-					if( fileholder ) {
-						$('.bd-'+boatday.id+' .image').css({ backgroundImage: 'url('+fileholder.get('file').url()+')' });
-					}
-				});
-
-    		});
-
-    		
-
-    	}, function(error){
-    		console.log(error);
-    	})
-
-
-
-
-    }
-
 });
-
-
-var tplStr = '<div class="col-sm-4">'+
-					'<div class="boatday-card bd-<%= boatday.id %>">' +
-						'<div class="image">'+
-							'<div class="banner left">'+
-								'<div class="host-picture" style="background-image:url(<%= boatday.get("captain").get("profilePicture").url() %>)"></div>'+
-								'<div>'+
-								'</div>'+
-							'</div>'+	
-						'</div>';
 
 
 // Facebook Tracking

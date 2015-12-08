@@ -6,10 +6,10 @@
 	use Parse\ParseQuery;
 
 	//Development version
-	ParseClient::initialize('LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU', 'b7qmevgk3fqgAydZYttahfXeY3yvJtiJG1oY98LD', 'aA7tEGR51o5yxPdTfA8RKo5IbaN9eLPba4a0bIIy');
+	//ParseClient::initialize('LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU', 'b7qmevgk3fqgAydZYttahfXeY3yvJtiJG1oY98LD', 'aA7tEGR51o5yxPdTfA8RKo5IbaN9eLPba4a0bIIy');
 
 	//Production version
-	//ParseClient::initialize('8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv', 'M4t1qE8ZLZ009lVRqX4QFCTQbUqcdNwblB5DfKV4', 'G32GlUu97evll0wt27WwmqaFuGsTbdwCmebvIGZx');
+	ParseClient::initialize('8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv', 'M4t1qE8ZLZ009lVRqX4QFCTQbUqcdNwblB5DfKV4', 'G32GlUu97evll0wt27WwmqaFuGsTbdwCmebvIGZx');
 ?>
 <!DOCTYPE html>
 <html lang="en">

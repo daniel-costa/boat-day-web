@@ -2,68 +2,59 @@
 	require 'lib.functions.php';
 	require 'vendor/autoload.php';
 
-	use Parse\ParseClient;
-	use Parse\ParseQuery;
-
-	//Development version
-	ParseClient::initialize('LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU', 'b7qmevgk3fqgAydZYttahfXeY3yvJtiJG1oY98LD', 'aA7tEGR51o5yxPdTfA8RKo5IbaN9eLPba4a0bIIy');
-
-	//Production version
-	//ParseClient::initialize('8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv', 'M4t1qE8ZLZ009lVRqX4QFCTQbUqcdNwblB5DfKV4', 'G32GlUu97evll0wt27WwmqaFuGsTbdwCmebvIGZx');
-
-	//default value settings for options
-	$startPrice = "10";
-	$endPrice = "200";
-	$minPrice = "10";
-	$maxPrice = "500";
-	$startDepartureTime = "6";
-	$endDepartureTime = "21.5";
-	$departureMinTime = "0";
-	$departureMaxTime = "23.5";
-	$dateFrom = "";
-	$dateTo = "";
-	$category = "leisure";
-
-	$query = new ParseQuery("BoatDay");
-	$query->includeKey('captain');
-	$query->includeKey('host');
-	$query->limit(20);
-	$query->equalTo('status', 'complete');
-	
-
-	if(isset($_POST['option-submit'])){
-		$category = mysql_real_escape_string($_POST['category']);
-		$dateFrom = mysql_real_escape_string($_POST['date-from']);
-		$dateTo = mysql_real_escape_string($_POST['date-to']);
-		$startPrice = mysql_real_escape_string($_POST['start-price-hidden']);
-		$endPrice = mysql_real_escape_string($_POST['end-price-hidden']);
-		$startDepartureTime = mysql_real_escape_string($_POST['start-departure-hidden']);
-		$endDepartureTime = mysql_real_escape_string($_POST['end-departure-hidden']);
-
-		$dateFrom_ = DateTime::createFromFormat('m/d/Y', $dateFrom);
-		$query->greaterThanOrEqualTo('date', $dateFrom_);
-		$dateTo_ = DateTime::createFromFormat('m/d/Y', $dateTo);
-		$query->lessThanOrEqualTo('date', $dateTo_);	
-	}
-
-	else{
-		//$query->equalTo("featured", -1);
-		$query->greaterThan('date', new DateTime());
-	}
-
-	$query->equalTo('category', $category);
-	$query->greaterThanOrEqualTo('price', floatval($startPrice));
-	$query->lessThanOrEqualTo('price', floatval($endPrice));
-	$query->greaterThanOrEqualTo('departureTime', floatval($startDepartureTime));
-	$query->lessThanOrEqualTo('departureTime', floatval($endDepartureTime));
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
 		<title>BoatDay App - Upcoming BoatDays</title>
+
+
+		<script type="x-boatday/template" name="boatday-card">
+			<div class="col-sm-4">
+				<div class="boatday-card bd-<%= boatday.id %>">
+					<div class="image">
+						<div class="banner left">
+							<div class="host-picture" style="background-image:url(<%= boatday.get("captain").get("profilePicture").url() %>)">
+							</div>
+							<% if(boatday.get("captain").get("rating")){ %>
+								<div class="rating rating-<%= Math.ceil(boatday.get('captain').get('rating')) %> bd-icons">
+									<div class="with-empty bd-icons"></div>
+								</div>
+							<% } else { %>
+								<label class="no-rating"><%= boatday.get("captain").get("displayName") %></label>
+							<% } %>
+						</div>
+						<div class="banner right">
+							<label class="price">$<%= boatday.get('price') %></label>
+						</div>
+					</div>
+					<div class="details">
+						<h1 class="title"><%= boatday.get("name") %></h1>
+						<div class="items">
+							<div class="item location">
+								<div class="icon bd-pin"></div>
+								<div class="label">get location</div>
+							</div>
+							<div class="item date">
+								<div class="icon bd-calendar"></div>
+								<div class="label"><%= dateToEn %></div>
+							</div>
+							<div class="item time">
+								<div class="icon bd-clock"></div>
+								<div class="label"><%= departureTime %></div>
+							</div>
+							<div class="item seats">
+								<div class="bd-person icon"></div>
+								<div class="label"><%= (boatday.get("availableSeats") - boatday.get("bookedSeats")) %></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+
+
 	</head>
 	<body class="boatdays">
 		<?php include_once('UX.section.header.php'); ?>
@@ -81,9 +72,6 @@
 			<section class="upcoming-boatdays">
 				<div class="container">
 					<div class="row text-center">
-						
-
-
 					</div>
 				</div>
 			</section>
