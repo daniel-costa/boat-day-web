@@ -1,13 +1,15 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+
+	date_default_timezone_set('America/New_York'); 
+
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
 
 	require 'vendor/autoload.php';
 	
 	function dateToEnBoatDayCard($date) {
-		$date->setTimezone(new DateTimeZone('Europe/Helsinki'));
-
+		// $date->setTimezone(new DateTimeZone('Europe/Helsinki'));
 		return $date->format("D, n/j");
 	}
 
@@ -23,7 +25,7 @@ error_reporting(E_ALL);
 			$h -= 12;
 		}
 
-		return ( $h == 0 ? 12 : $h ) + ':' + ( $mm == 0 ? '00' : + ( $mm < 10 ? '0' + $mm : $mm ) ) + ' ' + $dd;	
+		return ($h==0?12:$h) . ':' . ($mm==0?'00':($mm<10?'0'.$mm:$mm)) . ' ' . $dd;
 	}
 
 	function getCityFromLocation($location) {
@@ -59,11 +61,91 @@ error_reporting(E_ALL);
 
 	$boatdayid = $_GET['id'];
 
+	$canDisplay = false;
+	$attempts = 0;
+	$isAnother = false;
+
+	// Fetch the one asked
 	$query = new ParseQuery("BoatDay");
 	$query->includeKey('captain');
 	$query->includeKey('host');
-	$boatday = $query->get($boatdayid);
-	$seats = $boatday->get('availableSeats') - $boatday->get('bookedSeats');
+	$baseBoatday = $query->get($boatdayid);
+
+	do {
+
+		switch($attempts) {
+			case 0 : 
+				$isAnother = false;
+				$boatdays = array($baseBoatday);
+				break;
+			case 1 :
+				$isAnother = true;
+				// Fetch from same Captain
+				$query = new ParseQuery("BoatDay");
+				$query->includeKey('captain');
+				$query->includeKey('host');
+				$query->greaterThan('date', new DateTime());
+				$query->equalTo('captain', $baseBoatday->get('captain'));
+				$query->ascending('date');
+				$boatdays = $query->find();
+				break;
+			case 2 :
+				$isAnother = true;
+				// Feth from same category & price between 50+-
+				$query = new ParseQuery("BoatDay");
+				$query->includeKey('captain');
+				$query->includeKey('host');
+				$query->greaterThan('date', new DateTime());
+				$query->equalTo('category', $baseBoatday->get('category'));
+				$query->greaterThan('price', $baseBoatday->get('price') - 25);
+				$query->lessThan('price', $baseBoatday->get('price') + 25);
+				$query->ascending('date');
+				$boatdays = $query->find();
+				break;
+			case 3 :
+				$isAnother = true;
+				// Same category
+				$query = new ParseQuery("BoatDay");
+				$query->includeKey('captain');
+				$query->includeKey('host');
+				$query->greaterThan('date', new DateTime());
+				$query->equalTo('category', $baseBoatday->get('category'));
+				$query->ascending('date');
+				$boatdays = $query->find();
+				break;
+			case 4 :
+				$isAnother = true;
+				// Anything
+				$query = new ParseQuery("BoatDay");
+				$query->includeKey('captain');
+				$query->includeKey('host');
+				$query->greaterThan('date', new DateTime());
+				$query->ascending('date');
+				$boatdays = $query->find();
+				break;
+			default :
+				// oops nothing to display
+				die('No BoatDays available currently.');
+				break;
+		}
+
+		$attempts++;
+
+		if( $boatdays !== null && count($boatdays) > 0 ) {
+			
+			$boatday = $boatdays[0];
+
+			$seats = $boatday->get('availableSeats') - $boatday->get('bookedSeats');
+			$now = new DateTime();
+			$time = new DateTime($boatday->get('date')->format('Y-m-d'));
+			$tsBoatDay = $time->getTimestamp() + ($boatday->get('departureTime') * 3600) ;
+			
+			if( $seats > 0 && $now->getTimestamp() < $tsBoatDay ) {
+				$canDisplay = true;
+			} 
+		}
+	} while( !$canDisplay);
+
 
 	$_q = $boatday->getRelation('boatdayPictures')->getQuery();
 	$_q->ascending('createdAt');
@@ -105,7 +187,13 @@ error_reporting(E_ALL);
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-					<p>You're a click away from this great day of boating!</p>
+					<p>
+						<?php if( $isAnother ) { ?>
+							Oops, the BoatDay you're looking for already set sail! Here's another great option nearby.
+						<?php } else { ?>
+							You're a click away from this great day of boating!
+						<?php } ?>
+					</p>
 					<div class="wrapper">
 						<div class="boatday-card">
 							<div class="image" style="background-image:url(<?php echo $boatdayPicture; ?>)">
@@ -149,8 +237,17 @@ error_reporting(E_ALL);
 					</div>
 
 					<div class="buttons">
-						<a href="https://itunes.apple.com/us/app/boatday/id953574487?ls=1&amp;mt=8"><img src="../../deep-linking/resources/apple-store.png" /></a>
-						<a href="boatday://boatday?id=<?php echo $boatdayid ?>" class="deep-link">View in the app</a>
+						<a href="https://itunes.apple.com/us/app/boatday/id953574487?ls=1&amp;mt=8"><img class="dl-button" src="../../deep-linking/resources/dl-apple.png" /></a>
+						<a href="https://play.google.com/store/apps/details?id=com.boat.day"><img class="dl-button" src="../../deep-linking/resources/dl-google.png" /></a>
+						<a id="dl" style="display:none" href="javascript:dl('<?php echo $boatdayid ?>')" class="deep-link">View in the app</a>
+						<script type="text/javascript">
+							function dl(id) { window.location = /Android/i.test(navigator.userAgent) ? 'android-app://com.boat.day/boatday/boatday?id='+id : 'boatday://boatday?id='+id; }
+							if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) document.getElementById('dl').style.display = 'inline-block';
+						</script>
+						<?php if( $isAnother ) { ?>
+							<br/><br/>
+							<a href="https://www.boatdayapp.com/boatdays">See more BoatDays</a>
+						<?php } ?>
 					</div>
 
 					<div class="share">
