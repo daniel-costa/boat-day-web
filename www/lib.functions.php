@@ -21,7 +21,7 @@
 			$h -= 12;
 		}
 
-		return ( $h == 0 ? 12 : $h ) + ':' + ( $mm == 0 ? '00' : + ( $mm < 10 ? '0' + $mm : $mm ) ) + ' ' + $dd;	
+		return ( $h == 0 ? 12 : $h ) . ':' . ( $mm == 0 ? '00' :  ( $mm < 10 ? '0' . $mm : $mm ) ) . ' ' . $dd;	
 	}
 
 	function getCityFromLocation($location) {
