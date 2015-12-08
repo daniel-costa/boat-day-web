@@ -34,7 +34,7 @@
 						<div class="items">
 							<div class="item location">
 								<div class="icon bd-pin"></div>
-								<div class="label">get location</div>
+								<div class="label"><%= location %></div>
 							</div>
 							<div class="item date">
 								<div class="icon bd-calendar"></div>

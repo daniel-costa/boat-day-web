@@ -14,7 +14,7 @@
 				</div>
 			</div>
 			
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-2 col-sm-6">
 				<div class="form-group">
 					<label class="control-label pull-left">Activity:</label>
 					<select name="category" required class="form-control">
@@ -36,11 +36,9 @@
 				</div>
 			</div>
 
-
-
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4 col-sm-6">
 				<div class="form-group">
-					<label class="control-label pull-left">Departure:</label>
+					<label class="control-label pull-left">Departure Time:</label>
 					<label class="preview-departure control-label pull-right">6:00 AM - 10:00 PM</label>
 					<div>
 						<input style="width: 100%;" type="text" class="form-control" id="slider-departure" name="slider-departure"  data-slider-min="0" data-slider-max="23.5" data-slider-step="0.5" data-slider-value="[6, 22]">

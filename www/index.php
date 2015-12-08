@@ -43,15 +43,15 @@
 							</div>		
 						</div>
 						<div class="swiper-slide slide-2">
-							<div class="container text-right">
+							<div class="container text-left">
 								<span>Meanigfull<br/>Conections</span>
-								<p class="text-right">Unforgettable memories in the sun</p>
+								<p class="text-left">Unforgettable memories in the sun</p>
 							</div>	
 						</div>
 						<div class="swiper-slide slide-4">
-							<div class="container text-right">
+							<div class="container text-left">
 								<span>Unprecedented<br/>Value</span>
-								<p class="text-right">Affordable adventures departing daily</p>
+								<p class="text-left">Affordable adventures departing daily</p>
 							</div>
 						</div>
 					</div>
@@ -248,6 +248,7 @@
 							<div class="box">
 								<h4>Host fun boat outings with paying Guests</h4>
 								<a class="btn" href="https://www.boatdayhosts.com" target="_blank">Sign-up as a Host</a>
+								<a class="learn-more" href="hosts">Learn More</a>
 							</div>
 						</div>
 					</div>

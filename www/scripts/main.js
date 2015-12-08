@@ -71,6 +71,24 @@ function getDateToEn(date){
 	return (d + ", " + (date.getMonth() + 1) + "/" + date.getDate());
 }
 
+function getCityFromLocation(location) {
+
+	var l = location.split(",");
+
+	if( l.length == 0 ) {
+		return '';
+	}
+
+	if( l.length == 1 ) {
+		return l[0].trim();
+	}
+
+	if( l.length > 1 ) {
+		return l[l.length - 2].trim(); //trim($l[count($l) - 2]);
+	}
+
+}
+
 function loadBoatDays(){
 
 	var tpl = _.template(getTemplate('boatday-card'));
@@ -127,7 +145,8 @@ function loadBoatDays(){
 				var data = {
 					boatday: boatday,
 					departureTime: departureTimeToDisplayTime(boatday.get("departureTime")),
-					dateToEn: getDateToEn(new Date(boatday.get('date')))
+					dateToEn: getDateToEn(new Date(boatday.get('date'))),
+					location: getCityFromLocation(boatday.get('locationText'))
 				};
 
 				target.append(tpl(data));

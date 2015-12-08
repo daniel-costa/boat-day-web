@@ -234,7 +234,7 @@ section.phone-screenshot img{
 section .box {
 	margin-top: 80px;
 	background: rgb(245, 247, 250);
-	min-height: 200px;
+	min-height: 230px;
 	padding: 25px;
 	border: 1px solid rgb(230, 233, 237);
 	border-top: 2px solid rgb(11, 184, 200);
@@ -529,6 +529,14 @@ section.options .row .date-col-to{
 	padding: 0px 5px 0px 0px;
 }
 
+a.learn-more{
+	display: block;
+	margin-top: 10px;
+	color: rgb(115, 135, 156);
+}
+a.learn-more:hover{
+	text-decoration: underline;
+}
 
 /* Media Queries */
 @media (max-width: 767px) { 
@@ -537,3 +545,4 @@ section.options .row .date-col-to{
 		padding: 0px;
 	}
 }
+
