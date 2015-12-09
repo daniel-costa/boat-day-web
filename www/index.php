@@ -113,6 +113,7 @@
 				$query->includeKey('host');
 				$query->limit(3);
 				//$query->equalTo("featured", -1);
+				$query->equalTo("displayInWebsite", true);
 				$query->greaterThan('date', new DateTime());
 				$boatdays = $query->find();
 
@@ -236,7 +237,7 @@
 
 			<section class="join-boatday">
 				<div class="container">
-					<h4>Ready to go Boating?</h4>
+					<h4 class="title">Ready to go Boating?</h4>
 					<div class="row">
 						<div class="col-sm-6">
 							<img class="heading-for-box" src="resources/guestcard.jpg" />

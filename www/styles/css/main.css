@@ -375,7 +375,10 @@ section.placeholder {
 	padding: 18.25px 0px;
 	text-align: right;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 2px  2px 2px  #696E6B,
+				-2px -2px 2px  #696E6B,
+				-2px  2px 2px  #696E6B,
+				 2px -2px 2px  #696E6B;
 	font-family: Arial;
 }
 
@@ -502,7 +505,7 @@ section.join-boatday .container{
 	padding-top: 0px !important;
 }
 
-section.join-boatday .container h4{
+section.join-boatday .container h4.title{
 	margin-top: 70px;
 	margin-bottom: 0px;
 }
