@@ -98,12 +98,13 @@ header .btn:hover {
 }
 header a.host-log-in{
 	margin-left: 10px;
-	background: #36b4c6;
+	color: white !important;
+	background: #36b4c6 !important;
 }
 
 header a.host-log-in:hover{
 	background: #36b4c6;
-	color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255) !important;
 }
 
 
