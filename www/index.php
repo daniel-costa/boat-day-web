@@ -112,7 +112,7 @@
 				$query->includeKey('captain');
 				$query->includeKey('host');
 				$query->limit(3);
-				$query->equalTo("featured", -1);
+				//$query->equalTo("featured", -1);
 				$query->greaterThan('date', new DateTime());
 				$boatdays = $query->find();
 
@@ -121,7 +121,7 @@
 				<section class="upcoming-boatdays">
 					<div class="container">
 						<div class="row text-center">
-							<h2>Enjoy a great day out.</h2>
+							<h2>Enjoy a great day out</h2>
 							<?php
 								foreach( $boatdays as $boatday ) {
 									
@@ -134,7 +134,7 @@
 									$boatdayPicture = gettype($fh) == 'object' ? $fh->get('file')->getUrl() : 'https://www.boatdayapp.com/deep-linking/resources/placeholder-boatday.png';
 							?>
 								<div class="col-sm-4">
-									<div class="boatday-card">
+									<div class="boatday-card" onClick="dl('<?php echo $boatday->getObjectId(); ?>'); return false;">
 										<div class="image" style="background-image:url(<?php echo $boatdayPicture; ?>)">
 											<div class="banner left">
 												<div class="host-picture" style="background-image:url(<?php echo $boatday->get('captain')->get('profilePicture')->getUrl(); ?>)"></div>
@@ -175,7 +175,10 @@
 									</div>
 								</div>
 							<?php  } ?>
+
 						</div>
+
+						<a class="learn-more" href="boatdays">View more BoatDays</a>
 					</div>
 				</section>
 			<?php  } ?>
@@ -191,7 +194,6 @@
 				$query->descending('createdAt');
 				$reviews = $query->find();
 
-				print_r(count($reviews));
 
 				if( count($reviews) > 0 ) {
 			?>
@@ -248,7 +250,7 @@
 							<div class="box">
 								<h4>Host fun boat outings with paying Guests</h4>
 								<a class="btn" href="https://www.boatdayhosts.com" target="_blank">Sign-up as a Host</a>
-								<a class="learn-more" href="hosts">Learn More</a>
+								<a class="learn-more" href="hosts">Learn more</a>
 							</div>
 						</div>
 					</div>

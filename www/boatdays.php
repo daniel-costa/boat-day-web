@@ -12,7 +12,7 @@
 
 		<script type="x-boatday/template" name="boatday-card">
 			<div class="col-sm-4">
-				<div class="boatday-card bd-<%= boatday.id %>">
+				<div class="boatday-card bd-<%= boatday.id %>" onClick="dl('<%= boatday.id %>'); return false;">
 					<div class="image">
 						<div class="banner left">
 							<div class="host-picture" style="background-image:url(<%= boatday.get("captain").get("profilePicture").url() %>)">

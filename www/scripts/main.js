@@ -28,6 +28,21 @@ var departureSlideEvent = function(slideEvent){
 	$('.preview-departure').text(departureTimeToDisplayTime(startTime) + " - " + departureTimeToDisplayTime(endTime));
 };
 
+function dl(id){
+	
+	var href = "https://www.boatdayapp.com/dl/boatday/"+id;
+	
+	if(/Android/i.test(navigator.userAgent)){
+		href = "android-app://com.boat.day/boatday/boatday?id="+id;
+
+	} else if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+		href = "boatday://boatday?id="+id;	
+	}
+
+	window.open(href, "_self");	
+	
+}
+
 function scrollToAnchor(aid) {
 	var aTag = $(aid);
 	$('html, body').animate({ scrollTop: aTag.offset().top - 100}, 'slow');
@@ -102,15 +117,6 @@ function loadBoatDays(){
 	var timeArray = $('#slider-departure').slider('getValue');
 	var startTime = timeArray[0];
 	var endTime = timeArray[1];
-
-	console.log("From Date :" + fromDate);
-	console.log("To Date :" + toDate);
-	console.log("Category :" + category);
-	console.log("Start price :" + parseInt(startPrice));
-	console.log("End price :" + parseInt(endPrice));
-	console.log("Start time :" + parseFloat(startTime));
-	console.log("End time :" + parseFloat(endTime));
-
 
 	var target = $('.upcoming-boatdays .container .row');
 	target.html("");
@@ -268,33 +274,37 @@ $(document).ready(function() {
         $("#boatday-intro-video").attr('src', youtubeUrl);
     });
 
-    //datepicker
-    $('#date-from').datepicker(datepickerOpts);
-    $('#date-to').datepicker(datepickerOpts);
 
-    //slider
-    $('#slider-price').slider(slidersConfig).on('slide', priceSlideEvent);
-    $('#slider-departure').slider(slidersConfig).on('slide', departureSlideEvent);
+    if($('.boatdays .options').length !== 0){
+    	    //datepicker
+	    $('#date-from').datepicker(datepickerOpts);
+	    $('#date-to').datepicker(datepickerOpts);
 
-    $('#boatdaySearch').on('submit', function(e){
-    	e.preventDefault();
+	    //slider
+	    $('#slider-price').slider(slidersConfig).on('slide', priceSlideEvent);
+	    $('#slider-departure').slider(slidersConfig).on('slide', departureSlideEvent);
 
-    	buttonLoader("Searching...");
+	    $('#boatdaySearch').on('submit', function(e){
+	    	e.preventDefault();
 
-    	var fromDate = $('.options .form-group input[name="date-from"]').datepicker('getDate');
-    	var toDate = $('.options .form-group input[name="date-to"]').datepicker('getDate');
+	    	buttonLoader("Searching...");
 
-    	if((fromDate != null) && (toDate != null)){
-    		loadBoatDays();
-    	}
-    	else {
-    		buttonLoader();
-    		alert("Please pick dates!");
-    	}
-    });
+	    	var fromDate = $('.options .form-group input[name="date-from"]').datepicker('getDate');
+	    	var toDate = $('.options .form-group input[name="date-to"]').datepicker('getDate');
+
+	    	if((fromDate != null) && (toDate != null)){
+	    		loadBoatDays();
+	    	}
+	    	else {
+	    		buttonLoader();
+	    		alert("Please pick dates!");
+	    	}
+	    });
 
 
-    loadBoatDays();
+	    loadBoatDays();
+	}
+
 
 });
 
