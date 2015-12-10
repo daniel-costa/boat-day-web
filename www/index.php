@@ -115,7 +115,7 @@
 				$queryHostApproved = new ParseQuery('Host');
 				$queryHostApproved->equalTo('status', 'approved');
 
-				$startDate = new DateTime('tomorrow');
+				$startDate = new DateTime();
 				//$startDate->setTime(0, 0);
 				//print_r($startDate);
 				//$curHr = $startDate->format('H');
