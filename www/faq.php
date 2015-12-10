@@ -23,45 +23,45 @@
 						<div class="col-sm-4 faq-col">
 							<h4>Using BoatDay</h4>
 							<ul class="list-unstyled">
-								<li><a href="faq01#q-1">How long is a BoatDay?</a></li>
-								<li><a href="faq01#q-2">How much does a BoatDay cost?</a></li>
-								<li><a href="faq01#q-3">How do I submit a BoatDay request?</a></li>
-								<li><a href="faq01#q-4">Can I cancel a pending request?</a></li>
-								<li><a href="faq01#q-5">Can I make changes to a pendng request?</a></li>
-								<li><a href="faq01#q-6">Can I reserve a BoatDay weeks in advance?</a></li>
-								<li><a href="faq01#q-7">What is Instant Booking?</a></li>
-								<li><a href="faq01#q-8">Can I request multiple seats on a BoatDay?</a></li>
-								<li><a href="faq01#q-9">How long does a Host have to respond to my BoatDay request?</a></li>
-								<li><a href="faq01#q-10">What if I can't make it to a reserved BoatDay?</a></li>
-								<li><a href="faq01#q-11">Ratings and Reviews</a></li>
+								<li><a href="faq-01#q-1">How long is a BoatDay?</a></li>
+								<li><a href="faq-01#q-2">How much does a BoatDay cost?</a></li>
+								<li><a href="faq-01#q-3">How do I submit a BoatDay request?</a></li>
+								<li><a href="faq-01#q-4">Can I cancel a pending request?</a></li>
+								<li><a href="faq-01#q-5">Can I make changes to a pending request?</a></li>
+								<li><a href="faq-01#q-6">Can I reserve a BoatDay weeks in advance?</a></li>
+								<li><a href="faq-01#q-7">What is Instant Booking?</a></li>
+								<li><a href="faq-01#q-8">Can I request multiple seats on a BoatDay?</a></li>
+								<li><a href="faq-01#q-9">How long does a Host have to respond to my BoatDay request?</a></li>
+								<li><a href="faq-01#q-10">What if I can't make it to a reserved BoatDay?</a></li>
+								<li><a href="faq-01#q-11">Ratings and Reviews</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-4 faq-col">
 							<h4>Hosting with BoatDay</h4>
 							<ul class="list-unstyled">
-								<li><a href="#">How do I create a BoatDay?</a></li>
-								<li><a href="#">Pricing of My BoatDay</a></li>
-								<li><a href="#">Booking Policy</a></li>
-								<li><a href="#">How do I manage my BoatDays?</a></li>
-								<li><a href="#">What if Guest cancels?</a></li>
-								<li><a href="#">What if I have to cancel a BoatDay?</a></li>
-								<li><a href="#">Duplicating a BoatDay</a></li>
-								<li><a href="#">What boat can I use to Host BoatDays?</a></li>
-								<li><a href="#">Hosting Standards and Accuracy</a></li>
-								<li><a href="#">Can I use a Captain for my BoatDay?</a></li>
-								<li><a href="#">Reporting an on-water incident?</a></li>
+								<li><a href="faq-02#q-1">How do I create a BoatDay?</a></li>
+								<li><a href="faq-02#q-2">Pricing of My BoatDay</a></li>
+								<li><a href="faq-02#q-3">Booking Policy</a></li>
+								<li><a href="faq-02#q-4">How do I manage my BoatDays?</a></li>
+								<li><a href="faq-02#q-5">What if Guest cancels?</a></li>
+								<li><a href="faq-02#q-6">What if I have to cancel a BoatDay?</a></li>
+								<li><a href="faq-02#q-7">Duplicating a BoatDay</a></li>
+								<li><a href="faq-02#q-8">What boat can I use to Host BoatDays?</a></li>
+								<li><a href="faq-02#q-9">Hosting Standards and Accuracy</a></li>
+								<li><a href="faq-02#q-10">Can I use a Captain for my BoatDay?</a></li>
+								<li><a href="faq-02#q-11">Reporting an on-water incident?</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-4 faq-col">
 							<h4>Become a Host</h4>
 							<ul class="list-unstyled">
-								<li><a href="#">Can I be a Host?</a></li>
-								<li><a href="#">How do I sign up?</a></li>
-								<li><a href="#">Will BoatDay work for my Charter Business?</a></li>
-								<li><a href="#">Are there any fees to become a Host?</a></li>
-								<li><a href="#">Host Background Screening</a></li>
-								<li><a href="#">Taking excellent Profile, Boat and Account Photos</a></li>
-								<li><a href="#">Host Insurance Coverage</a></li>
+								<li><a href="faq-03#q-1">Can I be a Host?</a></li>
+								<li><a href="faq-03#q-2">How do I sign up?</a></li>
+								<li><a href="faq-03#q-3">Will BoatDay work for my Charter Business?</a></li>
+								<li><a href="faq-03#q-4">Are there any fees to become a Host?</a></li>
+								<li><a href="faq-03#q-5">Host Background Screening</a></li>
+								<li><a href="faq-03#q-6">Taking excellent Profile, Boat and Account Photos</a></li>
+								<li><a href="faq-03#q-7">Host Insurance Coverage</a></li>
 							</ul>
 						</div>
 					</div>
@@ -70,32 +70,32 @@
 						<div class="col-sm-4 faq-col">
 							<h4>Payments</h4>
 							<ul class="list-unstyled">
-								<li><a href="#">What is a "contribution"?</a></li>
-								<li><a href="#">How do payment work?</a></li>
-								<li><a href="#">How do Hosts get paid?</a></li>
-								<li><a href="#">Payment Issues</a></li>
-								<li><a href="#">Receipts</a></li>
+								<li><a href="faq-04#q-1">What is a "contribution"?</a></li>
+								<li><a href="faq-04#q-2">How do payments work?</a></li>
+								<li><a href="faq-04#q-3">How do Hosts get paid?</a></li>
+								<li><a href="faq-04#q-4">Payment Issues</a></li>
+								<li><a href="faq-04#q-5">Receipts</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-4 faq-col">
 							<h4>Safety</h4>
 							<ul class="list-unstyled">
-								<li><a href="#">What are the Boatday safety features?</a></li>
-								<li><a href="#">I'm a Guest, what are some safety tips I can follow?</a></li>
-								<li><a href="#">Reporting an incident or safety concern?</a></li>
-								<li><a href="#">Emergency Boat Assistance?</a></li>
+								<li><a href="faq-05#q-1">What are the BoatDay safety features?</a></li>
+								<li><a href="faq-05#q-2">I'm a Guest, what are some safety tips I can follow?</a></li>
+								<li><a href="faq-05#q-3">Reporting an incident or safety concern?</a></li>
+								<li><a href="faq-05#q-4">Emergency Boat Assistance?</a></li>
 							</ul>
 						</div>
 						<div class="col-sm-4 faq-col">
 							<h4>Policies and Other Info</h4>
 							<ul class="list-unstyled">
-								<li><a href="#">What is the Trust and Safety Fee?</a></li>
-								<li><a href="#">Can I bring children?</a></li>
-								<li><a href="#">How BoatDay and BoatDay Hosts are Classified?</a></li>
-								<li><a href="#">What is the BoatDay zero-tolerance drug and alcohol policy for Hosts?</a></li>
-								<li><a href="#">No-Weapons Policy</a></li>
-								<li><a href="#">Using BoatDay with iOS 7 or older</a></li>
-								<li><a href="#">Lost Items</a></li>
+								<li><a href="faq-06#q-1">What is the Trust &amp; Safety Fee?</a></li>
+								<li><a href="faq-06#q-2">Can I bring children?</a></li>
+								<li><a href="faq-06#q-3">How BoatDay and BoatDay Hosts are Classified?</a></li>
+								<li><a href="faq-06#q-4">What is the BoatDay zero-tolerance drug and alcohol policy for Hosts?</a></li>
+								<li><a href="faq-06#q-5">No-Weapons Policy</a></li>
+								<li><a href="faq-06#q-6">Using BoatDay with iOS 7 or older</a></li>
+								<li><a href="faq-06#q-7">Lost Items</a></li>
 							</ul>
 						</div>
 					</div>

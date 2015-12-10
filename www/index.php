@@ -108,13 +108,29 @@
 
 
 			<?php
-				$query = new ParseQuery("BoatDay");
+
+				$queryBoatApproved = new ParseQuery('Boat');
+				$queryBoatApproved->equalTo('status', 'approved');
+
+				$queryHostApproved = new ParseQuery('Host');
+				$queryHostApproved->equalTo('status', 'approved');
+
+				$startDate = new DateTime();
+				//$startDate->setTime(0, 0);
+				//print_r($startDate);
+
+				$query = new ParseQuery('BoatDay');
+				$query->matchesQuery("boat", $queryBoatApproved);
+				$query->matchesQuery("host", $queryHostApproved);
 				$query->includeKey('captain');
 				$query->includeKey('host');
 				$query->limit(3);
+				$query->equalTo('displayInWebsite', true);
+				$query->greaterThan('date', $startDate);
+				$query->equalTo('status', 'complete');
 				//$query->equalTo("featured", -1);
-				$query->equalTo("displayInWebsite", true);
-				$query->greaterThan('date', new DateTime());
+				
+				
 				$boatdays = $query->find();
 
 				if( count($boatdays) > 0 ) {

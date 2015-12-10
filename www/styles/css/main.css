@@ -415,6 +415,10 @@ section.faq .row .faq-col h4{
 	font-size: 1.8em;
 }
 
+section.faq h5{
+	font-size: 1.5em;
+}
+
 section.faq a {
 	color: #36b4c6;
 }
@@ -456,10 +460,10 @@ section.faq .back-to-top {
 
 
 section.faq p {
-	font-size: 14px;
+	font-size: 15px;
+	line-height: 25px;
 	margin: 0px;
 	margin-bottom: 0px;
-	line-height: 20px;
 }
 
 section.faq img {

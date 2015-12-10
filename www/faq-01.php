@@ -29,7 +29,7 @@
 
 					<div id="q-2">
 						<h5 class="title">How much does a BoatDay cost?</h5>
-						<p>The price of each BoatDay is set by the Host. Learn more about <a href="#contibution">contributions</a> here. Because of our unprecedented per-person pricing, BoatDay is almost always much cheaper (and more fun) than other boating options.</p>
+						<p>The price of each BoatDay is set by the Host. Learn more about <a href="faq-04#q-1">contributions</a> here. Because of our unprecedented per-person pricing, BoatDay is almost always much cheaper (and more fun) than other boating options.</p>
 						<div class="sub-sub-cat">
 							<h5>CAN I SEE HOW MUCH THE BOATDAY WILL BE BEFORE I JOIN IT?</h5>
 							<p>Of Course! The contribution for each BoatDay will be listed on the front of the listing for each BoatDay in the App. It will also be included in the BoatDay details when you click on any specific BoatDay. </p>
@@ -37,7 +37,7 @@
 						<div class="sub-sub-cat">
 							<h5>WHAT IS THE TRUST &amp; SAFETY FEE?</h5>
 							<p>The safety of all BoatDay passengers is our top priority and is taken into account with everything we do. The Trust &amp; Safety Fee of $4.00 per confirmed BoatDay Guest supports our safety standards, including background checks, insurance and ongoing support. The Trust &amp; Safety fee will always be displayed as before you book your BoatDay.</p>
-							<p>Find out more about <a href="#payment">how payments work</a> on the BoatDay platform.</p>
+							<p>Find out more about <a href="faq-04#q-2">how payments work</a> on the BoatDay platform.</p>
 						</div>
 						<div class="back-to-top">
 							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -68,14 +68,14 @@
 
 					<div id="q-4">
 						<h5 class="title">Can I cancel a pending request?</h5>
-						<p>You can cancel your reservation request as long as it hasn’t been accepted by the Host. Once a reservation has been accepted, any cancellations will be subject to the terms of the <a href="#cancellationPolicy">cancellation policy</a> selected by the Host.</p>
+						<p>You can cancel your reservation request as long as it hasn’t been accepted by the Host. Once a reservation has been accepted, any cancellations will be subject to the terms of the <a href="faq-02#5">cancellation policy</a> selected by the Host.</p>
 						<div class="back-to-top">
 							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-5">
-						<h5 class="title">Can I make changes to a pendng request?</h5>
+						<h5 class="title">Can I make changes to a pending request?</h5>
 						<p>As long as your reservation request has not yet been accepted by the Host, you can cancel the request and submit a new reservation request with the updated details. There’s no way to adjust a reservation request without canceling the original request.</p>
 						<div class="back-to-top">
 							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
