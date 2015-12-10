@@ -45,7 +45,7 @@ function dl(id){
 
 function scrollToAnchor(aid) {
 	var aTag = $(aid);
-	$('html, body').animate({ scrollTop: aTag.offset().top - 100}, 'slow');
+	$('html, body').animate({ scrollTop: aTag.offset().top - 88}, 'slow');
 }
 
 function buttonLoader( text, button ) {

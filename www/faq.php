@@ -20,7 +20,7 @@
 				<div class="container">
 
 					<div class="row">
-						<div class="col-sm-4 faq-col">
+						<div class="col-sm-6 faq-col">
 							<h4>Using BoatDay</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-01#q-1">How long is a BoatDay?</a></li>
@@ -36,7 +36,7 @@
 								<li><a href="faq-01#q-11">Ratings and Reviews</a></li>
 							</ul>
 						</div>
-						<div class="col-sm-4 faq-col">
+						<div class="col-sm-6 faq-col">
 							<h4>Hosting with BoatDay</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-02#q-1">How do I create a BoatDay?</a></li>
@@ -52,7 +52,10 @@
 								<li><a href="faq-02#q-11">Reporting an on-water incident?</a></li>
 							</ul>
 						</div>
-						<div class="col-sm-4 faq-col">
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6 faq-col">
 							<h4>Become a Host</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-03#q-1">Can I be a Host?</a></li>
@@ -64,10 +67,7 @@
 								<li><a href="faq-03#q-7">Host Insurance Coverage</a></li>
 							</ul>
 						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-sm-4 faq-col">
+						<div class="col-sm-6 faq-col">
 							<h4>Payments</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-04#q-1">What is a "contribution"?</a></li>
@@ -77,7 +77,10 @@
 								<li><a href="faq-04#q-5">Receipts</a></li>
 							</ul>
 						</div>
-						<div class="col-sm-4 faq-col">
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6 faq-col">
 							<h4>Safety</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-05#q-1">What are the BoatDay safety features?</a></li>
@@ -86,7 +89,7 @@
 								<li><a href="faq-05#q-4">Emergency Boat Assistance?</a></li>
 							</ul>
 						</div>
-						<div class="col-sm-4 faq-col">
+						<div class="col-sm-6 faq-col">
 							<h4>Policies and Other Info</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-06#q-1">What is the Trust &amp; Safety Fee?</a></li>
