@@ -316,7 +316,9 @@ section.placeholder {
 	background-image: url(../../resources/host_cover_img.jpg); 
 	padding: 300px;
 }
-.faq    section.placeholder { background-image: url(../../resources/swiper-main-04.jpg); }
+.faq section.placeholder { background-image: url(../../resources/swiper-main04.jpg); 
+	padding: 300px;
+}
 
 .swiper-pagination-bullet {
 	background: #506A85;
@@ -404,6 +406,27 @@ section.placeholder {
 	font-size: 10px;
 }
 
+section.faq .row .faq-col{
+	
+	margin-top: 70px;
+}
+
+section.faq .row .faq-col h4{
+	font-size: 1.8em;
+}
+
+section.faq a {
+	color: #36b4c6;
+}
+section.faq a:hover{
+	text-decoration: underline;
+}
+
+section.faq ul li a{
+	font-size: 1.20em;
+	line-height: 30px;
+}
+
 
 section.faq.blured h2 {
 	margin: 0px !important;
@@ -430,9 +453,7 @@ section.faq .back-to-top {
 	margin-top: 20px;
 }
 
-section.faq a {
-	color: #36b4c6;
-}
+
 
 section.faq p {
 	font-size: 14px;
