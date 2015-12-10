@@ -1,6 +1,8 @@
 <?php 
 	require 'lib.functions.php';
 	require 'vendor/autoload.php';
+
+	$backLink = '<a class="back-arrow" href="faq">&#10094;&#10094; back to faq</a>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +21,7 @@
 				<div class="container">
 					
 					<div id="q-1">
+						<?php echo $backLink; ?>
 						<h5 class="title">How long is a BoatDay?</h5>
 							<!-- <p>The length of each BoatDay is up to the Host, and will be displayed clearly on each BoatDay listing in the app.  If you have specific time requirements, use the search filters to find BoatDays that fit your schedule.</p> -->
 							<p>To ensure the safety and comfort of our users, BoatDays are limited to a maximum duration of 12 hours. Overnight trips are not permitted (its a Boat"DAY"), and BoatDay excursions may travel up to a maximum of 12 miles offshore (the distance from the nearest shoreline).</p>
@@ -28,6 +31,7 @@
 					</div>
 
 					<div id="q-2">
+						<?php echo $backLink; ?>
 						<h5 class="title">How much does a BoatDay cost?</h5>
 						<p>The price of each BoatDay is set by the Host. Learn more about <a href="faq-04#q-1">contributions</a> here. Because of our unprecedented per-person pricing, BoatDay is almost always much cheaper (and more fun) than other boating options.</p>
 						<div class="sub-sub-cat">
@@ -45,6 +49,7 @@
 					</div>
 
 					<div id="q-3">
+						<?php echo $backLink; ?>
 						<h5 class="title">How do I submit a BoatDay request?</h5>
 						<p>Its easy, three simple steps and you’re on your way to a great day on the water!</p>
 						<div class="sub-sub-cat">
@@ -67,6 +72,7 @@
 					</div>
 
 					<div id="q-4">
+						<?php echo $backLink; ?>
 						<h5 class="title">Can I cancel a pending request?</h5>
 						<p>You can cancel your reservation request as long as it hasn’t been accepted by the Host. Once a reservation has been accepted, any cancellations will be subject to the terms of the <a href="faq-02#5">cancellation policy</a> selected by the Host.</p>
 						<div class="back-to-top">
@@ -75,6 +81,7 @@
 					</div>
 
 					<div id="q-5">
+						<?php echo $backLink; ?>
 						<h5 class="title">Can I make changes to a pending request?</h5>
 						<p>As long as your reservation request has not yet been accepted by the Host, you can cancel the request and submit a new reservation request with the updated details. There’s no way to adjust a reservation request without canceling the original request.</p>
 						<div class="back-to-top">
@@ -83,6 +90,7 @@
 					</div>
 					
 					<div id="q-6">
+						<?php echo $backLink; ?>
 						<h5 class="title">Can I reserve a BoatDay weeks in advance?</h5>
 						<p>Yes! In-app filters allow you to browse BoatDays by date of departure, so if you're looking for a specific day, filter using the calendar to see what's available well in advance. When you find what you're looking for, even if its weeks away, you can request a spot!</p>
 						<div class="back-to-top">
@@ -91,6 +99,7 @@
 					</div>
 
 					<div id="q-7">
+						<?php echo $backLink; ?>
 						<h5 class="title">What is Instant Booking?</h5>
 						<p>Instant booking BoatDays don't require approval from the Host before you can confirm a spot on-board. Instead, you will be automatically confirmed once you send your request, and can discuss any day-of plans with the Host through the message function for each BoatDay.</p>
 						<p>There is no additional fee for confirming a BoatDay with an instant booking. You can filter your search to only view BoatDays that are available for instant booking.</p>	
@@ -100,6 +109,7 @@
 					</div>
 
 					<div id="q-8">
+						<?php echo $backLink; ?>
 						<h5 class="title">Can I request multiple seats on a BoatDay?</h5>
 						<p>Of course! Even though all BoatDays are priced per-person, you can request and reserve multiple seats on a BoatDay, or event he whole boat, if you have friends you’d like to bring along.</p>
 						<!-- <p>If you have reserved more than one seat aboard a BoatDay, you can invite Guests (if they’re also BoatDay users) to fill one of your reserved seats, or split the price with the friends you brought on board.</p> -->
@@ -109,6 +119,7 @@
 					</div>
 
 					<div id="q-9">
+						<?php echo $backLink; ?>
 						<h5 class="title">How long does a Host have to respond to my BoatDay request?</h5>
 						<p>Hosts have 24 hours to accept or decline a BoatDay request. You will receive a notification about the status of your request.  You may not request to join overlapping BoatDays (i.e. two BoatDays taking place at the same time).</p>
 						<p>If a Host accepts your request, you will appear as a confirmed Guest and have access to the group messaging board for that BoatDay. If a host declines your request or the request expires, you will be able to request alternative BoatDay’s on that day and time. </p>
@@ -118,6 +129,7 @@
 					</div>
 
 					<div id="q-10">
+						<?php echo $backLink; ?>
 						<h5 class="title">What if I can't make it to a reserved BoatDay?</h5>
 						<p>BoatDay allows hosts to choose among three standardized cancellation policies (Flexible, Moderate, and Strict) that we will enforce to protect both Guests and Hosts alike. Each BoatDay listing and confirmation on our will clearly state the cancellation policy for that BoatDay.</p>
 						<ul>
@@ -133,6 +145,7 @@
 					</div>
 
 					<div id="q-11">
+						<?php echo $backLink; ?>
 						<h5 class="title">Ratings and Reviews</h5>
 						<div class="sub-sub-cat">
 							<h5>WHAT IS THE RATING AND REVIEW SYSTEM?</h5>

@@ -474,6 +474,14 @@ section.faq img {
 
 section.faq h5.title {
 	color: #36b4c6;
+	margin-top: 10px;
+}
+
+section.faq a.back-arrow{
+	color: #73879C;
+}
+section.faq a.back-arrow:before{
+	content: "";
 }
 
 #modal-download img.logo {

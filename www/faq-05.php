@@ -1,6 +1,8 @@
 <?php 
 	require 'lib.functions.php';
 	require 'vendor/autoload.php';
+
+	$backLink = '<a class="back-arrow" href="faq">&#10094;&#10094; back to faq</a>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +21,7 @@
 				<div class="container">
 					
 					<div id="q-1">
+						<?php echo $backLink; ?>
 						<h5 class="title">What are the BoatDay safety features?</h5>
 						<p>Safety, trust, and reliability are our priorities. Although the BoatDay community is built on a fun shared experience, we emphasize that nothing is more important than the safety of the users in our BoatDay community. From Host <a href="faq-03#q-5">background screenings</a> to $500,000 in excess personal liability insurance for the Host of every BoatDay, we are committed to maintaining and improving our safety procedures, including:</p>
 							<ul>
@@ -37,6 +40,7 @@
 					</div>
 
 					<div id="q-2">
+						<?php echo $backLink; ?>
 						<h5 class="title">I'm a Guest, what are some safety tips I can follow?</h5>
 						<div class="sub-sub-cat">
 							<h5>1. READ THE PROFILES AND REVIEWS OF HOSTS</h5>
@@ -61,6 +65,7 @@
 					</div>
 
 					<div id="q-3">
+						<?php echo $backLink; ?>
 						<h5 class="title">Reporting an incident or safety concern?</h5>
 						<p>If you experience an issue while on a BoatDay that you feel threatens your personal safety, make sure to take the appropriate steps to protect yourself and get to a safe place. Call the authorities if necessary (the “Emergency Services” feature displayed in the app while you are actively on a BoatDay provides a direct link to the Coast Guard emergency line) and, once in a safe place, provide us with the details of the incident.</p>
 						<p>Be sure to contact us, or flag the BoatDay and/or user directly through the app's flagging function. We are committed to maintaining your safety and the safety of the entire BoatDay community.</p>
@@ -70,6 +75,7 @@
 					</div>
 
 					<div id="q-4">
+						<?php echo $backLink; ?>
 						<h5 class="title">Emergency Boat Assistance?</h5>
 						<div class="sub-sub-cat">
 								<h5>WHAT SHOULD I DO IF THERE IS ANY SORT OF EMERGENCY OR INCIDENT?</h5>

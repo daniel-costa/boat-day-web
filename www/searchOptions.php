@@ -18,6 +18,7 @@
 				<div class="form-group">
 					<label class="control-label pull-left">Activity:</label>
 					<select name="category" required class="form-control">
+						<option value="all">All</option>
 						<option value="leisure" >Leisure</option>
 						<option value="fishing" >Fishing</option>
 						<option value="sailing" >Sailing</option>

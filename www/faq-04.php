@@ -1,6 +1,8 @@
 <?php 
 	require 'lib.functions.php';
 	require 'vendor/autoload.php';
+
+	$backLink = '<a class="back-arrow" href="faq">&#10094;&#10094; back to faq</a>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +21,7 @@
 				<div class="container">
 					
 					<div id="q-1">
+						<?php echo $backLink; ?>
 						<h5 class="title">What is a "contribution"?</h5>
 						<p>When a Host creates a BoatDay, they set the price or “contribution" for Guests on-board. This amount will be visible on the front of all BoatDay listings, as well as in the specific details for each BoatDay listed at booking.</p>
 							<p>As a Guest, once your BoatDay is finished, you have 24 hours to review your Host and finalize your contribution (including any added tip). If you don't submit your contribution within that time period, we take it as a sign that you enjoyed your BoatDay, and the app will automatically charge the listed contribution amount to your credit card on file.</p>
@@ -31,6 +34,7 @@
 					</div>
 
 					<div id="q-2">
+						<?php echo $backLink; ?>
 						<h5 class="title">How do payments work?</h5>
 						<p>When you create your BoatDay Account, you will be asked to input your payment information. From there, making and receiving payments for BoatDays is done quickly and easily through the platform, and is completely cash-free! </p>
 							<p>As a Guest, when your BoatDay is over, you will be prompted to confirm payment, and will have 24 hours to finalize your contribution. To show your appreciation for an amazing BoatDay, just hit the payment method and tap "+" to increase the contribution amount!</p>
@@ -49,6 +53,7 @@
 					</div>
 
 					<div id="q-3">
+						<?php echo $backLink; ?>
 						<h5 class="title">How do Hosts get paid?</h5>
 						<div class="sub-sub-cat">
 							<h5>DIRECT DEPOSIT</h5>
@@ -66,6 +71,7 @@
 					</div>
 
 					<div id="q-4">
+						<?php echo $backLink; ?>
 						<h5 class="title">Payment Issues</h5>
 						<p>Our Payments team is standing by to investigate any payment issues you may have. Please contact us at <a href="mailto:payments@boatdayapp.com">payments@boatdayapp.com</a> with the following information:</p>
 							<ul>
@@ -82,6 +88,7 @@
 					</div>
 
 					<div id="q-5">
+						<?php echo $backLink; ?>
 						<h5 class="title">Receipts</h5>
 						<p>You will automatically receive a payment receipt shortly after your payment has been confirmed. If you do not receive a receipt, or would like to have one resent, contact us at <a href="mailto:payments@boatdayapp.com">payments@boatdayapp.com</a>.</p>
 						<div class="back-to-top">

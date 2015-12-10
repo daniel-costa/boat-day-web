@@ -1,6 +1,8 @@
 <?php 
 	require 'lib.functions.php';
 	require 'vendor/autoload.php';
+
+	$backLink = '<a class="back-arrow" href="faq">&#10094;&#10094; back to faq</a>';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +21,7 @@
 				<div class="container">
 					
 					<div id="q-1">
+						<?php echo $backLink; ?>
 						<h5 class="title">What is the Trust &amp; Safety Fee?</h5>
 						<p>The safety of all BoatDay passengers is our top priority and is taken into account with everything we do. The Trust &amp; Safety Fee of $4.00 per confirmed BoatDay Guest supports our safety standards, including background checks, insurance and ongoing support. The Trust &amp; Safety fee will always be displayed as before you book your BoatDay.</p>
 						<p>Find out more about <a href="faq-04#q-2">how payments work</a> on the BoatDay platform.</p>
@@ -28,6 +31,7 @@
 					</div>
 
 					<div id="q-2">
+						<?php echo $backLink; ?>
 						<h5 class="title">Can I bring children?</h5>
 						<p>Although you must be at least 18 to use BoatDay, and 23 to sign-up as Host, BoatDay supports family-friendly outings.</p>
 						<p>Select “children allowed” from the filter options to look for family-friendly BoatDay options. When requesting a seat on board, reserve extra seats for the family, and be sure to notify your Host that you're bringing kids along.</p>
@@ -38,6 +42,7 @@
 					</div>
 
 					<div id="q-3">
+						<?php echo $backLink; ?>
 						<h5 class="title">How BoatDay and BoatDay Hosts are Classified?</h5>
 						<div class="sub-sub-cat">
 								<h5>IS BOATDAY A BOAT CHARTER, RENTAL OR TRANSPORTATION SERVICE?</h5>
@@ -53,6 +58,7 @@
 					</div>
 
 					<div id="q-4">
+						<?php echo $backLink; ?>
 						<h5 class="title">What is the BoatDay zero-tolerance drug and alcohol policy for Hosts?</h5>
 						<p>BoatDay has a zero-tolerance drug and alcohol policy for Hosts. If you suspect that a BoatDay Host is under the influence of drugs or alcohol while on a BoatDay, please contact us.</p>
 						<div class="back-to-top">
@@ -61,6 +67,7 @@
 					</div>
 
 					<div id="q-5">
+						<?php echo $backLink; ?>
 						<h5 class="title">No-Weapons Policy</h5>
 						<p>In order to ensure that our users are comfortable, BoatDay maintains a strict "No Weapons" policy. If any Host or Guest possesses a weapon on a BoatDay boat, regardless of whether such possession is legal where they are, they will be removed from the platform.</p>
 						<p>We maintain this policy to preserve the best interests of the community, as the presence of a weapon on a BoatDay may make another user uncomfortable or distressed.</p>
@@ -72,6 +79,7 @@
 					</div>
 
 					<div id="q-6">
+						<?php echo $backLink; ?>
 						<h5 class="title">Using BoatDay with iOS 7 or older</h5>
 						<p>In order to keep the BoatDay app running smoothly and bug free, we do not support iOS 7 and below. Don't worry, to enjoy great BoatDays, simply follow the steps below:</p>
 						<div class="sub-sub-cat">
@@ -88,6 +96,7 @@
 					</div>
 
 					<div id="q-7">
+						<?php echo $backLink; ?>
 						<h5 class="title">Lost Items</h5>
 						<p>If you accidentally leave something behind on a boat, don't worry, let us know and we'll help you find your item. Email us at <a href="mailto:Lostandfound@boatdayapp.com">Lostandfound@boatdayapp.com</a>, tell us what you left behind, the name of your Host and the date of your BoatDay, and we'll do our best to locate your lost item.</p>
 						<div class="back-to-top">

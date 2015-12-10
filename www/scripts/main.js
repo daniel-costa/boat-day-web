@@ -106,6 +106,8 @@ function getCityFromLocation(location) {
 
 function loadBoatDays(){
 
+	buttonLoader("Searching...");
+
 	var tpl = _.template(getTemplate('boatday-card'));
 
     var fromDate = $('.options .form-group input[name="date-from"]').datepicker('getDate');
@@ -126,19 +128,20 @@ function loadBoatDays(){
 	query.include('host');
 	query.limit(20);
 	query.equalTo('status', 'complete');
-	query.equalTo('category', category);
 	query.greaterThanOrEqualTo('price', parseInt(startPrice));
 	query.lessThanOrEqualTo('price', parseInt(endPrice));
 	query.greaterThanOrEqualTo('departureTime', parseFloat(startTime));
 	query.lessThanOrEqualTo('departureTime', parseFloat(endTime));
 	
+	if(category != "all"){
+		query.equalTo('category', category);
+	}
+
 	if((fromDate != null) && (toDate != null)){
-		console.log("Form date in query");
 		query.greaterThanOrEqualTo("date",fromDate);
 		query.lessThanOrEqualTo("date", toDate);
 	}
 	else{
-		console.log("Form date not in query");
 		query.greaterThan("date", new Date());
 	}
 	
@@ -286,8 +289,6 @@ $(document).ready(function() {
 
 	    $('#boatdaySearch').on('submit', function(e){
 	    	e.preventDefault();
-
-	    	buttonLoader("Searching...");
 
 	    	var fromDate = $('.options .form-group input[name="date-from"]').datepicker('getDate');
 	    	var toDate = $('.options .form-group input[name="date-to"]').datepicker('getDate');

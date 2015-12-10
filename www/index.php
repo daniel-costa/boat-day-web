@@ -118,6 +118,7 @@
 				$startDate = new DateTime();
 				//$startDate->setTime(0, 0);
 				//print_r($startDate);
+				//$curHr = $startDate->format('H');
 
 				$query = new ParseQuery('BoatDay');
 				$query->matchesQuery("boat", $queryBoatApproved);
@@ -149,6 +150,11 @@
 									$fh = $_q->first();
 
 									$boatdayPicture = gettype($fh) == 'object' ? $fh->get('file')->getUrl() : 'https://www.boatdayapp.com/deep-linking/resources/placeholder-boatday.png';
+
+									//$bdDate = $boatday->get('date');
+									//$bdDate->setTime(0, 0);
+
+									
 							?>
 								<div class="col-sm-4">
 									<div class="boatday-card" onClick="dl('<?php echo $boatday->getObjectId(); ?>'); return false;">
