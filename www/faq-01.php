@@ -45,7 +45,7 @@
 						<h5 class="title">How long is a BoatDay?</h5>
 						<p>To ensure the safety and comfort of our users, BoatDays are limited to a maximum duration of 12 hours. Overnight trips are not permitted (its a Boat"DAY"), and BoatDay excursions may travel up to a maximum of 12 miles offshore (the distance from the nearest shoreline).</p>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -64,7 +64,7 @@
 							<p>Find out more about <a href="faq-04#q-2">how payments work</a> on the BoatDay platform.</p>
 						</div>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -88,7 +88,7 @@
 							<p>For some listings, you'll be able to book instantly through Instant Booking, which means the Host automatically accepts all BoatDay requests. </p>
 						</div>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -98,7 +98,7 @@
 						<h5 class="title">Can I cancel a pending request?</h5>
 						<p>You can cancel your reservation request as long as it hasn’t been accepted by the Host. Once a reservation has been accepted, any cancellations will be subject to the terms of the <a href="faq-02#5">cancellation policy</a> selected by the Host.</p>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -108,7 +108,7 @@
 						<h5 class="title">Can I make changes to a pending request?</h5>
 						<p>As long as your reservation request has not yet been accepted by the Host, you can cancel the request and submit a new reservation request with the updated details. There’s no way to adjust a reservation request without canceling the original request.</p>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -118,7 +118,7 @@
 						<h5 class="title">Can I reserve a BoatDay weeks in advance?</h5>
 						<p>Yes! In-app filters allow you to browse BoatDays by date of departure, so if you're looking for a specific day, filter using the calendar to see what's available well in advance. When you find what you're looking for, even if its weeks away, you can request a spot!</p>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -129,7 +129,7 @@
 						<p>Instant booking BoatDays don't require approval from the Host before you can confirm a spot on-board. Instead, you will be automatically confirmed once you send your request, and can discuss any day-of plans with the Host through the message function for each BoatDay.</p>
 						<p>There is no additional fee for confirming a BoatDay with an instant booking. You can filter your search to only view BoatDays that are available for instant booking.</p>	
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -140,7 +140,7 @@
 						<p>Of course! Even though all BoatDays are priced per-person, you can request and reserve multiple seats on a BoatDay, or event he whole boat, if you have friends you’d like to bring along.</p>
 						<!-- <p>If you have reserved more than one seat aboard a BoatDay, you can invite Guests (if they’re also BoatDay users) to fill one of your reserved seats, or split the price with the friends you brought on board.</p> -->
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -151,7 +151,7 @@
 						<p>Hosts have 24 hours to accept or decline a BoatDay request. You will receive a notification about the status of your request.  You may not request to join overlapping BoatDays (i.e. two BoatDays taking place at the same time).</p>
 						<p>If a Host accepts your request, you will appear as a confirmed Guest and have access to the group messaging board for that BoatDay. If a host declines your request or the request expires, you will be able to request alternative BoatDay’s on that day and time. </p>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -168,7 +168,7 @@
 						<p>You agree to the Host's cancellation policy by submitting a BoatDay request. We strongly recommend reviewing all cancellation policies before making reservations.</p>
 						<p>A BoatDay is officially canceled when the Guest clicks the cancellation button on the cancellation confirmation page, which they can find in App Menu > My BoatDays > Cancel. The Trust &amp; Safety Fee is non-refundable.</p>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
@@ -187,7 +187,7 @@
 							<p>The star rating you give a Host should be based on your interaction with the Host during your BoatDay. When choosing a rating, consider whether your Host was friendly, safe, a good navigator, and whether the BoatDay matched the listing and your expectations.</p>
 						</div>
 						<div class="back-to-top">
-							<a href="#list-faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
 							- or -
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>

@@ -2,7 +2,7 @@
 	require 'lib.functions.php';
 	require 'vendor/autoload.php';
 
-	$backLink = '<a class="back-arrow" href="faq">&#10094;&#10094; back to faq</a>';
+	$faq = isset($_GET['faq']) ? $_GET['faq'] : null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,10 +18,24 @@
 			</section>
 
 			<section class="faq" id="list-faq">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 faq-col">
+							<h4>Safety</h4>
+							<ul class="list-unstyled">
+								<li><a href="javascript:scrollToAnchor('#q-1')">What are the BoatDay safety features?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-2')">I'm a Guest, what are some safety tips I can follow?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-3')">Reporting an incident or safety concern?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-4')">Emergency Boat Assistance?</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 				<div class="container">
 					
 					<div id="q-1">
-						<?php echo $backLink; ?>
 						<h5 class="title">What are the BoatDay safety features?</h5>
 						<p>Safety, trust, and reliability are our priorities. Although the BoatDay community is built on a fun shared experience, we emphasize that nothing is more important than the safety of the users in our BoatDay community. From Host <a href="faq-03#q-5">background screenings</a> to $500,000 in excess personal liability insurance for the Host of every BoatDay, we are committed to maintaining and improving our safety procedures, including:</p>
 							<ul>
@@ -35,12 +49,13 @@
 							</ul>
 							<p>If you would like to learn more about our safety features, please visit our <a href="#" data-toggle="modal" data-target="#modal-safety">safety page</a>.</p>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-2">
-						<?php echo $backLink; ?>
 						<h5 class="title">I'm a Guest, what are some safety tips I can follow?</h5>
 						<div class="sub-sub-cat">
 							<h5>1. READ THE PROFILES AND REVIEWS OF HOSTS</h5>
@@ -60,22 +75,24 @@
 							<p><i>Remember: if you ever find yourself in an emergency or feel that your personal safety is threatened, always contact local police and emergency services first.</i></p>
 						</div>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-3">
-						<?php echo $backLink; ?>
 						<h5 class="title">Reporting an incident or safety concern?</h5>
 						<p>If you experience an issue while on a BoatDay that you feel threatens your personal safety, make sure to take the appropriate steps to protect yourself and get to a safe place. Call the authorities if necessary (the “Emergency Services” feature displayed in the app while you are actively on a BoatDay provides a direct link to the Coast Guard emergency line) and, once in a safe place, provide us with the details of the incident.</p>
 						<p>Be sure to contact us, or flag the BoatDay and/or user directly through the app's flagging function. We are committed to maintaining your safety and the safety of the entire BoatDay community.</p>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-4">
-						<?php echo $backLink; ?>
 						<h5 class="title">Emergency Boat Assistance?</h5>
 						<div class="sub-sub-cat">
 								<h5>WHAT SHOULD I DO IF THERE IS ANY SORT OF EMERGENCY OR INCIDENT?</h5>
@@ -88,7 +105,9 @@
 								<p>Once all passengers are safely ashore, use the event-flagging tool for your BoatDay to report the accident. Upon receiving report of an accident, a member of our Trust and Safety Team should reach out to you to check in and see what action needs to be taken.</p>
 							</div>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
@@ -100,5 +119,16 @@
 
 		<?php include_once('UX.section.footer.php'); ?>
 		<?php include_once('UX.scripts.php'); ?>
+
+		<?php if($faq) { ?> 
+			<script type="text/javascript">
+			$(document).ready(function() {
+				setTimeout(function() {
+					scrollToAnchor('#<?php echo $faq; ?>');
+				}, 600);
+			});
+			</script>
+		<?php } ?>
+
 	</body>
 </html>

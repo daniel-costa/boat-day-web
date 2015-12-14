@@ -2,7 +2,7 @@
 	require 'lib.functions.php';
 	require 'vendor/autoload.php';
 
-	$backLink = '<a class="back-arrow" href="faq">&#10094;&#10094; back to faq</a>';
+	$faq = isset($_GET['faq']) ? $_GET['faq'] : null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +19,25 @@
 
 			<section class="faq" id="list-faq">
 				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 faq-col">
+							<h4>Become a Host</h4>
+							<ul class="list-unstyled">
+								<li><a href="javascript:scrollToAnchor('#q-1')">Can I be a Host?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-2')">How do I sign up?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-3')">Will BoatDay work for my Charter Business?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-4')">Are there any fees to become a Host?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-5')">Host Background Screening</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-6')">Taking excellent Profile, Boat and Account Photos</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-7')">Host Insurance Coverage</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
 					
 					<div id="q-1">
-						<?php echo $backLink; ?>
 						<h5 class="title">Can I be a Host?</h5>
 							<p>We're glad you're interested in hosting BoatDays, if you satisfy these basic criteria you are eligible to become a BoatDay Host!</p>
 							<div class="sub-sub-cat">
@@ -37,12 +53,13 @@
 								<p>If you would like to learn more about our safety measures, please visit our <a href="#" data-toggle="modal" data-target="#modal-safety">safety page</a>.</p>
 							</div>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-2">
-						<?php echo $backLink; ?>
 						<h5 class="title">How do I sign up?</h5>
 						<p>Hosts can sign up at www.boatdayhosts.com. Once you've created an account and logged in, we’ll guide you through our registration process:</p>
 						<ol>
@@ -69,33 +86,36 @@
 							<p>Your registration information will be saved and available, even if you close your browser completely. Just come back and pick up where you left off!</p>
 						</div>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-3">
-						<?php echo $backLink; ?>
 						<h5 class="title">Will BoatDay work for my Charter Business?</h5>
 							<p>Absolutely! Whether your looking to fill that extra space on an existing charter, or just looking to book more trips, BoatDay can seamlessly integrate with your existing boat charter or rental operation. </p>
 							<p>Our Host Center allows you to create, book and manage BoatDays directly from the Dashboard, meaning its easier then ever to make your charter trips available to BoatDay’s enthusiastic guests! </p>
 							<p>Have a standard weekly trip you’d like to fill? The <a href="faq-02#q-7">Duplicate a BoatDay</a> feature allows you to create multiple BoatDays in seconds!</p>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-4">
-						<?php echo $backLink; ?>
 						<h5 class="title">Are there any fees to become a Host?</h5>
 						<p>No, signing up as a Host, registering a boat and listing BoatDays on the platform are absolutely free for all Hosts!  There are also no subscription costs or membership fees.  Simply go to www.boatdayhosts.com to create your free Host account and get started.</p>
 						<p>To ensure BoatDay’s quality and safety standards, BoatDay does receive a 15% of the per-person contributions made by each Guest who comes aboard, which goes to support and maintain our extra insurance coverage for Hosts, background checks, and easy to use application.</p>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-5">
-						<?php echo $backLink; ?>
 						<h5 class="title">Host Background Screening</h5>
 						<p>We’re committed to the safety of your BoatDay experience!</p>
 							<p>All BoatDay Hosts (and Captains) must pass BoatDay’s background screening, which includes county, federal and multi-state checks. </p>
@@ -119,12 +139,13 @@
 								<p>If you would like to learn more about our safety measures, please visit our <a href="#" data-toggle="modal" data-target="#modal-safety">safety page.</a></p>
 							</div>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-6">
-						<?php echo $backLink; ?>
 						<h5 class="title">Taking excellent Profile, Boat and Account Photos</h5>
 						<div class="sub-sub-cat">
 								<h5>PROFILE PHOTO</h5>
@@ -152,16 +173,19 @@
 								<img src="resources/faq/pof.png"/><br>
 							</div>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
 					<div id="q-7">
-						<?php echo $backLink; ?>
 						<h5 class="title">Host Insurance Coverage</h5>
 						<p>To help protect all Hosts and Guests on the platform, BoatDay requires all Hosts to maintain <a href="#proofOfInsurance">boat insurance</a>. But don’t worry, Host’s are also protected by our $500,000 excess liability policy for each BoatDay, covering injury to Guests while on a BoatDay.</p>
 						<div class="back-to-top">
-							<a href="#list-faq">back <span class="glyphicon glyphicon-chevron-up"></span></a>
+							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>
+							- or -
+							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
 
@@ -173,5 +197,15 @@
 
 		<?php include_once('UX.section.footer.php'); ?>
 		<?php include_once('UX.scripts.php'); ?>
+
+		<?php if($faq) { ?> 
+			<script type="text/javascript">
+			$(document).ready(function() {
+				setTimeout(function() {
+					scrollToAnchor('#<?php echo $faq; ?>');
+				}, 600);
+			});
+			</script>
+		<?php } ?>
 	</body>
 </html>
