@@ -6,26 +6,54 @@
 				<h4 class="modal-title text-center">WE'VE GOT YOU COVERED</h4>
 			</div>
 			<div class="modal-body">
+				
 				<h4>INSURANCE COVERAGE</h4>
-				<p>BoatDay requires all Hosts to have their own private boat insurance. We will also provide $500,000 in excess liability coverage for each BoatDay Host, covering Host liability for injury to Guests while on a BoatDay.</p>
+				<div class="text-center">
+					<img src="resources/ico-insurance.png" />
+				</div>
+				<p class="safety-para">BoatDay requires all Hosts to have their own private boat insurance. We will also provide $500,000 in excess liability coverage for each BoatDay Host, covering Host liability for injury to Guests while on a BoatDay.</p>
 			
+				
 				<h4>BACKGROUND SCREENING</h4>
-				<p>Every BoatDay Host is subject to a background screening, including a search of national and county databases, as well as DMV records and the sex-offender registry.</p>
+				<div class="text-center">
+					<img src="resources/ico-background.png" />
+				</div>
+				<p class="safety-para">Every BoatDay Host is subject to a background screening, including a search of national and county databases, as well as DMV records and the sex-offender registry.</p>
 		
+				
 				<h4>BOATER CERTIFICATIONS</h4>
-				<p>BoatDay displays all boating certifications obtained by each Host. From boater safety courses to fishing, diving and captains licenses, view each Host's certifications when making your choice.</p>
+				<div class="text-center">
+					<img src="resources/ico-certificate.png" />
+				</div>
+				<p class="safety-para">BoatDay displays all boating certifications obtained by each Host. From boater safety courses to fishing, diving and captains licenses, view each Host's certifications when making your choice.</p>
 			
+				
 				<h4>PEER REVIEWS</h4>
-				<p>Hosts and Guests can leave ratings and reviews after every BoatDay, which are used to maintain our high quality standards. For added reassurance, read through past reviews when picking a BoatDay.</p>
-			
+				<div class="text-center">
+					<img src="resources/ico-review.png" />
+				</div>
+				<p class="safety-para">Hosts and Guests can leave ratings and reviews after every BoatDay, which are used to maintain our high quality standards. For added reassurance, read through past reviews when picking a BoatDay.</p>
+				
+				
 				<h4>ON-WATER ASSISTANCE</h4>
-				<p>Quickly contact and receive on-water assistance directly through the app. To directly contact emergency on-water assistance, tap the Safety Icon from the screen displayed throughout the duration of your BoatDay.</p>
+				<div class="text-center">
+					<img src="resources/ico-support.png" />
+				</div>
+				<p class="safety-para">Quickly contact and receive on-water assistance directly through the app. To directly contact emergency on-water assistance, tap the Safety Icon from the screen displayed throughout the duration of your BoatDay.</p>
 			
+				
 				<h4>CUSTOMER SUPPORT</h4>
-				<p>BoatDay's customer support team will be standing by to address all of your concerns. Reach us any time via email at support@boatdayapp.com.</p>
+				<div class="text-center">
+					<img src="resources/ico-support.png" />
+				</div>
+				<p class="safety-para">BoatDay's customer support team will be standing by to address all of your concerns. Reach us any time via email at support@boatdayapp.com.</p>
 			
+				
 				<h4>ZERO TOLERANCE</h4>
-				<p>BoatDay has a zero-tolerance policy toward drug use and offensive behavior. To report suspected abuse of this policy, contact support@boatdayapp.com or flag offenders through the app.</p>
+				<div class="text-center">
+					<img src="resources/ico-tolerance.png" />
+				</div>
+				<p class="safety-para">BoatDay has a zero-tolerance policy toward drug use and offensive behavior. To report suspected abuse of this policy, contact support@boatdayapp.com or flag offenders through the app.</p>
 			</div>
 		</div>
 	</div>

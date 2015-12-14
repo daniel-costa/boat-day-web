@@ -12,7 +12,7 @@
 				<li><a href="hosts">BOATDAY FOR HOSTS</a></li>
 				<li><a href="boatdays">FIND A BOATDAY</a></li>
 			</ul>
-			<ul class="nav navbar-nav pull-right">
+			<ul class="nav navbar-nav pull-right hidden-sm hidden-xs visible-md visible-lg">
 				<li><button data-toggle="modal" data-target="#modal-download" class="btn">GET THE APP</button></li>
 				<li><a href="https://www.boatdayhosts.com/" target="_blank" class="host-log-in btn">HOST LOG-IN</a></li>
 			</ul>

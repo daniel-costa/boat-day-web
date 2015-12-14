@@ -580,6 +580,11 @@ a.learn-more:hover{
 	text-decoration: underline;
 }
 
+#modal-safety p.safety-para{
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
 /* Media Queries */
 @media (max-width: 767px) { 
 	section.options .row .date-col-from,
