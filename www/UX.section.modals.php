@@ -12,23 +12,20 @@
 				<h4>BACKGROUND SCREENING</h4>
 				<p>Every BoatDay Host is subject to a background screening, including a search of national and county databases, as well as DMV records and the sex-offender registry.</p>
 		
-				<h4>HOST BOATDAY</h4>
-				<p>BoatDay allows you to see any boating certifications obtained by each Host and Guest. From boater safety courses to fishing, diving and captains licenses, we verify certifications so you feel safe</p>
+				<h4>BOATER CERTIFICATIONS</h4>
+				<p>BoatDay displays all boating certifications obtained by each Host. From boater safety courses to fishing, diving and captains licenses, view each Host's certifications when making your choice.</p>
 			
-				<h4>HOST BOATDAY</h4>
-				<p>Hosts and Guests can leave reviews after every BoatDay, which are used to maintain our high quality standards. For added reassurance, read through reviews when picking a BoatDay.</p>
+				<h4>PEER REVIEWS</h4>
+				<p>Hosts and Guests can leave ratings and reviews after every BoatDay, which are used to maintain our high quality standards. For added reassurance, read through past reviews when picking a BoatDay.</p>
 			
-				<h4>HOST BOATDAY</h4>
-				<p>Quickly contact and receive on-water assistance directly through the app. To directly contact emergency on-water assistance, tap the Safety Icon while you are on-board a BoatDay.</p>
+				<h4>ON-WATER ASSISTANCE</h4>
+				<p>Quickly contact and receive on-water assistance directly through the app. To directly contact emergency on-water assistance, tap the Safety Icon from the screen displayed throughout the duration of your BoatDay.</p>
 			
-				<h4>HOST BOATDAY</h4>
-				<p>BoatDay's customer support team will be standing by to address all of your safety concerns. Reach us any time via email at support@boatdayapp.com.</p>
+				<h4>CUSTOMER SUPPORT</h4>
+				<p>BoatDay's customer support team will be standing by to address all of your concerns. Reach us any time via email at support@boatdayapp.com.</p>
 			
-				<h4>HOST BOATDAY</h4>
+				<h4>ZERO TOLERANCE</h4>
 				<p>BoatDay has a zero-tolerance policy toward drug use and offensive behavior. To report suspected abuse of this policy, contact support@boatdayapp.com or flag offenders through the app.</p>
-			
-				<h4>HOST BOATDAY</h4>
-				<p>Because we link your BoatDay profile to your existing Facebook account, you can easily view friends in common with any Host or Guest. It's not only a conversation starter, but helps build confidence and trust within the BoatDay community.</p>
 			</div>
 		</div>
 	</div>
@@ -398,28 +395,27 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
-				<h4 class="modal-title text-center">GET BOATDAY</h4>
+				<h4 class="modal-title text-center">GET THE APP</h4>
 			</div>
 			<div class="modal-body text-center">
 				<img src="resources/logo.png" class="logo">
 
 				<hr />
 
-				<h4>Get started with BoatDay.</h4>	
+				<h4>Download the BoatDay App and come aboard today.</h4>	
 				<div class="dls">
-					<a target="_blank" href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" ><img src="resources/dl-apple.png" class="dl" /></a>
-					<a target="_blank" href="https://play.google.com/store/apps/details?id=com.boat.day" ><img src="resources/dl-google.png" class="dl" /></a>
+					<a href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" target="_blank"><img src="resources/dl-apple.png" class="dl" /></a>
+					<a href="https://play.google.com/store/apps/details?id=com.boat.day" target="_blank"><img src="resources/dl-google.png" class="dl" /></a>
 				</div>
 
 				<div class="or-hr">
 				  <span>or</span>
 				</div>
 
-				<h4>Send a link to my phone.</h4>
 				<form>
-					<input class="form-control input-lg cell" type="text" name="phone" placeholder="### ### ####" />
+					<input class="form-control input-lg cell" type="text" name="phone" placeholder="Enter your phone number" />
 					<p class="cell msg" style="display:none"></p>
-					<button type="submit" class="btn btn-block">Send text</button>
+					<button type="submit" class="btn btn-block">GET DOWNLOAD LINK</button>
 				</form>
 
 			</div>
