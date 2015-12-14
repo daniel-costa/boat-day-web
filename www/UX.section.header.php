@@ -11,6 +11,10 @@
 				<li><a href="guests">HOW IT WORKS</a></li>
 				<li><a href="hosts">BOATDAY FOR HOSTS</a></li>
 				<li><a href="boatdays">FIND A BOATDAY</a></li>
+				<!--
+				<li><a href="boatdays" class="visible-xs hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target="#modal-download">GET THE APP</a></li>
+				<li><a href="boatdays" class="visible-xs hidden-sm hidden-md hidden-lg">HOST LOG-IN</a></li>
+				-->
 			</ul>
 			<ul class="nav navbar-nav pull-right hidden-sm hidden-xs visible-md visible-lg">
 				<li><button data-toggle="modal" data-target="#modal-download" class="btn">GET THE APP</button></li>

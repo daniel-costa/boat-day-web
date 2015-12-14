@@ -126,6 +126,11 @@ section {
 	text-align: center;
 }
 
+section:not(.main-swiper){
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 section > .container {
 	padding: 120px 0px !important;
 }
@@ -377,16 +382,19 @@ section.placeholder {
 	padding: 18.25px 0px;
 	text-align: right;
 	text-transform: uppercase;
-	text-shadow: 2px  2px 2px  #696E6B,
-				-2px -2px 2px  #696E6B,
-				-2px  2px 2px  #696E6B,
-				 2px -2px 2px  #696E6B;
+	text-shadow: 1px  0px  1px #696E6B, 
+				-1px  0px  1px #696E6B, 
+				 0px  1px  1px #696E6B, 
+				 0px -1px  1px #696E6B;
 	font-family: Arial;
 }
 
 .main-swiper .swiper-slide p {
 	color: white;
-	text-shadow: rgb(0, 0, 0) 3px 3px 15px;
+	text-shadow: 1px  0px  1px rgba(0, 0, 0, 0.40),
+				-1px  0px  1px rgba(0, 0, 0, 0.40), 
+				 0px  1px  1px rgba(0, 0, 0, 0.40), 
+				 0px -1px  1px rgba(0, 0, 0, 0.40);
 	margin-top: 30px;
 }
 
