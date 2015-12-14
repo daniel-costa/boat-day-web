@@ -8,7 +8,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App - Our mission</title>
+		<title>Learn more about BoatDay</title>
 	</head>
 	<body class="faq">
 		<?php include_once('UX.section.header.php'); ?>
@@ -31,7 +31,7 @@
 								<li><a href="javascript:scrollToAnchor('#q-6')">Can I reserve a BoatDay weeks in advance?</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-7')">What is Instant Booking?</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-8')">Can I request multiple seats on a BoatDay?</a></li>
-								<li><a href="javascript:scrollToAnchor('#q-9')">How long does a Host have to respond to my BoatDay request?</a></li>
+								<!-- <li><a href="javascript:scrollToAnchor('#q-9')">How long does a Host have to respond to my BoatDay request?</a></li> -->
 								<li><a href="javascript:scrollToAnchor('#q-10')">What if I can't make it to a reserved BoatDay?</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-11')">Ratings and Reviews</a></li>
 							</ul>
@@ -146,6 +146,7 @@
 						</div>
 					</div>
 
+					<!--
 					<div id="q-9">
 						<h5 class="title">How long does a Host have to respond to my BoatDay request?</h5>
 						<p>Hosts have 24 hours to accept or decline a BoatDay request. You will receive a notification about the status of your request.  You may not request to join overlapping BoatDays (i.e. two BoatDays taking place at the same time).</p>
@@ -156,6 +157,7 @@
 							<a href="#list-faq">top <span class="glyphicon glyphicon-chevron-up"></span></a>
 						</div>
 					</div>
+				-->
 
 					<div id="q-10">
 						<h5 class="title">What if I can't make it to a reserved BoatDay?</h5>

@@ -8,7 +8,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App - Our mission</title>
+		<title>Learn more about BoatDay</title>
 	</head>
 	<body class="faq">
 		<?php include_once('UX.section.header.php'); ?>
@@ -27,7 +27,7 @@
 								<li><a href="javascript:scrollToAnchor('#q-1')">What is the Trust &amp; Safety Fee?</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-2')">Can I bring children?</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-3')">How BoatDay and BoatDay Hosts are Classified?</a></li>
-								<li><a href="javascript:scrollToAnchor('#q-4')">What is the BoatDay zero-tolerance drug and alcohol policy for Hosts?</a></li>
+								<li><a href="javascript:scrollToAnchor('#q-4')">What is the zero-tolerance drug and alcohol policy for Hosts?</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-5')">No-Weapons Policy</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-6')">Using BoatDay with iOS 7 or older</a></li>
 								<li><a href="javascript:scrollToAnchor('#q-7')">Lost Items</a></li>
@@ -79,7 +79,7 @@
 					</div>
 
 					<div id="q-4">
-						<h5 class="title">What is the BoatDay zero-tolerance drug and alcohol policy for Hosts?</h5>
+						<h5 class="title">What is the zero-tolerance drug and alcohol policy for Hosts?</h5>
 						<p>BoatDay has a zero-tolerance drug and alcohol policy for Hosts. If you suspect that a BoatDay Host is under the influence of drugs or alcohol while on a BoatDay, please contact us.</p>
 						<div class="back-to-top">
 							<a href="faq"><span class="glyphicon glyphicon-chevron-left"></span> back to FAQ's</a>

@@ -271,6 +271,14 @@ section .box p {
 	text-align: center;
 }
 
+section.legal-text p{
+	font-size: 1.1em;
+}
+
+section.legal-text h2{
+	margin-bottom: 20px;
+}
+
 section.legal-text p, 
 section.legal-text h2{
 	text-align: left;

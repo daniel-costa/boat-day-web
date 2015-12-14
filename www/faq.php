@@ -6,7 +6,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App - Our mission</title>
+		<title>Learn more about BoatDay</title>
 	</head>
 	<body class="faq">
 		<?php include_once('UX.section.header.php'); ?>
@@ -31,7 +31,7 @@
 								<li><a href="faq-01?faq=q-6">Can I reserve a BoatDay weeks in advance?</a></li>
 								<li><a href="faq-01?faq=q-7">What is Instant Booking?</a></li>
 								<li><a href="faq-01?faq=q-8">Can I request multiple seats on a BoatDay?</a></li>
-								<li><a href="faq-01?faq=q-9">How long does a Host have to respond to my BoatDay request?</a></li>
+								<!-- <li><a href="faq-01?faq=q-9">How long does a Host have to respond to my BoatDay request?</a></li> -->
 								<li><a href="faq-01?faq=q-10">What if I can't make it to a reserved BoatDay?</a></li>
 								<li><a href="faq-01?faq=q-11">Ratings and Reviews</a></li>
 							</ul>
@@ -95,7 +95,7 @@
 								<li><a href="faq-06?faq=q-1">What is the Trust &amp; Safety Fee?</a></li>
 								<li><a href="faq-06?faq=q-2">Can I bring children?</a></li>
 								<li><a href="faq-06?faq=q-3">How BoatDay and BoatDay Hosts are Classified?</a></li>
-								<li><a href="faq-06?faq=q-4">What is the BoatDay zero-tolerance drug and alcohol policy for Hosts?</a></li>
+								<li><a href="faq-06?faq=q-4">What is the zero-tolerance drug and alcohol policy for Hosts?</a></li>
 								<li><a href="faq-06?faq=q-5">No-Weapons Policy</a></li>
 								<li><a href="faq-06?faq=q-6">Using BoatDay with iOS 7 or older</a></li>
 								<li><a href="faq-06?faq=q-7">Lost Items</a></li>

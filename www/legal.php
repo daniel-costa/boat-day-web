@@ -367,6 +367,7 @@
 				</div>
 			</section>
 		
+		<?php include_once('UX.section.modals.php'); ?>
 		</main>
 
 		<?php include_once('UX.section.footer.php'); ?>

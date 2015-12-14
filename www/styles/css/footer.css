@@ -26,6 +26,12 @@ footer h4, footer h4 a {
     text-transform: uppercase;
 }   
 
+footer h4 a:focus{
+    outline: none;
+    color: white;
+    text-decoration: none;
+}
+
 footer p {
     color: rgb(163, 177, 191);
     margin: 0px;
@@ -34,18 +40,17 @@ footer p {
     line-height: 22px;
 }
 
-footer a {
+footer .footer-bottom a,
+footer a.mail {
     color: #707E8C;
     font-size: 14px;
     text-decoration: none;
     outline: none;
 }
-footer a:visited, footer a:focus{
-    outline: none;
 
-}
 
-footer a:hover {
+footer .footer-bottom a:hover {
+    color: rgb(60, 175, 192);
 }
 
 footer .footer-bottom {

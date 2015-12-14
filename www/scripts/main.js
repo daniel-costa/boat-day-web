@@ -89,6 +89,7 @@ function loadBoatDays() {
 	query.lessThanOrEqualTo('price', parseInt(priceArray[1]));
 	query.greaterThanOrEqualTo('departureTime', parseFloat(timeArray[0]));
 	query.lessThanOrEqualTo('departureTime', parseFloat(timeArray[1]));
+	query.ascending("date");
 	
 	if(category != "all"){
 		query.equalTo('category', category);

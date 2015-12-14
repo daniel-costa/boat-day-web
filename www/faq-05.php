@@ -8,7 +8,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App - Our mission</title>
+		<title>Learn more about BoatDay</title>
 	</head>
 	<body class="faq">
 		<?php include_once('UX.section.header.php'); ?>

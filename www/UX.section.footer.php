@@ -11,7 +11,7 @@
 				<h4>GET IN TOUCH</h4>
 				<p>The world is our office and you’ll find us working away in Miami and Helsinki. Our HQ are in Florida.</p>
 				<ul class="list-unstyled">
-					<li><a href="mailto:contact@boatday.com"><span class="icon bd-mail"></span> info@boatdayapp.com</a></li>
+					<li><a class="mail" href="mailto:contact@boatday.com"><span class="icon bd-mail"></span> info@boatdayapp.com</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-sm-8 footer-col3">
@@ -33,7 +33,7 @@
 			<ul class="list-inline pull-right">
 				<li><a href="home">Home</a></li>
 				<li><a href="mailto:info@boatday.com">Contact</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#modal-terms">Legal</a></li>
+				<li><a href="legal">Legal</a></li>
 			</ul>
 		</div>
 	</div>
