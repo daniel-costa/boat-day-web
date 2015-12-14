@@ -414,8 +414,26 @@ section.placeholder {
 	font-size: 10px;
 }
 
+
+/*
+body.faq .placeholder {
+	height: auto;
+	max-height: none;
+	padding: 0px;
+}
+
+body.faq .placeholder .container {
+	margin: 0px;
+	padding: 40px 0px 40px 0px;
+}
+
+body.faq .placeholder .container ul li {
+	text-align: left;
+	color: white;
+}
+*/
+
 section.faq .row .faq-col{
-	
 	margin-top: 70px;
 }
 
@@ -461,7 +479,7 @@ section.faq h5 {
 
 section.faq .back-to-top {
 	text-align: left;
-	margin-bottom: 40px;
+	margin-bottom: 140px;
 	margin-top: 20px;
 }
 
@@ -485,11 +503,8 @@ section.faq h5.title {
 	margin-top: 10px;
 }
 
-section.faq a.back-arrow{
-	color: #73879C;
-}
-section.faq a.back-arrow:before{
-	content: "";
+section.faq h5 {
+	font-size: 18px;
 }
 
 #modal-download img.logo {
