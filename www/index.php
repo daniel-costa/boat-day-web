@@ -70,22 +70,10 @@
 				</div>
 			</section>
 
-
-<!-- 
-			<section class="phone-screenshot">
-				<div class="container">
-					<div class="row text-center">
-						<img  class="img-responsive" src="resources/3phoneScreens.png" >
-					</div>
-				</div>
-			</section>
--->
-
 			<section class="blured blured-01">
 				<div class="container">
 					<div class="row text-center">
 						<h2>How does it work?</h2>
-							
 						<div class="col-sm-3">
 							<h3>1. Browse</h3>
 							<p class="text-small">Cruising, fishing, watersports and more, the app shows you available trips in your area.</p>
@@ -116,9 +104,6 @@
 				$queryHostApproved->equalTo('status', 'approved');
 
 				$startDate = new DateTime();
-				//$startDate->setTime(0, 0);
-				//print_r($startDate);
-				//$curHr = $startDate->format('H');
 
 				$query = new ParseQuery('BoatDay');
 				$query->matchesQuery("boat", $queryBoatApproved);
@@ -129,8 +114,6 @@
 				$query->equalTo('displayInWebsite', true);
 				$query->greaterThan('date', $startDate);
 				$query->equalTo('status', 'complete');
-				//$query->equalTo("featured", -1);
-				
 				
 				$boatdays = $query->find();
 
@@ -142,19 +125,11 @@
 							<h2>Enjoy a great day out</h2>
 							<?php
 								foreach( $boatdays as $boatday ) {
-									
 									$seats = $boatday->get('availableSeats') - $boatday->get('bookedSeats');
-
 									$_q = $boatday->getRelation('boatdayPictures')->getQuery();
 									$_q->ascending('createdAt');
 									$fh = $_q->first();
-
 									$boatdayPicture = gettype($fh) == 'object' ? $fh->get('file')->getUrl() : 'https://www.boatdayapp.com/deep-linking/resources/placeholder-boatday.png';
-
-									//$bdDate = $boatday->get('date');
-									//$bdDate->setTime(0, 0);
-
-									
 							?>
 								<div class="col-sm-4">
 									<div class="boatday-card" onClick="dl('<?php echo $boatday->getObjectId(); ?>'); return false;">
@@ -216,7 +191,6 @@
 				$query->limit(6);
 				$query->descending('createdAt');
 				$reviews = $query->find();
-
 
 				if( count($reviews) > 0 ) {
 			?>
