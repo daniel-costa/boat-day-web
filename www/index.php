@@ -111,9 +111,10 @@
 				$query->includeKey('captain');
 				$query->includeKey('host');
 				$query->limit(3);
-				$query->equalTo('displayInWebsite', true);
+				// $query->equalTo('displayInWebsite', true);
 				$query->greaterThan('date', $startDate);
 				$query->equalTo('status', 'complete');
+				$query->ascending('featured,date');
 				
 				$boatdays = $query->find();
 
@@ -176,7 +177,7 @@
 
 						</div>
 
-						<a class="learn-more" href="boatdays">View more BoatDays</a>
+						<a class="btn" href="boatdays">View more BoatDays</a>
 					</div>
 				</section>
 			<?php  } ?>
