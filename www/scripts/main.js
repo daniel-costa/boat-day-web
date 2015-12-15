@@ -185,6 +185,18 @@ $(document).ready(function() {
 		}
 	});
 
+	$('body').on('click', '.boatday-card', function(event) {
+
+		dl($(event.currentTarget).closest('.boatday-card').attr('data-id'));
+		
+	});
+
+	$('body').on('click', '.bd-share', function(event) {
+		event.preventDefault();
+		event.stopPropagation()
+		fbShare($(event.currentTarget).closest('.boatday-card').attr('data-id'));
+	});
+
 
 	$('#modal-download form').submit(function(event) {
 		

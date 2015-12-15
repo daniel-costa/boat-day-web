@@ -6,22 +6,22 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App - Our BoatDays</title>
+		<title>Book an adventure</title>
 
 		<script type="x-boatday/template" name="boatday-card">
 			<div class="col-sm-4">
-				<div class="boatday-card bd-<%= boatday.id %>" onClick="dl('<%= boatday.id %>'); return false;">
+				<div class="boatday-card bd-<%= boatday.id %>" data-id="<%= boatday.id %>">
 					<div class="image">
 						<div class="seats-remaining">
 							<label>only<br>
 							<%= boatday.get("availableSeats") == 1 ? '1 seat' : (boatday.get("availableSeats") + ' seats') %>
 							 left</label>
 						</div>
-						<!--
+						
 						<div class="share-boatday">
-							<a href="https://boatdayapp.com"><span class="icon bd-share"></span></a>
+							<span class="icon bd-share"></span>
 						</div>
-						-->
+						
 						<div class="banner left">
 							<div class="host-picture" style="background-image:url(<%= boatday.get("captain").get("profilePicture").url() %>)">
 							</div>
@@ -62,9 +62,9 @@
 
 
 				</div>
-				<!--
-				<a class="boatday-share-test" href="#" onClick="fbShare('<%= boatday.id %>'); return false;">share test</a>
-				-->
+				
+				
+				
 			</div>
 		</script>
 	</head>

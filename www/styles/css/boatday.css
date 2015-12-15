@@ -62,7 +62,7 @@
 }
 
 .boatday-card:hover{
-	border-color: rgba(84, 110, 122, 1);
+	transform: scale(1.05);
 }
 
 .boatday-card .image {
