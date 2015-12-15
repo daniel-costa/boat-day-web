@@ -38,8 +38,3 @@
 		</div>
 	</div>
 </footer>
-
-<div class="visible-lg res">LG</div>
-<div class="visible-md res">MD</div>
-<div class="visible-sm res">SM</div>
-<div class="visible-xs res">XS</div>
