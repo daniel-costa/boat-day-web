@@ -175,3 +175,28 @@
 	vertical-align: middle;
 	font-weight: 400;
 }
+
+.boatday-card .share-boatday{
+	float: right;
+	margin: 10px;
+}
+
+.boatday-card .share-boatday span{
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 2em;
+}
+
+.boatday-card .seats-remaining{
+	height: 50px;
+	width: 100px;
+	background: rgba(0, 0, 0, 0.6);
+	float: left;
+	margin: 10px;
+	border-radius: 5px;
+}
+.boatday-card .seats-remaining label{
+	font-size: 0.9em;
+	color: #ffffff;
+	margin-top: 5px;
+	font-weight: 500;
+}

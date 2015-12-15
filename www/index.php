@@ -135,6 +135,11 @@
 								<div class="col-sm-4">
 									<div class="boatday-card" onClick="dl('<?php echo $boatday->getObjectId(); ?>'); return false;">
 										<div class="image" style="background-image:url(<?php echo $boatdayPicture; ?>)">
+
+											<div class="seats-remaining">
+												<label>only<br>6 seats left</label>
+											</div>
+
 											<div class="banner left">
 												<div class="host-picture" style="background-image:url(<?php echo $boatday->get('captain')->get('profilePicture')->getUrl(); ?>)"></div>
 												<?php if( $boatday->get('captain')->get('rating') ) { ?>

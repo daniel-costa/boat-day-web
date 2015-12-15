@@ -3,7 +3,7 @@
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#xs-menu" aria-expanded="false">
 			<span class="glyphicon glyphicon-menu-hamburger"></span>
 		</button>
-		<a class="navbar-brand" href="guests"><img src="resources/logo.svg" class="logo"></a>
+		<a class="navbar-brand" href="guests"><img src="resources/logo.png" class="logo"></a>
 	</div>
 	<div class="container">
 		<div class="collapse navbar-collapse" id="xs-menu">

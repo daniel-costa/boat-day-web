@@ -6,6 +6,7 @@ var getTemplate = function(name) {
 };
 
 function dl(id) {
+
 	var href = "https://www.boatdayapp.com/dl/boatday/"+id;
 	if( /Android/i.test(navigator.userAgent) ){
 		href = "android-app://com.boat.day/boatday/boatday?id="+id;
@@ -13,6 +14,15 @@ function dl(id) {
 		href = "boatday://boatday?id="+id;	
 	}
 	window.open(href, "_self");	
+}
+
+function fbShare(id){
+	FB.ui({
+		method: 'share',
+		href: 'https://www.boatdayapp.com/dl/boatday/'+id,
+	}, function(response){
+		console.log(response);
+	});
 }
 
 function scrollToAnchor(aid) {
@@ -175,6 +185,7 @@ $(document).ready(function() {
 		}
 	});
 
+
 	$('#modal-download form').submit(function(event) {
 		
 		event.preventDefault();
@@ -243,6 +254,7 @@ $(document).ready(function() {
 
 	    loadBoatDays();
 	}
+
 });
 
 // Facebook Tracking
