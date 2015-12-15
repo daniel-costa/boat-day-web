@@ -100,6 +100,8 @@ function loadBoatDays() {
 	query.greaterThanOrEqualTo('departureTime', parseFloat(timeArray[0]));
 	query.lessThanOrEqualTo('departureTime', parseFloat(timeArray[1]));
 	query.ascending("date");
+
+	
 	
 	if(category != "all"){
 		query.equalTo('category', category);
@@ -263,6 +265,8 @@ $(document).ready(function() {
 		}).on('change', loadBoatDays);
 
 	    $('select[name="category"]').on('change', loadBoatDays);
+
+	    $('select[name="location"]').on('change', loadBoatDays);
 
 	    loadBoatDays();
 	}
