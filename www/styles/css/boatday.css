@@ -182,8 +182,11 @@
 }
 
 .boatday-card .share-boatday span{
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(255, 255, 255, 0.5);
 	font-size: 2em;
+}
+.boatday-card .share-boatday span:hover{
+	color: rgba(255, 255, 255, 1);
 }
 
 .boatday-card .seats-remaining{

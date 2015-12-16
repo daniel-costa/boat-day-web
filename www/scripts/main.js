@@ -13,7 +13,7 @@ function dl(id) {
 	} else if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
 		href = "boatday://boatday?id="+id;	
 	}
-	window.open(href, "_self");	
+	window.open(href, "_blank");	
 }
 
 function fbShare(id){
@@ -77,10 +77,30 @@ function getGuestPrice(price, guestPart) {
 	return Math.ceil(price / (1 - guestPart));
 }
 
+function disableFormFields(){
+	$('input[name="date-from"]').prop('disabled', true);
+	$('input[name="date-to"]').prop('disabled', true);
+	$('select[name="category"]').prop('disabled', true);
+	$('#slider-price').slider('disable');
+	$('#slider-departure').slider('disable');
+	$('select[name="location"]').prop('disabled', true);
+}
+
+function enableFormFields(){
+	$('input[name="date-from"]').prop('disabled', false);
+	$('input[name="date-to"]').prop('disabled', false);
+	$('select[name="category"]').prop('disabled', false);
+	$('#slider-price').slider('enable');
+	$('#slider-departure').slider('enable');
+	$('select[name="location"]').prop('disabled', false);
+}
+
 
 
 
 function loadBoatDays() {
+
+	disableFormFields();
 
 	var tpl = _.template(getTemplate('boatday-card'));
 
@@ -151,7 +171,9 @@ function loadBoatDays() {
 			}
 		}, function(error){
 			console.log(error);
-		})
+		});
+
+		enableFormFields();
 	});
 	
 }
@@ -272,12 +294,12 @@ $(document).ready(function() {
 	    $('#slider-price').slider({ tooltip: 'hide' }).on('slide', function(slideEvent){
 			var priceArray = $('#slider-price').slider('getValue');
 			$('.preview-price').text("$"+ priceArray[0] + " - $" + priceArray[1]);
-		}).on('change', loadBoatDays);
+		}).on('slideStop', loadBoatDays);
 
 	    $('#slider-departure').slider({ tooltip: 'hide' }).on('slide', function(slideEvent){
 			var timeArray = $('#slider-departure').slider('getValue');
 			$('.preview-departure').text(departureTimeToDisplayTime(timeArray[0]) + " - " + departureTimeToDisplayTime(timeArray[1]));
-		}).on('change', loadBoatDays);
+		}).on('slideStop', loadBoatDays);
 
 	    $('select[name="category"]').on('change', loadBoatDays);
 

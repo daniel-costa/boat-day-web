@@ -602,6 +602,18 @@ section.options .row .date-col-to{
 	padding: 0px 5px 0px 0px;
 }
 
+section.upcoming-boatdays h1.book-adventure{
+	margin-bottom: 40px;
+}
+
+section.upcoming-boatdays .container{
+	padding-top: 30px !important;
+}
+
+section.faq h1.faq-title{
+	margin-top: 50px;
+}
+
 a.learn-more{
 	display: block;
 	margin-top: 10px;

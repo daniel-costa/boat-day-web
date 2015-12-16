@@ -10,7 +10,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App - Be a Host</title>
+		<title>BoatDay - Become a Host</title>
 	</head>
 	<body class="hosts">
 		<?php include_once('UX.section.header.php'); ?>

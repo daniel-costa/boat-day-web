@@ -6,7 +6,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>Book an adventure</title>
+		<title>BoatDay - Book an adventure</title>
 
 		<script type="x-boatday/template" name="boatday-card">
 			<div class="col-sm-4">
@@ -78,17 +78,8 @@
 
 			<section class="options">
 				<div class="container">
-					<div class="row">	
-						<div class="col-md-3 col-sm-6">
-							<div class="form-group col-sm-6 date-col-from" >
-								<label class="control-label pull-left">From:</label>
-								<input type="text" required placeholder="mm/dd/yyyy" class="form-control" id="date-from" name="date-from">
-							</div>
-							<div class="form-group col-sm-6 date-col-to" >
-								<label class="control-label pull-left">To:</label>
-								<input type="text" required placeholder="mm/dd/yyyy" class="form-control" id="date-to" name="date-to">
-							</div>
-						</div>
+					<div class="row">
+
 						<div class="col-md-3 col-sm-6">
 							<div class="form-group">
 								<label class="control-label pull-left">Activity:</label>
@@ -101,6 +92,29 @@
 								</select>
 							</div>
 						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="form-group">
+								<label class="control-label pull-left">Area:</label>
+								<select name="location" class="form-control">
+									<option value="wpb-fl" lat="26.713361" lng="-80.048790">West Palm Beach, FL</option>
+									<option value="ftl-fl" lat="26.119363" lng="-80.129802">Ft. Lauderdale, FL</option>
+									<option value="mia-fl" lat="25.774382" lng="-80.185515">Miami, FL</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="form-group col-sm-6 date-col-from" >
+								<label class="control-label pull-left">From:</label>
+								<input type="text" required placeholder="mm/dd/yyyy" class="form-control" id="date-from" name="date-from">
+							</div>
+							<div class="form-group col-sm-6 date-col-to" >
+								<label class="control-label pull-left">To:</label>
+								<input type="text" required placeholder="mm/dd/yyyy" class="form-control" id="date-to" name="date-to">
+							</div>
+						</div>
+						
 						<div class="col-md-3 col-sm-6 ">
 							<div class="form-group">
 								<label class="control-label pull-left">Price:</label>
@@ -121,19 +135,14 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="form-group">
-							<select name="location" class="form-control">
-								<option value="wpb-fl" lat="26.713361" lng="-80.048790">West Palm Beach, FL</option>
-								<option value="ftl-fl" lat="26.119363" lng="-80.129802">Ft. Lauderdale, FL</option>
-								<option value="mia-fl" lat="25.774382" lng="-80.185515">Miami, FL</option>
-							</select>
-						</div>
+
 					</div>
 				</div>
 			</section>
 	
 			<section class="upcoming-boatdays">
 				<div class="container">
+					<h1 class="text-center book-adventure">Book an adventure</h1>
 					<div class="row text-center"></div>
 				</div>
 			</section>

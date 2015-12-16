@@ -6,7 +6,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>Learn more about BoatDay</title>
+		<title>BoatDay - Learn more</title>
 	</head>
 	<body class="faq">
 		<?php include_once('UX.section.header.php'); ?>
@@ -18,6 +18,8 @@
 
 			<section class="faq">
 				<div class="container">
+
+					<h1 class="text-center faq-title">Learn more about BoatDay</h1>
 
 					<div class="row">
 						<div class="col-sm-6 faq-col">
