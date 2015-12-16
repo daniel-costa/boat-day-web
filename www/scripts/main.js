@@ -110,7 +110,6 @@ function loadBoatDays() {
 		longitude: parseFloat($('select[name="location"]').find(':selected').attr('lng'))
 	});
 
-	query.withinMiles("location", around, Parse.Config.current().get('FILTER_AROUND_RADIUS'));
 
 	if(category != "all"){
 		query.equalTo('category', category);
@@ -125,30 +124,36 @@ function loadBoatDays() {
 	if( toDate != null ) {
 		query.lessThanOrEqualTo("date", toDate);
 	}
+
+	Parse.Config.get().then(function(config){
+
+		query.withinMiles("location", around, config.get('FILTER_AROUND_RADIUS'));
 	
-	query.find().then(function(boatdays) {
-		if(boatdays.length > 0){
-			_.each(boatdays, function(boatday){
-				target.append(tpl({
-					boatday: boatday,
-					departureTime: departureTimeToDisplayTime(boatday.get("departureTime")),
-					dateToEn: getDateToEn(new Date(boatday.get('date'))),
-					location: getCityFromLocation(boatday.get('locationText'))
-				}));
-				var q = boatday.relation('boatdayPictures').query();
-				q.ascending('order');
-				q.first().then(function(fileholder) {
-					if( fileholder ) {
-						$('.bd-'+boatday.id+' .image').css({ backgroundImage: 'url('+fileholder.get('file').url()+')' });
-					}
+		query.find().then(function(boatdays) {
+			if(boatdays.length > 0){
+				_.each(boatdays, function(boatday){
+					target.append(tpl({
+						boatday: boatday,
+						departureTime: departureTimeToDisplayTime(boatday.get("departureTime")),
+						dateToEn: getDateToEn(new Date(boatday.get('date'))),
+						location: getCityFromLocation(boatday.get('locationText'))
+					}));
+					var q = boatday.relation('boatdayPictures').query();
+					q.ascending('order');
+					q.first().then(function(fileholder) {
+						if( fileholder ) {
+							$('.bd-'+boatday.id+' .image').css({ backgroundImage: 'url('+fileholder.get('file').url()+')' });
+						}
+					});
 				});
-			});
-		} else {
-			$('.upcoming-boatdays .container .row').append("<h1>No BoatDays matching this search</h1>");
-		}
-	}, function(error){
-		console.log(error);
-	})
+			} else {
+				$('.upcoming-boatdays .container .row').append("<h1>No BoatDays matching this search</h1>");
+			}
+		}, function(error){
+			console.log(error);
+		})
+	});
+	
 }
 
 $(document).ready(function() {

@@ -133,11 +133,15 @@
 									$boatdayPicture = gettype($fh) == 'object' ? $fh->get('file')->getUrl() : 'https://www.boatdayapp.com/deep-linking/resources/placeholder-boatday.png';
 							?>
 								<div class="col-sm-4">
-									<div class="boatday-card" onClick="dl('<?php echo $boatday->getObjectId(); ?>'); return false;">
+									<div class="boatday-card" data-id="<?php echo $boatday->getObjectId(); ?>">
 										<div class="image" style="background-image:url(<?php echo $boatdayPicture; ?>)">
 
 											<div class="seats-remaining">
 												<label>only<br>6 seats left</label>
+											</div>
+
+											<div class="share-boatday">
+												<span class="icon bd-share"></span>
 											</div>
 
 											<div class="banner left">
