@@ -144,7 +144,7 @@
 			<section class="upcoming-boatdays">
 				<div class="container">
 					<div class="row text-center"></div>
-					<a href="#" class="btn host-log-in show-more">Show More</a>
+					<button class="btn host-log-in show-more">Show More</button>
 				</div>
 			</section>
 

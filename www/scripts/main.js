@@ -200,6 +200,9 @@ function loadMoreBoatDays() {
 
 	disableFormFields();
 
+	$('.upcoming-boatdays .show-more').text("Loading..");
+	$('.upcoming-boatdays .show-more').prop("disabled",true);
+
 	var tpl = _.template(getTemplate('boatday-card'));
 
     var fromDate = $('input[name="date-from"]').datepicker('getDate');
@@ -270,7 +273,8 @@ function loadMoreBoatDays() {
 				});
 			} 
 
-			console.log("Show More " + currentBoatdaysNum);
+			$('.upcoming-boatdays .show-more').text("Show More");
+			$('.upcoming-boatdays .show-more').prop("disabled",false);
 
 			if(boatdays.length < queryLimit){
 				$('.upcoming-boatdays .show-more').hide();
