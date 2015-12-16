@@ -9,7 +9,7 @@
 		<title>BoatDay - Book an adventure</title>
 
 		<script type="x-boatday/template" name="boatday-card">
-			<div class="col-sm-4">
+			<div class="col-sm-6 col-lg-4">
 				<div class="boatday-card bd-<%= boatday.id %>" data-id="<%= boatday.id %>">
 					<div class="image">
 						<div class="seats-remaining">

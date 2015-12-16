@@ -59,10 +59,11 @@
 	margin-bottom: 25px;
 	height: 365px;
 	cursor: pointer;
+	transition: all 0.2s ease-in-out
 }
 
 .boatday-card:hover{
-	transform: scale(1.05);
+	transform: scale(1.08);
 }
 
 .boatday-card .image {
@@ -177,8 +178,11 @@
 }
 
 .boatday-card .share-boatday{
+	background: rgba(0, 0, 0, 0.6);
 	float: right;
 	margin: 10px;
+	border-radius: 5px;
+	padding: 5px 10px 0px 10px;
 }
 
 .boatday-card .share-boatday span{
@@ -186,7 +190,7 @@
 	font-size: 2em;
 }
 .boatday-card .share-boatday span:hover{
-	color: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 0.8);
 }
 
 .boatday-card .seats-remaining{
