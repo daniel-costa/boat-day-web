@@ -182,13 +182,13 @@
 	float: right;
 	margin: 10px;
 	border-radius: 5px;
-	padding: 5px 10px 0px 10px;
+	padding: 5px 5px 0px 5px;
 }
 
 .boatday-card .share-boatday span{
 	color: rgba(255, 255, 255, 1);
-	font-size: 2em;
 }
+
 .boatday-card .share-boatday span:hover{
 	color: rgba(255, 255, 255, 0.8);
 }
