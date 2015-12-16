@@ -123,7 +123,6 @@
 					<div class="row">
 						<div class="form-group">
 							<select name="location" class="form-control">
-								<option value="my-location" lat="" lng="">My location</option>
 								<option value="wpb-fl" lat="26.713361" lng="-80.048790">West Palm Beach, FL</option>
 								<option value="ftl-fl" lat="26.119363" lng="-80.129802">Ft. Lauderdale, FL</option>
 								<option value="mia-fl" lat="25.774382" lng="-80.185515">Miami, FL</option>

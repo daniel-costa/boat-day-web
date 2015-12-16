@@ -104,32 +104,32 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>1. Register as a Host</h4>
-								<p>Tell us about yourself, your boat, and your boating experience. Enter your info, and after a background screening and a quick Q&A with our team, you're all set!</p>
-								<a class="learn-more" href="faq-03">Learn more</a>
+								<h4 class="text-left">1. Register as a Host</h4>
+								<p  class="text-left">Tell us about yourself, your boat, and your boating experience. Enter your info, and after a background screening and a quick Q&A with our team, you're all set!</p>
+								<a class="learn-more text-center" href="faq-03">Learn more</a>
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>2. Create BoatDays</h4>
-								<p>Create fun boat outings for us to list in the app. Want to fill up fast?  Use our social media tools to promote your BoatDays directly on Facebook and Twitter.</p>
-								<a class="learn-more" href="faq-02">Learn more</a>
+								<h4 class="text-left">2. Create BoatDays</h4>
+								<p class="text-left">Create fun boat outings for us to list in the app. Want to fill up fast?  Use our social media tools to promote your BoatDays directly on Facebook and Twitter.</p>
+								<a class="learn-more text-center" href="faq-02">Learn more</a>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>3. Set Sail</h4>
-								<p>It's the big day! Meet your Guests at the departure point and head out for a fun and memorable day on the water.</p>
-								<a class="learn-more" href="faq-01">Learn more</a>
+								<h4 class="text-left">3. Set Sail</h4>
+								<p class="text-left">It's the big day! Meet your Guests at the departure point and head out for a fun and memorable day on the water.</p>
+								<a class="learn-more text-center" href="faq-01">Learn more</a>
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="box">
-								<h4>4. Recieve Payment</h4>
-								<p>Once the BoatDay is over, Guest payments are automatically processed through the app and deposited in your account. Its cashless and hassle-free.</p>
-								<a class="learn-more" href="faq-04">Learn more</a>
+								<h4 class="text-left">4. Recieve Payment</h4>
+								<p class="text-left">Once the BoatDay is over, Guest payments are automatically processed through the app and deposited in your account. Its cashless and hassle-free.</p>
+								<a class="learn-more text-center" href="faq-04">Learn more</a>
 							</div>
 						</div>
 					</div>

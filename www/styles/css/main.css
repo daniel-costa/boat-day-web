@@ -268,8 +268,8 @@ section .box p {
 	line-height: 22px;
 	margin: 0px;
 	padding-bottom: 0px;
-	text-align: center;
 }
+
 
 section.legal-text p{
 	font-size: 1.1em;
@@ -317,20 +317,20 @@ section.placeholder {
 
 .legal  section.placeholder { 
 	background-image: url(../../resources/legal_header.jpg); 
-	padding: 300px;
+	padding: 300px 0px 300px 0px;
 }
 
 .boatdays  section.placeholder { 
 	background-image: url(../../resources/boatdays_display_header.jpg); 
-	padding: 300px;
+	padding: 300px 0px 300px 0px;
 }
 
 .hosts  section.placeholder { 
 	background-image: url(../../resources/host_cover_img.jpg); 
-	padding: 300px;
+	padding: 300px 0px 300px 0px;
 }
 .faq section.placeholder { background-image: url(../../resources/swiper-main04.jpg); 
-	padding: 300px;
+	padding: 300px 0px 300px 0px;
 }
 
 .swiper-pagination-bullet {

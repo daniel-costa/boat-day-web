@@ -77,6 +77,9 @@ function getGuestPrice(price, guestPart) {
 	return Math.ceil(price / (1 - guestPart));
 }
 
+
+
+
 function loadBoatDays() {
 
 	var tpl = _.template(getTemplate('boatday-card'));
@@ -86,6 +89,7 @@ function loadBoatDays() {
    	var category = $('select[name="category"]').val();
    	var priceArray = $('#slider-price').slider('getValue');
 	var timeArray = $('#slider-departure').slider('getValue');
+	var location = $('select[name="location"]').val();
 
 	var target = $('.upcoming-boatdays .container .row');
 	target.html("");
@@ -101,8 +105,13 @@ function loadBoatDays() {
 	query.lessThanOrEqualTo('departureTime', parseFloat(timeArray[1]));
 	query.ascending("date");
 
-	
-	
+	var around = new Parse.GeoPoint({
+		latitude: parseFloat($('select[name="location"]').find(':selected').attr('lat')),
+		longitude: parseFloat($('select[name="location"]').find(':selected').attr('lng'))
+	});
+
+	query.withinMiles("location", around, Parse.Config.current().get('FILTER_AROUND_RADIUS'));
+
 	if(category != "all"){
 		query.equalTo('category', category);
 	}
@@ -144,6 +153,7 @@ function loadBoatDays() {
 
 $(document).ready(function() {
 
+	
 	Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp");
 	
 	if($('.main-swiper').length !== 0) {
