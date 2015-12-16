@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay App - Legal</title>
+		<title>BoatDay - Legal</title>
 	</head>
 	<body class="legal">
 		<?php include_once('UX.section.header.php'); ?>

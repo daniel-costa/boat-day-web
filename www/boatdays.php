@@ -59,8 +59,6 @@
 						</div>
 					</div>
 
-
-
 				</div>
 				
 				
@@ -78,6 +76,7 @@
 
 			<section class="options">
 				<div class="container">
+					<h1 class="text-center book-adventure">Book an adventure</h1>
 					<div class="row">
 
 						<div class="col-md-3 col-sm-6">
@@ -124,7 +123,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-3 col-sm-6">
+						<!--
+							<div class="col-md-3 col-sm-6">
 							<div class="form-group">
 								<label class="control-label pull-left">Departure:</label>
 								<label class="preview-departure control-label pull-right">12:00 AM - 11:30 PM</label>
@@ -133,6 +133,7 @@
 								</div>
 							</div>
 						</div>
+						-->
 					</div>
 					<div class="row">
 
@@ -142,8 +143,8 @@
 	
 			<section class="upcoming-boatdays">
 				<div class="container">
-					<h1 class="text-center book-adventure">Book an adventure</h1>
 					<div class="row text-center"></div>
+					<a href="#" class="btn host-log-in show-more">Show More</a>
 				</div>
 			</section>
 

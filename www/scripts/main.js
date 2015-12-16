@@ -1,6 +1,10 @@
 var base_url = "";
 var xAnimationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
+var currentBoatdaysNum = 0;
+
+var queryLimit = 9;
+
 var getTemplate = function(name) {
 	return $('script[type="x-boatday/template"][name="'+name+'"]').html();
 };
@@ -82,7 +86,7 @@ function disableFormFields(){
 	$('input[name="date-to"]').prop('disabled', true);
 	$('select[name="category"]').prop('disabled', true);
 	$('#slider-price').slider('disable');
-	$('#slider-departure').slider('disable');
+	//$('#slider-departure').slider('disable');
 	$('select[name="location"]').prop('disabled', true);
 }
 
@@ -91,16 +95,18 @@ function enableFormFields(){
 	$('input[name="date-to"]').prop('disabled', false);
 	$('select[name="category"]').prop('disabled', false);
 	$('#slider-price').slider('enable');
-	$('#slider-departure').slider('enable');
+	//$('#slider-departure').slider('enable');
 	$('select[name="location"]').prop('disabled', false);
 }
 
 
-
-
 function loadBoatDays() {
 
+	currentBoatdaysNum = 0;
+
 	disableFormFields();
+
+	$('.upcoming-boatdays .show-more').hide();
 
 	var tpl = _.template(getTemplate('boatday-card'));
 
@@ -108,7 +114,7 @@ function loadBoatDays() {
    	var toDate = $('input[name="date-to"]').datepicker('getDate');
    	var category = $('select[name="category"]').val();
    	var priceArray = $('#slider-price').slider('getValue');
-	var timeArray = $('#slider-departure').slider('getValue');
+	//var timeArray = $('#slider-departure').slider('getValue');
 	var location = $('select[name="location"]').val();
 
 	var target = $('.upcoming-boatdays .container .row');
@@ -117,12 +123,13 @@ function loadBoatDays() {
 	var query = new Parse.Query(Parse.Object.extend('BoatDay'));
 	query.include('captain');
 	query.include('host');
-	query.limit(20);
+	query.limit(queryLimit);
+	
 	query.equalTo('status', 'complete');
 	query.greaterThanOrEqualTo('price', parseInt(priceArray[0]));
 	query.lessThanOrEqualTo('price', parseInt(priceArray[1]));
-	query.greaterThanOrEqualTo('departureTime', parseFloat(timeArray[0]));
-	query.lessThanOrEqualTo('departureTime', parseFloat(timeArray[1]));
+	//query.greaterThanOrEqualTo('departureTime', parseFloat(timeArray[0]));
+	//query.lessThanOrEqualTo('departureTime', parseFloat(timeArray[1]));
 	query.ascending("date");
 
 	var around = new Parse.GeoPoint({
@@ -150,6 +157,11 @@ function loadBoatDays() {
 		query.withinMiles("location", around, config.get('FILTER_AROUND_RADIUS'));
 	
 		query.find().then(function(boatdays) {
+
+			currentBoatdaysNum = boatdays.length + currentBoatdaysNum;
+
+			console.log(currentBoatdaysNum);
+
 			if(boatdays.length > 0){
 				_.each(boatdays, function(boatday){
 					target.append(tpl({
@@ -166,9 +178,104 @@ function loadBoatDays() {
 						}
 					});
 				});
+
+				if(currentBoatdaysNum <= boatdays.length){
+					$('.upcoming-boatdays .show-more').show();
+				}
+
 			} else {
 				$('.upcoming-boatdays .container .row').append("<h1>No BoatDays matching this search</h1>");
 			}
+
+		}, function(error){
+			console.log(error);
+		});
+
+		enableFormFields();
+	});
+	
+}
+
+function loadMoreBoatDays() {
+
+	disableFormFields();
+
+	var tpl = _.template(getTemplate('boatday-card'));
+
+    var fromDate = $('input[name="date-from"]').datepicker('getDate');
+   	var toDate = $('input[name="date-to"]').datepicker('getDate');
+   	var category = $('select[name="category"]').val();
+   	var priceArray = $('#slider-price').slider('getValue');
+	//var timeArray = $('#slider-departure').slider('getValue');
+	var location = $('select[name="location"]').val();
+
+	var target = $('.upcoming-boatdays .container .row');
+
+
+	var query = new Parse.Query(Parse.Object.extend('BoatDay'));
+	query.include('captain');
+	query.include('host');
+	query.limit(queryLimit);
+	query.skip(currentBoatdaysNum);
+	query.equalTo('status', 'complete');
+	query.greaterThanOrEqualTo('price', parseInt(priceArray[0]));
+	query.lessThanOrEqualTo('price', parseInt(priceArray[1]));
+	//query.greaterThanOrEqualTo('departureTime', parseFloat(timeArray[0]));
+	//query.lessThanOrEqualTo('departureTime', parseFloat(timeArray[1]));
+	query.ascending("date");
+
+	var around = new Parse.GeoPoint({
+		latitude: parseFloat($('select[name="location"]').find(':selected').attr('lat')),
+		longitude: parseFloat($('select[name="location"]').find(':selected').attr('lng'))
+	});
+
+
+	if(category != "all"){
+		query.equalTo('category', category);
+	}
+
+	if( fromDate != null ) {
+		query.greaterThanOrEqualTo("date",fromDate);
+	} else {
+		query.greaterThanOrEqualTo("date", new Date());
+	}
+
+	if( toDate != null ) {
+		query.lessThanOrEqualTo("date", toDate);
+	}
+
+	Parse.Config.get().then(function(config){
+
+		query.withinMiles("location", around, config.get('FILTER_AROUND_RADIUS'));
+	
+		query.find().then(function(boatdays) {
+
+			currentBoatdaysNum = boatdays.length + currentBoatdaysNum;
+
+			if(boatdays.length > 0){
+				_.each(boatdays, function(boatday){
+					target.append(tpl({
+						boatday: boatday,
+						departureTime: departureTimeToDisplayTime(boatday.get("departureTime")),
+						dateToEn: getDateToEn(new Date(boatday.get('date'))),
+						location: getCityFromLocation(boatday.get('locationText'))
+					}));
+					var q = boatday.relation('boatdayPictures').query();
+					q.ascending('order');
+					q.first().then(function(fileholder) {
+						if( fileholder ) {
+							$('.bd-'+boatday.id+' .image').css({ backgroundImage: 'url('+fileholder.get('file').url()+')' });
+						}
+					});
+				});
+			} 
+
+			console.log("Show More " + currentBoatdaysNum);
+
+			if(boatdays.length < queryLimit){
+				$('.upcoming-boatdays .show-more').hide();
+			}
+
 		}, function(error){
 			console.log(error);
 		});
@@ -236,6 +343,11 @@ $(document).ready(function() {
 		fbShare($(event.currentTarget).closest('.boatday-card').attr('data-id'));
 	});
 
+	$('body').on('click', '.show-more', function(event){
+		event.preventDefault();
+		loadMoreBoatDays();
+	});
+
 
 	$('#modal-download form').submit(function(event) {
 		
@@ -296,10 +408,12 @@ $(document).ready(function() {
 			$('.preview-price').text("$"+ priceArray[0] + " - $" + priceArray[1]);
 		}).on('slideStop', loadBoatDays);
 
+	   /*
 	    $('#slider-departure').slider({ tooltip: 'hide' }).on('slide', function(slideEvent){
 			var timeArray = $('#slider-departure').slider('getValue');
 			$('.preview-departure').text(departureTimeToDisplayTime(timeArray[0]) + " - " + departureTimeToDisplayTime(timeArray[1]));
 		}).on('slideStop', loadBoatDays);
+	   */
 
 	    $('select[name="category"]').on('change', loadBoatDays);
 
