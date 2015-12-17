@@ -246,10 +246,10 @@
 							}
 							if( /Android/i.test(navigator.userAgent) ){
 								document.getElementById('dl').style.display = 'inline-block';
-								document.getElementById('google-link').style.display = 'none';
+								document.getElementById('apple-link').style.display = 'none';
 							} else if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
 								document.getElementById('dl').style.display = 'inline-block';
-								document.getElementById('apple-link').style.display = 'none';
+								document.getElementById('google-link').style.display = 'none';
 							}
 								
 							//if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) document.getElementById('dl').style.display = 'inline-block';
@@ -281,8 +281,8 @@
 		<script>
 		  window.fbAsyncInit = function() {
 		    FB.init({
-		      appId      : '1501718213464671', //Test app
-		      //appId      : '1442439216059238', //Production App
+		      // appId      : '1501718213464671', //Test app
+		      appId      : '1442439216059238', //Production App
 		      xfbml      : true,
 		      version    : 'v2.5'
 		    });

@@ -39,12 +39,12 @@
 						<div class="swiper-slide slide-3">
 							<div class="container text-left">
 								<span>Amazing<br/>Experiences</span>
-								<p class="text-left">Cruising, fising, sailing and more</p>
+								<p class="text-left">Cruising, fishing, sailing and more</p>
 							</div>		
 						</div>
 						<div class="swiper-slide slide-2">
 							<div class="container text-left">
-								<span>Meanigfull<br/>Conections</span>
+								<span>Meaningful<br/>Connections</span>
 								<p class="text-left">Unforgettable memories in the sun</p>
 							</div>	
 						</div>

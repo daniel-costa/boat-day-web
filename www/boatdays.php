@@ -58,11 +58,7 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
-				
-				
-				
 			</div>
 		</script>
 		<script type="x-boatday/template" name="boatday-empty">
@@ -159,9 +155,8 @@
 
 			<section class="options">
 				<div class="container">
-					<h1 class="text-center book-adventure">Book an adventure</h1>
+					<h1 class="text-center book-adventure">Find an adventure</h1>
 					<div class="row">
-
 						<div class="col-md-3 col-sm-6">
 							<div class="form-group">
 								<label class="control-label pull-left">Activity:</label>
@@ -174,7 +169,6 @@
 								</select>
 							</div>
 						</div>
-
 						<div class="col-md-3 col-sm-6">
 							<div class="form-group">
 								<label class="control-label pull-left">Location:</label>
@@ -186,7 +180,6 @@
 								</select>
 							</div>
 						</div>
-
 						<div class="col-md-3 col-sm-6">
 							<div class="form-group col-sm-6 date-col-from" >
 								<label class="control-label pull-left">From:</label>
@@ -197,7 +190,6 @@
 								<input type="text" required placeholder="mm/dd/yyyy" class="form-control" id="date-to" name="date-to">
 							</div>
 						</div>
-						
 						<div class="col-md-3 col-sm-6 ">
 							<div class="form-group">
 								<label class="control-label pull-left">Price:</label>
