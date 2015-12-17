@@ -30,7 +30,7 @@
 	<div class="footer-bottom">
 		<div class="container inner">
 			<p class="pull-left">&copy; 2015 Peer-to-Peer Technologies, LLC.</p>
-			<ul class="list-inline pull-right">
+			<ul class="list-inline">
 				<li><a href="home">Home</a></li>
 				<li><a href="mailto:info@boatday.com">Contact</a></li>
 				<li><a href="legal">Legal</a></li>

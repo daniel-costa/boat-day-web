@@ -237,12 +237,23 @@
 					</div>
 
 					<div class="buttons">
-						<a href="https://itunes.apple.com/us/app/boatday/id953574487?ls=1&amp;mt=8"><img class="dl-button" src="../../deep-linking/resources/dl-apple.png" /></a>
-						<a href="https://play.google.com/store/apps/details?id=com.boat.day"><img class="dl-button" src="../../deep-linking/resources/dl-google.png" /></a>
+						<a id="apple-link" href="https://itunes.apple.com/us/app/boatday/id953574487?ls=1&amp;mt=8"><img class="dl-button" src="../../deep-linking/resources/dl-apple.png" alt="apple store"/></a>
+						<a id="google-link" href="https://play.google.com/store/apps/details?id=com.boat.day"><img class="dl-button" src="../../deep-linking/resources/dl-google.png" alt="play store"/></a>
 						<a id="dl" style="display:none" href="javascript:dl('<?php echo $boatdayid ?>')" class="deep-link">View in the app</a>
 						<script type="text/javascript">
-							function dl(id) { window.location = /Android/i.test(navigator.userAgent) ? 'android-app://com.boat.day/boatday/boatday?id='+id : 'boatday://boatday?id='+id; }
-							if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) document.getElementById('dl').style.display = 'inline-block';
+							function dl(id) { 
+								window.location = /Android/i.test(navigator.userAgent) ? 'android-app://com.boat.day/boatday/boatday?id='+id : 'boatday://boatday?id='+id; 
+							}
+							if( /Android/i.test(navigator.userAgent) ){
+								document.getElementById('dl').style.display = 'inline-block';
+								document.getElementById('google-link').style.display = 'none';
+							} else if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
+								document.getElementById('dl').style.display = 'inline-block';
+								document.getElementById('apple-link').style.display = 'none';
+							}
+								
+							//if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) document.getElementById('dl').style.display = 'inline-block';
+						
 						</script>
 						<?php if( $isAnother ) { ?>
 							<br/><br/>
@@ -251,11 +262,40 @@
 					</div>
 
 					<div class="share">
-						<a href="javascript:fbShare(<?php echo $boatdayid ?>)">Let other friends <br/>know about this BoatDay</a>
+						<a href="#" onClick="fbShare('<?php echo $boatdayid; ?>'); return false;">Let other friends <br/>know about this BoatDay</a>
 					</div> 
 				</div>
 			</div>
 		</div>
+
+		<script type="text/javascript">
+			function fbShare(id){
+				FB.ui({
+					method: 'share',
+					href: 'https://www.boatdayapp.com/dl/boatday/'+id,
+				}, function(response){
+					console.log(response);
+				});
+			}
+		</script>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1501718213464671', //Test app
+		      //appId      : '1442439216059238', //Production App
+		      xfbml      : true,
+		      version    : 'v2.5'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
 		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

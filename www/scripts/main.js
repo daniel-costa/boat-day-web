@@ -109,6 +109,7 @@ function loadBoatDays() {
 	$('.upcoming-boatdays .show-more').hide();
 
 	var tpl = _.template(getTemplate('boatday-card'));
+	var emptyTpl = _.template(getTemplate('boatday-empty'));
 
     var fromDate = $('input[name="date-from"]').datepicker('getDate');
    	var toDate = $('input[name="date-to"]').datepicker('getDate');
@@ -154,13 +155,13 @@ function loadBoatDays() {
 
 	Parse.Config.get().then(function(config){
 
-		query.withinMiles("location", around, config.get('FILTER_AROUND_RADIUS'));
+		if(location != "everywhere"){
+			query.withinMiles("location", around, config.get('FILTER_AROUND_RADIUS'));
+		}
 	
 		query.find().then(function(boatdays) {
 
 			currentBoatdaysNum = boatdays.length + currentBoatdaysNum;
-
-			console.log(currentBoatdaysNum);
 
 			if(boatdays.length > 0){
 				_.each(boatdays, function(boatday){
@@ -184,7 +185,7 @@ function loadBoatDays() {
 				}
 
 			} else {
-				$('.upcoming-boatdays .container .row').append("<h1>No BoatDays matching this search</h1>");
+				target.append(emptyTpl);
 			}
 
 		}, function(error){
@@ -249,7 +250,9 @@ function loadMoreBoatDays() {
 
 	Parse.Config.get().then(function(config){
 
-		query.withinMiles("location", around, config.get('FILTER_AROUND_RADIUS'));
+		if(location != "everywhere"){
+			query.withinMiles("location", around, config.get('FILTER_AROUND_RADIUS'));
+		}
 	
 		query.find().then(function(boatdays) {
 
@@ -289,10 +292,53 @@ function loadMoreBoatDays() {
 	
 }
 
+function submitFindBoatDay(){
+	$('#find-boatday form button[type="submit"]').text("Sending...");
+	$('#find-boatday form button[type="submit"]').prop("disabled",true);
+
+	var name = $('#find-boatday form input[name="mdl-name"]').val();
+	var email = $('#find-boatday form input[name="mdl-email"]').val();
+	var activity = $('#find-boatday form select[name="mdl-activity"]').val();
+	var location = $('#find-boatday form select[name="mdl-location"]').val();
+
+	var geoLocation = new Parse.GeoPoint({
+		latitude: parseFloat($('#find-boatday form select[name="mdl-location"]').find(':selected').attr('lat')),
+		longitude: parseFloat($('#find-boatday form select[name="mdl-location"]').find(':selected').attr('lng'))
+	});
+
+	console.log("Name: " + name);
+	console.log("Email: " + email);
+	console.log("Activity: " + activity);
+	console.log("Location: " + location);
+	console.log(geoLocation);
+
+	var BDrequest = Parse.Object.extend("BoatDayRequest");
+	var bdrequest = new BDrequest();
+	var data = {
+		name: name,
+		email: email,
+		activity: activity,
+		location: location
+	};
+
+	bdrequestSaveSuccess = function(bdrequest){
+		var thankTpl = _.template(getTemplate('boatday-thank'));
+		$('#find-boatday .modal-body').html(thankTpl({name: name}));		
+	};
+
+	bdrequestSaveError = function(error){
+		console.log(error);
+	}
+
+	bdrequest.save(data).then(bdrequestSaveSuccess, bdrequestSaveError);
+	
+
+}
+
 $(document).ready(function() {
 
-	
-	Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp");
+	Parse.initialize("LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU", "kXeZHxlhpWhnRdtg7F0Cdc6kvuGHVtDlnSZjfxpU"); // QA
+	//Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp"); //HP
 	
 	if($('.main-swiper').length !== 0) {
 		var mainSwiper = new Swiper('.main-swiper .swiper-container', {
@@ -352,7 +398,6 @@ $(document).ready(function() {
 		loadMoreBoatDays();
 	});
 
-
 	$('#modal-download form').submit(function(event) {
 		
 		event.preventDefault();
@@ -381,6 +426,11 @@ $(document).ready(function() {
 				btn.attr('back', '1').text('Back');
 			});
 		}
+	});
+
+	$('#find-boatday form').submit(function(event){
+		event.preventDefault();
+		submitFindBoatDay();
 	});
 
 	//youtube on modal

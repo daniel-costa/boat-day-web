@@ -6,7 +6,7 @@
 <html lang="en">
 	<head>
 		<?php include_once('UX.head.php'); ?>
-		<title>BoatDay - Book an adventure</title>
+		<title>BoatDay - Find an adventure</title>
 
 		<script type="x-boatday/template" name="boatday-card">
 			<div class="col-sm-6 col-lg-4">
@@ -65,6 +65,30 @@
 				
 			</div>
 		</script>
+		<script type="x-boatday/template" name="boatday-empty">
+			<p>
+				Looks like your perfect BoatDay is still at the dock. <br>
+			 	Tell us what you’re looking for and we’ll update you when a matching BoatDay is available.
+			 </p>
+			 <button data-toggle="modal" data-target="#find-boatday" class="btn host-log-in">Find me a BoatDay</button>
+		</script>
+		<script type="x-boatday/template" name="boatday-thank">
+			<div class="text-center">
+				<h1>Thanks <%= name %>!</h1>
+				<p>
+					We will let you know when your perfect BoatDay is ready to set sail.
+					<br><br>
+					In the meantime, download the app to stay updated on the latest BoatDays:
+				</p>
+				<div class="dls">
+					<a href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" target="_blank"><img src="resources/dl-apple.png" class="dl" /></a>
+					<br><br>
+					<a href="https://play.google.com/store/apps/details?id=com.boat.day" target="_blank"><img src="resources/dl-google.png" class="dl" /></a>
+					<br><br>
+				</div>
+			</div>
+		</script>
+
 	</head>
 	<body class="boatdays">
 		<?php include_once('UX.section.header.php'); ?>
@@ -94,11 +118,12 @@
 
 						<div class="col-md-3 col-sm-6">
 							<div class="form-group">
-								<label class="control-label pull-left">Area:</label>
+								<label class="control-label pull-left">Location:</label>
 								<select name="location" class="form-control">
-									<option value="wpb-fl" lat="26.713361" lng="-80.048790">West Palm Beach, FL</option>
-									<option value="ftl-fl" lat="26.119363" lng="-80.129802">Ft. Lauderdale, FL</option>
+									<option value="everywhere" lat="0" lng="0">Everywhere</option>
 									<option value="mia-fl" lat="25.774382" lng="-80.185515">Miami, FL</option>
+									<option value="ftl-fl" lat="26.119363" lng="-80.129802">Ft. Lauderdale, FL</option>
+									<option value="wpb-fl" lat="26.713361" lng="-80.048790">West Palm Beach, FL</option>
 								</select>
 							</div>
 						</div>
@@ -118,7 +143,7 @@
 							<div class="form-group">
 								<label class="control-label pull-left">Price:</label>
 								<label class="preview-price control-label pull-right">$10 - $250</label>
-								<div>
+								<div class="price-slider">
 									<input style="width: 100%;" type="text" class="form-control" id="slider-price" name="slider-price"  data-slider-min="10" data-slider-max="250" data-slider-step="5" data-slider-value="[10, 250]">
 								</div>
 							</div>

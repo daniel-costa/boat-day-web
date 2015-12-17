@@ -412,8 +412,15 @@
 
 				<h4>Download the BoatDay App and come aboard today.</h4>	
 				<div class="dls">
-					<a href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" target="_blank"><img src="resources/dl-apple.png" class="dl" /></a>
-					<a href="https://play.google.com/store/apps/details?id=com.boat.day" target="_blank"><img src="resources/dl-google.png" class="dl" /></a>
+					<div class="row">
+						<div class="col-sm-12">
+							<a href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" target="_blank"><img src="resources/dl-apple.png" class="dl" /></a>
+						</div>
+						<div class="col-sm-12">
+							<a href="https://play.google.com/store/apps/details?id=com.boat.day" target="_blank"><img src="resources/dl-google.png" class="dl" /></a>
+						</div>
+					</div>	
+					
 				</div>
 
 				<div class="or-hr">
@@ -440,6 +447,65 @@
 			</div>
 			<div class="modal-body">
 				<iframe id="boatday-intro-video" width="640" height="360" src="https://www.youtube.com/embed/LZW8YKzh-MY?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="find-boatday" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+				<h4 class="modal-title text-center">We'll find you a BoatDay!</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal" name="find-boatday" role="form">
+					<div class="form-group">
+					    <label class="control-label col-sm-2" for="mdl-name">Name:</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" name="mdl-name" id="mdl-name" placeholder="Name" required>
+					    </div>
+					  </div>
+				  
+				  	<div class="form-group">
+					    <label class="control-label col-sm-2" for="mdl-email">Email:</label>
+					    <div class="col-sm-10"> 
+					      <input type="email" class="form-control" id="mdl-email" name="mdl-email" placeholder="Email" required>
+					    </div>
+				  	</div>
+				  	
+				  	<div class="form-group">
+					    <label class="control-label col-sm-2" for="mdl-activity">Activity:</label>
+					    <div class="col-sm-10"> 
+				      		<select name="mdl-activity" id="mdl-activity" required class="form-control">
+								<option value="leisure" >Leisure</option>
+								<option value="fishing" >Fishing</option>
+								<option value="sailing" >Sailing</option>
+								<option value="sports"  >Water Sports</option>
+							</select>
+					    </div>
+				  	</div>
+
+				  	<div class="form-group">
+					    <label class="control-label col-sm-2" for="mdl-location">Location:</label>
+					    <div class="col-sm-10"> 
+			      			<select name="mdl-location" id="mdl-location" class="form-control">
+								<option value="wpb-fl" lat="26.713361" lng="-80.048790">West Palm Beach, FL</option>
+								<option value="ftl-fl" lat="26.119363" lng="-80.129802">Ft. Lauderdale, FL</option>
+								<option value="mia-fl" lat="25.774382" lng="-80.185515">Miami, FL</option>
+							</select>
+					    </div>
+				  	</div>
+
+
+				  	
+				  	<div class="form-group"> 
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn host-log-in pull-right">Send</button>
+					    </div>
+				  	</div>
+				</form>
 			</div>
 		</div>
 	</div>

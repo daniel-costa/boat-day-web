@@ -602,6 +602,8 @@ section.options .row .date-col-to{
 	padding: 0px 5px 0px 0px;
 }
 
+
+
 section.options h1.book-adventure{
 	margin-bottom: 40px;
 }
@@ -627,6 +629,9 @@ a.learn-more:hover{
 	margin-bottom: 30px;
 	margin-top: 10px;
 }
+footer .footer-bottom ul.list-inline{
+		float: right;
+	}
 
 /* Media Queries */
 @media (max-width: 767px) { 
@@ -634,5 +639,16 @@ a.learn-more:hover{
 	section.options .row .date-col-to{
 		padding: 0px;
 	}
+	section.options .row .price-slider{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
+
+@media (max-width: 540px) {
+	footer .footer-bottom ul.list-inline{
+		float: left;
+		margin-top: 10px;
+	}
+} 
 
