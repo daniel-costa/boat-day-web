@@ -70,7 +70,6 @@ function getCityFromLocation(location) {
 	if( l.length > 1 ) {
 		return l[l.length - 2].trim(); //trim($l[count($l) - 2]);
 	}
-
 }
 
 function getGuestRate(type) {
@@ -98,7 +97,6 @@ function enableFormFields(){
 	//$('#slider-departure').slider('enable');
 	$('select[name="location"]').prop('disabled', false);
 }
-
 
 function loadBoatDays() {
 
@@ -300,17 +298,7 @@ function submitFindBoatDay(){
 	var email = $('#find-boatday form input[name="mdl-email"]').val();
 	var activity = $('#find-boatday form select[name="mdl-activity"]').val();
 	var location = $('#find-boatday form select[name="mdl-location"]').val();
-
-	var geoLocation = new Parse.GeoPoint({
-		latitude: parseFloat($('#find-boatday form select[name="mdl-location"]').find(':selected').attr('lat')),
-		longitude: parseFloat($('#find-boatday form select[name="mdl-location"]').find(':selected').attr('lng'))
-	});
-
-	console.log("Name: " + name);
-	console.log("Email: " + email);
-	console.log("Activity: " + activity);
-	console.log("Location: " + location);
-	console.log(geoLocation);
+	var price = $('#mdl-slider-price').slider('getValue');
 
 	var BDrequest = Parse.Object.extend("BoatDayRequest");
 	var bdrequest = new BDrequest();
@@ -318,7 +306,8 @@ function submitFindBoatDay(){
 		name: name,
 		email: email,
 		activity: activity,
-		location: location
+		location: location,
+		price: price
 	};
 
 	bdrequestSaveSuccess = function(bdrequest){
@@ -337,8 +326,8 @@ function submitFindBoatDay(){
 
 $(document).ready(function() {
 
-	Parse.initialize("LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU", "kXeZHxlhpWhnRdtg7F0Cdc6kvuGHVtDlnSZjfxpU"); // QA
-	//Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp"); //HP
+	//Parse.initialize("LCn0EYL8lHOZOtAksGSdXMiHI08jHqgNOC5J0tmU", "kXeZHxlhpWhnRdtg7F0Cdc6kvuGHVtDlnSZjfxpU"); // QA
+	Parse.initialize("8YpQsh2LwXpCgkmTIIncFSFALHmeaotGVDTBqyUv", "FaULY8BIForvAYZwVwqX4IAmfsyxckikiZ2NFuEp"); //HP
 	
 	if($('.main-swiper').length !== 0) {
 		var mainSwiper = new Swiper('.main-swiper .swiper-container', {
@@ -382,9 +371,7 @@ $(document).ready(function() {
 	});
 
 	$('body').on('click', '.boatday-card', function(event) {
-
-		dl($(event.currentTarget).closest('.boatday-card').attr('data-id'));
-		
+		dl($(event.currentTarget).closest('.boatday-card').attr('data-id'));	
 	});
 
 	$('body').on('click', '.bd-share', function(event) {
@@ -428,9 +415,31 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#find-boatday form').submit(function(event){
+	$('body').on('submit', 'form[name="find-boatday"]', function(event){
 		event.preventDefault();
 		submitFindBoatDay();
+	});
+
+
+	$('#find-boatday').on('show.bs.modal', function(){
+		var thankTpl = _.template(getTemplate('boatday-find-form'));
+		var formData = {
+			location: $('select[name="location"]').val(),
+			activity: $('select[name="category"]').val(),
+			price: $('#slider-price').slider('getValue')
+		};
+		
+		$('#find-boatday .modal-body').html(thankTpl(formData));
+		
+		if($('#find-boatday').length !== 0) {
+			$('#mdl-slider-price').slider({tooltip: 'hide'}).on('slide', 
+				function(slideEvent){
+					var priceArray = $('#mdl-slider-price').slider('getValue');
+					$('#find-boatday .preview-mdl-price-st').text("$"+ priceArray[0]);
+					$('#find-boatday .preview-mdl-price-ed').text("$"+ priceArray[1]);
+				});
+		}
+
 	});
 
 	//youtube on modal

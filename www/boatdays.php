@@ -88,6 +88,65 @@
 				</div>
 			</div>
 		</script>
+		<script type="x-boatday/template" name="boatday-find-form">
+			<form class="form-horizontal" name="find-boatday" role="form">
+				<div class="form-group">
+				    <label class="control-label col-sm-2" for="mdl-name">Name:</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" name="mdl-name" id="mdl-name" placeholder="Name" required>
+				    </div>
+				  </div>
+			  
+			  	<div class="form-group">
+				    <label class="control-label col-sm-2" for="mdl-email">Email:</label>
+				    <div class="col-sm-10"> 
+				      <input type="email" class="form-control" id="mdl-email" name="mdl-email" placeholder="Email" required>
+				    </div>
+			  	</div>
+			  	
+			  	<div class="form-group">
+				    <label class="control-label col-sm-2" for="mdl-activity">Activity:</label>
+				    <div class="col-sm-10"> 
+			      		<select name="mdl-activity" id="mdl-activity" required class="form-control">
+							<option value="all" 	<%= activity=="all" 	? "selected": "" %>>All</option>
+							<option value="leisure" <%= activity=="leisure" ? "selected": "" %> >Leisure</option>
+							<option value="fishing" <%= activity=="fishing" ? "selected": "" %>>Fishing</option>
+							<option value="sailing" <%= activity=="sailing" ? "selected": "" %>>Sailing</option>
+							<option value="sports"  <%= activity=="sports" 	? "selected": "" %>>Water Sports</option>
+						</select>
+				    </div>
+			  	</div>
+
+			  	<div class="form-group">
+				    <label class="control-label col-sm-2" for="mdl-location">Location:</label>
+				    <div class="col-sm-10"> 
+		      			<select name="mdl-location" id="mdl-location" class="form-control">
+		      				<option <%= location=="everywhere" 	? "selected": "" %> value="everywhere" lat="0" lng="0">Everywhere</option>
+							<option <%= location=="wpb-fl" 		? "selected": "" %> value="wpb-fl" lat="26.713361" lng="-80.048790">West Palm Beach, FL</option>
+							<option <%= location=="ftl-fl" 		? "selected": "" %> value="ftl-fl" lat="26.119363" lng="-80.129802">Ft. Lauderdale, FL</option>
+							<option <%= location=="mia-fl" 		? "selected": "" %> value="mia-fl" lat="25.774382" lng="-80.185515">Miami, FL</option>
+						</select>
+				    </div>
+			  	</div>
+
+			  	<div class="form-group">
+				    <label class="control-label col-sm-2" for="mdl-price">Price:</label>
+				    <div class="col-sm-10">
+				    	<label class="preview-mdl-price-st control-label pull-left">$<%= price[0] %></label>
+				    	<label class="preview-mdl-price-ed control-label pull-right">$<%= price[1] %></label>
+				    	<div class="price-slider">
+							<input style="width: 100%;" type="text" class="form-control" id="mdl-slider-price" name="mdl-slider-price"  data-slider-min="10" data-slider-max="250" data-slider-step="5" data-slider-value="<%= "["+price+"]" %>">
+						</div>
+				    </div>
+			  	</div>
+			  	
+			  	<div class="form-group"> 
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" class="btn host-log-in pull-right testtest">Send</button>
+				    </div>
+			  	</div>
+			</form>
+		</script>
 
 	</head>
 	<body class="boatdays">

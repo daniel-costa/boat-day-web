@@ -23,6 +23,11 @@
 
 					<div class="row">
 						<div class="col-sm-6 faq-col">
+
+							<img class="pull-left" src="resources/faq/ico-using-boatday.png" />
+
+							<div class="clear"></div>
+
 							<h4>Using BoatDay</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-01?faq=q-1">How long is a BoatDay?</a></li>
@@ -39,6 +44,10 @@
 							</ul>
 						</div>
 						<div class="col-sm-6 faq-col">
+							<img class="pull-left" src="resources/faq/ico-hosting-boatday.png" />
+
+							<div class="clear"></div>
+
 							<h4>Hosting with BoatDay</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-02?faq=q-1">How do I create a BoatDay?</a></li>
@@ -58,6 +67,9 @@
 
 					<div class="row">
 						<div class="col-sm-6 faq-col">
+							<img class="pull-left" src="resources/faq/ico-become-a-host.png" />
+
+							<div class="clear"></div>
 							<h4>Become a Host</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-03?faq=q-1">Can I be a Host?</a></li>
@@ -70,6 +82,8 @@
 							</ul>
 						</div>
 						<div class="col-sm-6 faq-col">
+							<img class="pull-left" src="resources/faq/ico-payment.png" />
+							<div class="clear"></div>
 							<h4>Payments</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-04?faq=q-1">What is a "contribution"?</a></li>
@@ -83,6 +97,8 @@
 
 					<div class="row">
 						<div class="col-sm-6 faq-col">
+							<img class="pull-left" src="resources/faq/ico-safety.png" />
+							<div class="clear"></div>
 							<h4>Safety</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-05?faq=q-1">What are the BoatDay safety features?</a></li>
@@ -92,6 +108,8 @@
 							</ul>
 						</div>
 						<div class="col-sm-6 faq-col">
+							<img class="pull-left" src="resources/faq/ico-policy.png" />
+							<div class="clear"></div>
 							<h4>Policies and Other Info</h4>
 							<ul class="list-unstyled">
 								<li><a href="faq-06?faq=q-1">What is the Trust &amp; Safety Fee?</a></li>
