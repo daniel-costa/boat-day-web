@@ -456,8 +456,18 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
-				<h4 class="modal-title text-center">We'll find you a BoatDay!</h4>
+				<div class="row">
+					<div class="col-sm-2 col-xs-2">
+						<img src="resources/logo.png" class="modal-header-logo">
+					</div>
+					<div class="col-sm-8 col-xs-9">
+						<h4 class="modal-title text-center">We'll find you a BoatDay!</h4>
+					</div>
+					<div class="col-sm-2 col-xs-1">
+						<button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+					</div>
+				</div>
+				
 			</div>
 			<div class="modal-body">
 			</div>

@@ -634,8 +634,49 @@ a.learn-more:hover{
 	margin-top: 10px;
 }
 footer .footer-bottom ul.list-inline{
-		float: right;
-	}
+	float: right;
+}
+
+#find-boatday .modal-header .row{
+	height: 40px;
+	overflow: hidden;
+}
+#find-boatday .modal-header .row h4.modal-title{
+	line-height: 40px;
+}
+
+#find-boatday button.btn{
+	margin: 0px;
+}
+#find-boatday p.send-text{
+	padding-right: 10px;
+} 
+
+#find-boatday .thanks .dls .apple-store{
+	text-align: right;
+}
+
+#find-boatday .thanks .dls .play-store{
+	text-align: left;
+}
+
+#find-boatday .thanks h1{
+	margin: 5px 5px 20px 5px;
+	font-size: 2.1em;
+}
+
+#find-boatday .thanks p{
+	padding-bottom: 20px;
+}
+
+#find-boatday .thanks img{
+	margin-bottom: 20px;
+}
+
+img.modal-header-logo{
+	width: 40px;
+	display: inline;
+}
 
 /* Media Queries */
 @media (max-width: 767px) { 
@@ -646,6 +687,14 @@ footer .footer-bottom ul.list-inline{
 	section.options .row .price-slider{
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+
+	#find-boatday .thanks .dls .apple-store{
+		text-align: center;
+	}
+
+	#find-boatday .thanks .dls .play-store{
+		text-align: center;
 	}
 }
 

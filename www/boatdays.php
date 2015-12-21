@@ -69,18 +69,20 @@
 			 <button data-toggle="modal" data-target="#find-boatday" class="btn host-log-in">Find me a BoatDay</button>
 		</script>
 		<script type="x-boatday/template" name="boatday-thank">
-			<div class="text-center">
+			<div class="text-center thanks">
 				<h1>Thanks <%= name %>!</h1>
 				<p>
 					We will let you know when your perfect BoatDay is ready to set sail.
-					<br><br>
+					<br>
 					In the meantime, download the app to stay updated on the latest BoatDays:
 				</p>
 				<div class="dls">
-					<a href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" target="_blank"><img src="resources/dl-apple.png" class="dl" /></a>
-					<br><br>
-					<a href="https://play.google.com/store/apps/details?id=com.boat.day" target="_blank"><img src="resources/dl-google.png" class="dl" /></a>
-					<br><br>
+					<div class="col-sm-6 apple-store">
+						<a href="https://itunes.apple.com/us/app/boatday/id953574487?mt=8" target="_blank"><img src="resources/dl-apple.png" class="dl" /></a>
+					</div>
+					<div class="col-sm-6 play-store">
+						<a href="https://play.google.com/store/apps/details?id=com.boat.day" target="_blank"><img src="resources/dl-google.png" class="dl" /></a>
+					</div>
 				</div>
 			</div>
 		</script>
@@ -136,10 +138,15 @@
 				    </div>
 			  	</div>
 			  	
-			  	<div class="form-group"> 
-				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" class="btn host-log-in pull-right testtest">Send</button>
-				    </div>
+			  	<div class="form-group">
+		
+				  		<div class="col-sm-10">
+				  			<p class="send-text text-center">Send us your BoatDay preference and we’ll let you know when a match is available.</p>
+				  		</div>
+					    <div class="col-sm-2">
+					      <button type="submit" class="btn host-log-in pull-right testtest">Send</button>
+					    </div>
+					 
 			  	</div>
 			</form>
 		</script>
