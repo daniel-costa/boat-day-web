@@ -137,7 +137,7 @@
 										<div class="image" style="background-image:url(<?php echo $boatdayPicture; ?>)">
 
 											<div class="seats-remaining">
-												<label>only<br>6 seats left</label>
+												<label>only<br><?php echo $seats ?> seats left</label>
 											</div>
 
 											<div class="share-boatday">

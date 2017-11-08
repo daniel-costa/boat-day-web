@@ -123,6 +123,7 @@
 	font-size: 16px;
 	margin:0px;
 	margin-left: 20px;
+	margin-right: 20px;
 	margin-bottom: 15px;
 	padding: 0px;
 	font-weight: 400;
@@ -132,8 +133,8 @@
 }
 
 .boatday-card .details .items {
- 	margin-left: 20px;
-	margin-right: 20px;
+ 	margin-left: 10px;
+	margin-right: 10px;
 	
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */

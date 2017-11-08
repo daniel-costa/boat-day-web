@@ -11,7 +11,7 @@
 				<h4>GET IN TOUCH</h4>
 				<p>The world is our office and you’ll find us working away in Miami and Helsinki. Our HQ are in Florida.</p>
 				<ul class="list-unstyled">
-					<li><a class="mail" href="mailto:contact@boatday.com"><span class="icon bd-mail"></span> info@boatdayapp.com</a></li>
+					<li><a class="mail" href="mailto:info@boatdayapp.com"><span class="icon bd-mail"></span> info@boatdayapp.com</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 col-sm-8 footer-col3">
@@ -32,7 +32,7 @@
 			<p class="pull-left">&copy; 2015 Peer-to-Peer Technologies, LLC.</p>
 			<ul class="list-inline">
 				<li><a href="home">Home</a></li>
-				<li><a href="mailto:info@boatday.com">Contact</a></li>
+				<li><a href="mailto:info@boatdayapp.com">Contact</a></li>
 				<li><a href="legal">Legal</a></li>
 			</ul>
 		</div>

@@ -12,7 +12,7 @@
 	
 	function departureTimeToDisplayTime($time) {
 
-		$h = $time * 1;
+		$h = floor($time);
 		$mm = ( $time - $h ) * 60;
 		$dd = 'am';
 
